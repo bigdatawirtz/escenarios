@@ -19,3 +19,4 @@ Podes utilizar este host para lanzar dockers e acceder aos servizos sen redirecc
 Por exemplo:
 `docker run hello-world`
 
+Mais info sobre o *provisioner* docker: https://developer.hashicorp.com/vagrant/docs/provisioning/docker
