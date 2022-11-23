@@ -1,0 +1,21 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+    # Identifica a imaxe/box de vagrant que vas utilizar: "ubuntu/focal64"
+    config.vm.box = "ubuntu/focal64"
+  
+    # Crea unha rede privada, que permite acceso host-only á máquina
+    config.vm.network "private_network", ip: "192.168.33.10"
+ 
+     # Indica o nome da máquina virtual
+     config.vm.provider :virtualbox do |vb|
+      vb.name = "docker-host"
+   end
+  
+    # Indica o nome do hostname
+    config.vm.hostname = "docker-host"
+
+    # Instala docker na máquina virtual
+    config.vm.provision "docker"
+  end
