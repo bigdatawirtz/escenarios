@@ -14,4 +14,5 @@ Para preparar o teu equipo:
 5. Sitúate no directorio co escenario que precisas e lanza `vagrant init`
 
 ## Listaxe de escenarios
+* **host-basico**; un escenario simple con un host ubuntu
 * **docker-host**; un escenario simple con un host ubuntu e docker
