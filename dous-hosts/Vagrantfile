@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.define "main" do |main|
+    main.vm.box = "ubuntu/focal64"
+    main.vm.hostname = "main"
+    main.vm.network "private_network", ip: "192.168.33.11"
+    main.vm.provider :virtualbox do |vb|
+      vb.name = "host-main"
+    end
+    
+  end
+
+  config.vm.define "worker" do |worker|
+    worker.vm.box = "ubuntu/focal64"
+    worker.vm.hostname = "worker"
+    worker.vm.network "private_network", ip: "192.168.33.12"
+    worker.vm.provider :virtualbox do |vb|
+      vb.name = "host-worker"
+    end
+    
+  end
+
+end

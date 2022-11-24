@@ -16,3 +16,4 @@ Para preparar o teu equipo:
 ## Listaxe de escenarios
 * **host-basico**; un escenario simple con un host ubuntu
 * **docker-host**; un escenario simple con un host ubuntu e docker
+* **dous-hosts**; un escenario con dous equipos ubuntu: main e worker
