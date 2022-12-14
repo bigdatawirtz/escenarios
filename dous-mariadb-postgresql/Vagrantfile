@@ -1,0 +1,47 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.define "mari" do |host1|
+    host1.vm.box = "ubuntu/focal64"
+    host1.vm.hostname = "mari"
+    host1.vm.network "private_network", ip: "192.168.33.101"
+    host1.vm.provider :virtualbox do |vb|
+      vb.name = "host-mari"
+    end
+    
+    host1.vm.provision "shell", inline: <<-SHELL
+     apt-get update
+
+     # servidor Bases de Datos MariaDB
+     apt-get install -y mariadb-server
+
+    SHELL
+
+  end
+
+  config.vm.define "postgri" do |host2|
+    host2.vm.box = "ubuntu/focal64"
+    host2.vm.hostname = "postgri"
+    host2.vm.network "private_network", ip: "192.168.33.102"
+    host2.vm.provider :virtualbox do |vb|
+      vb.name = "host-postgri"
+    end
+    
+    host2.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+
+    # servidor Bases de Datos PostgreSQL
+    apt-get install -y postgresql
+
+    SHELL
+
+
+  end
+
+
+
+
+
+end
