@@ -18,3 +18,4 @@ Para preparar o teu equipo:
 * **docker-host**; un escenario simple con un host ubuntu e docker
 * **dous-hosts**; un escenario con dous equipos ubuntu: main e worker
 * **docker-nginx**; un escenario con un host ubuntu, docker e un contedor nginx que server o directorio local www
+* **dous-mariadb-postgresql**; un escenario con dous equipos ubuntu: un con mariadb e outro con postgresql

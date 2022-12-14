@@ -1,11 +1,11 @@
-# dous-hosts
-Dous hosts ubuntus nunha rede privada.
+# dous-mariadb-postgresql
+Dous hosts ubuntus nunha rede privada con Sistemas Xestores de Bases de Datos Relacionais (SXBDR)
 ## Características
 * **box**: ubuntu/focal64 (20.04 LTS)
 * **rede**: rede privada ip: 192.168.33.0/24
 * **2 hosts**
-  * **vbname**: main - 192.168.33.11
-  * **vbname**: worker - 192.168.33.12
+  * **vbname**: mari - 192.168.33.101
+  * **vbname**: postgri - 192.168.33.102
 
 ## Como empezar
 1. Sitúate no directorio onde está o Vagrantfile correspondente
@@ -15,5 +15,5 @@ Dous hosts ubuntus nunha rede privada.
 ## Notas
 Créase unha rede privada entre o host e os dous guest, de xeito que todos se poden comunicar a través dos correspondentes enderezos ip:
 * **host**: 192.168.33.1
-* **main**: 192.168.33.11
-* **main**: 192.168.33.12
+* **mari**: 192.168.33.101
+* **postgri**: 192.168.33.102
