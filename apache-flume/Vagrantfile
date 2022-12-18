@@ -1,0 +1,53 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+    # Identifica a imaxe/box de vagrant que vas utilizar: "ubuntu/focal64"
+    config.vm.box = "ubuntu/focal64"
+  
+    # Crea unha rede privada, que permite acceso host-only á máquina
+    config.vm.network "private_network", ip: "192.168.33.100"
+
+    # Despregue de páxinas web compartindo unha carpeta local
+    config.vm.synced_folder "./www", "/var/www/html"    
+
+     # Indica o nome da máquina virtual
+     config.vm.provider :virtualbox do |vb|
+      vb.name = "host-flume"
+   end
+  
+    # Indica o nome do hostname
+    config.vm.hostname = "host-flume"
+
+    config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+
+    # instalación de java
+    apt-get install -y openjdk-8-jre-headless
+
+    # instalación de Flume
+    cd /home/vagrant
+    wget https://dlcdn.apache.org/flume/1.11.0/apache-flume-1.11.0-bin.tar.gz
+    tar xzfv apache-flume-1.11.0-bin.tar.gz 
+    mv apache-flume-1.11.0-bin /usr/local/flume
+
+    {
+    echo 'export FLUME_HOME=/usr/local/flume'
+    echo 'export PATH=$PATH:$FLUME_HOME/bin'
+    echo 'export CLASSPATH=$CLASSPATH:/usr/local/flume/lib/*:.'
+    echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/'    
+    } >> /home/vagrant/.bashrc
+
+    cd /usr/local/flume/conf
+    cp flume-env.sh.template flume-env.sh
+
+    echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/' >> flume-env.sh
+
+
+    # instalación de servidor web apache
+    apt-get install -y apache2
+
+    SHELL
+
+
+  end
