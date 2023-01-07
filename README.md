@@ -19,3 +19,4 @@ Para preparar o teu equipo:
 * **dous-hosts**; un escenario con dous equipos ubuntu: main e worker
 * **docker-nginx**; un escenario con un host ubuntu, docker e un contedor nginx que server o directorio local www
 * **dous-mariadb-postgresql**; un escenario con dous equipos ubuntu: un con mariadb e outro con postgresql
+* **docker-host**; un escenario con un equipo ubuntu con servidor MondoDB

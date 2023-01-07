@@ -1,0 +1,43 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+    # Identifica a imaxe/box de vagrant que vas utilizar: "ubuntu/focal64"
+    config.vm.box = "ubuntu/focal64"
+  
+    # Crea unha rede privada, que permite acceso host-only á máquina
+    config.vm.network "private_network", ip: "192.168.33.100"
+
+    # Carpeta compartida
+    #config.vm.synced_folder "./..", "/vagrant_data"    
+  
+
+     # Indica o nome da máquina virtual
+     config.vm.provider :virtualbox do |vb|
+      vb.name = "host-mongo"
+   end
+  
+    # Indica o nome do hostname
+    config.vm.hostname = "host-mongo"
+
+    config.vm.provision "shell", inline: <<-SHELL
+
+      # instalación de MondoDB
+      # https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+      cd /home/vagrant
+      wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+      echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+
+      apt-get update
+      apt-get install -y mongodb-org
+
+      # permite conexións externas
+      sed -i "s/bindIp: 127.0.0.1/bindIp: 127.0.0.1,192.168.33.100/" /etc/mongod.conf
+
+      systemctl start mongod
+      systemctl enable mongod
+
+    SHELL
+
+
+  end
