@@ -21,4 +21,5 @@ Para preparar o teu equipo:
 * **dous-mariadb-postgresql**; un escenario con dous equipos ubuntu: un con mariadb e outro con postgresql
 * **nginx-flume**; un escenario con un equipo ubuntu con nginx e flume
 * **host-mongo**; un escenario con un equipo ubuntu con servidor MondoDB
+* **host-mariadb-employees**; unha máquina ubuntu con servidor MariaDB e base de datos Employees
 
