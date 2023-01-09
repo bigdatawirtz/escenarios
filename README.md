@@ -22,4 +22,5 @@ Para preparar o teu equipo:
 * **nginx-flume**; un escenario con un equipo ubuntu con nginx e flume
 * **host-mongo**; un escenario con un equipo ubuntu con servidor MondoDB
 * **host-mariadb-employees**; unha máquina ubuntu con servidor MariaDB e base de datos Employees
+* **practica-sql-universidade**; unha máquina ubuntu con servidor MariaDB e base de datos Universidade para facer prácticas de consultas SQL
 
