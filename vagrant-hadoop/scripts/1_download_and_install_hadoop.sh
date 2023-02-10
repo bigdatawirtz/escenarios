@@ -17,7 +17,7 @@ sudo adduser --system --home /home/hadoop --shell /bin/bash --group --disabled-l
 ## Download and extract hadoop just if not exists
 if [ ! -d /vagrant/share_files/cache/hadoop-${HADOOP_VERSION}/ ]; then
     wget -P /vagrant/share_files/cache/ https://downloads.apache.org/hadoop/common/hadoop-${HADOOP_VERSION}/hadoop-${HADOOP_VERSION}.tar.gz
-    tar -xzf /vagrant/share_files/cache/hadoop-${HADOOP_VERSION}.tar.gz -C /vagrant/share_files/cache/
+    tar -xzfv /vagrant/share_files/cache/hadoop-${HADOOP_VERSION}.tar.gz -C /vagrant/share_files/cache/
 fi
 
 ## Copy hadoop directory to opt
