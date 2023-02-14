@@ -1,47 +1,30 @@
 
 
-# Introduction
-vagrant is a useful tool for managing vm's
+# Intro
 
-this project is a simple hadoop setup with vagrant 
+Este proxecto levanta un clúster hadoop con tres nodos e Pig
 
-# Install
-At first [install vagrant](https://www.vagrantup.com/downloads)
-
-Then install Virtualbox
-```bash
-sudo apt install virtualbox
-```
-
-# How to run
-just run this command's
-
-** note: you need to  a stable internet to have a correct installation
-```bas
-sudo mkdir -p /etc/vbox/
-echo "* 10.0.0.0/8 192.168.0.0/16"|sudo tee /etc/vbox/networks.conf
-vagrant up
-```
-### Note:
-for Apple Silicon run this commands
-
-[docker_branch](https://github.com/hoseinlook/vagrant-hadoop/tree/docker_provider) use docker as a provider instead of virtualbox
-```bash
-git checkout docker_provider
-vagrant up
-```
 
 ## WebUI
 + http://10.20.30.11:9870  #hdfs webUI
 + http://10.20.30.11:8088  #yarn webUI
 
-### Note:
-if you are using docker your webUI address will be changed because in docker version project use port_forwarding 
-+ http://localhost:9870  #hdfs webUI
-+ http://localhost:8088  #yarn webUI
 
-### Some Useful Vagrant commands:
-+ delete vm's with their files
+### Algúns comandos útiles Vagrant:
++ Levantar o clúster
+    ```bash 
+    vagrant up
+    ```
++ Salvar o estado do clúster
+    ```bash 
+    vagrant suspend
+    ```
++ Recuperar o estado salvado do clúster
+    ```bash 
+    vagrant resume
+    ```
+
++ Eliminar o escenario
     ```bash 
     vagrant destroy
     ```
@@ -50,48 +33,28 @@ if you are using docker your webUI address will be changed because in docker ver
     vagrant halt
     ```
 
-+ ssh to a specific vm
++ ssh a unha máquina específica
     ```bash 
     vagrant ssh <YOUR-VM-NAME>
     ```
-  for example:
+  por exemplo:
   ```bash 
     vagrant ssh hadoop-master
     vagrant ssh hadoop-worker1
     ```
 
-### Some Useful Hadoop commands (in master or worker vm's):
-after ssh change your unix user to hadoop
+### Comandos útiles de Hadoop (en master ou worker vm's):
+Despois de conectarse ás máquinas é recomendable mudar ao usuario hadoop
 ```bash
 sudo su hadoop
 ```
-now you are able to use below commands! 
-+ ls in hdfs
-    ```bash 
-    hdfs dfs -ls /your/path/to
-    ```
-+ make directories in hdfs
-  ```bash
-  hdfs dfs -mkdir -p /your/path
-  ```
-+ put file from your directory to hdfs
-    ```bash 
-    hdfs dfs -put  /path/to/your-file /path/to/hdfs
-    ```
-# Optional
-run this command to set hosts
+Sitúate tamén no home do usuario hadoop
 ```bash
-sudo sed -i '/hadoop/d' /etc/hosts
-echo "
-10.20.30.11 hadoop-master
-10.20.30.21 hadoop-worker1
-10.20.30.22 hadoop-worker2
-10.20.30.23 hadoop-worker3
-" | sudo tee -a /etc/hosts
+cd
+```
+Crea en hdfs o directorio default para o teu usuario:
+```bash
+ hdfs dfs -mkdir -p /user/hadoop
+
 ```
 
-# References
-+ [hadoop](https://hadoop.apache.org/docs/stable/)
-+ [hadoop-core-configs](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/core-default.xml)
-+ [hadoop-hdfs-configs](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml)
-+ [hadoop-yarn-configs](https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-common/yarn-default.xml)

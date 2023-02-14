@@ -8,7 +8,10 @@ sudo apt install nano
 # sudo apt-get update -y
 sudo apt-get install -y default-jre
 # Install below jdk to be able to use jps command
-sudo apt install openjdk-8-jdk-headless
+sudo apt install -y openjdk-8-jdk-headless
+
+sudo apt install -y pdsh
+echo "ssh" | sudo tee /etc/pdsh/rcmd_default
 
 ## Add hadoop user
 sudo adduser --system --home /home/hadoop --shell /bin/bash --group --disabled-login hadoop
