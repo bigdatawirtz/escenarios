@@ -1,0 +1,1284 @@
+Un relato apocalíptico para expertos en informática.
+
+¿Qué ocurre tras el fin del mundo?
+
+Aquí se plantea un curioso experimento social cuando el mundo se derrumba —la civilización occidental, en realidad— y los administradores de sistemas, los informáticos que cuidan que internet no se cierre, siguen en la brecha para mantener la Red como último reducto civilizado.
+
+Premio Locus 2007 (relato largo).
+
+
+
+
+
+Cory Doctorow
+
+
+
+
+
+Cuando los administradores de sistemas gobernaron la Tierra
+
+
+
+
+ePub r1.0
+
+Titivillus 09.10.17
+
+
+
+
+
+Título original: When Sysadmins Ruled the Earth
+
+Cory Doctorow, 2006
+
+Traducción: Graciela Lorenzo Tillard
+
+
+
+Esta traducción está bajo licencia: Creative Commons Reconocimiento-NoComercial-CompartirIgual
+
+Editor digital: Titivillus
+
+ePub base r1.2
+
+
+
+
+
+Cuando el teléfono especial de Felix sonó a las dos de la mañana, Kelly se dio vuelta, le dio un puñetazo en el hombro y siseó:
+
+—¿Por qué no apagaste esa cosa de mierda antes de acostarte?
+
+—Porque estoy de turno —dijo.
+
+—No eres un médico de mierda —dijo ella, pateándolo mientras él se sentaba en el borde de la cama y se ponía el pantalón que había dejado en el piso antes de acostarse—. Eres un maldito administrador de sistemas.
+
+—Es mi trabajo —dijo él.
+
+—Te hacen trabajar como una mula gubernamental —dijo ella—. Sabes que tengo razón. Por amor de Cristo, eres padre ahora, no puedes salir corriendo en medio de la noche cada vez que a alguien se le cae su proveedor de pornografía. No respondas ese teléfono.
+
+Sabía que ella tenía razón. Respondió al teléfono.
+
+—Los ruteadores principales no responden. BGP[1] no responde. —A la voz mecánica del monitor de sistemas no le importaba si maldecía, así que lo hizo y se sintió un poco mejor.
+
+—Tal vez pueda arreglarlo desde aquí —dijo. Podía ingresar al UPS[2] por el área cerrada y reiniciar los ruteadores. El UPS estaba en un bloque de red diferente, con sus ruteadores independientes, alimentados con sus propios suministros de energía ininterrumpida.
+
+Kelly estaba sentada en la cama ahora, una forma borrosa contra la cabecera.
+
+—En cinco años de matrimonio, jamás pudiste arreglar nada desde aquí.
+
+En esto estaba equivocada: arreglaba cosas desde su casa todo el tiempo, pero lo hacía discretamente y sin quejarse, de modo que ella no lo registraba. Y también tenía razón; tenía registros que mostraban que después de la una de la mañana jamás se podía arreglar nada sin llegarse hasta el área cerrada. Ley de la Infinita Perversión Universal… también conocida como la Ley de Felix.
+
+Cinco minutos después, Felix estaba al volante. No había logrado arreglarlo desde casa. El bloque del enrutador independiente también estaba fuera de línea. La última vez que había ocurrido había sido porque un estúpido trabajador de la construcción había cavado una zanja a través del conducto principal del centro de datos; y Felix se había unido a un equipo de cincuenta enfurecidos administradores de sistema que estuvieron una semana encima del hoyo gritándoles a los pobres bastardos que trabajaron las 24 horas del día durante una semana para re-empalmar los diez mil cables.
+
+Mientras iba en el automóvil, su teléfono sonó dos veces más, y lo conectó al estéreo para que los mecánicos reportes del estado crítico de la infraestructura de la red fuera de línea salieran a través de los bafles. Luego Kelly llamó.
+
+—Hola —dijo.
+
+—No te alarmes, puedo oír en tu voz que te asustaste.
+
+Sonrió de manera involuntaria.
+
+—No, no me asusté.
+
+—Te amo, Felix —dijo.
+
+—Estoy totalmente chiflado por ti, Kelly. Vuelve a la cama.
+
+—Dos Punto Cero está despierto —dijo. El bebé había sido una prueba beta mientras estaba en su útero, y cuando se rompió la bolsa recibió el llamado y salió corriendo de la oficina gritando «¡El Archivo Maestro ya está listo!». Habían empezado a llamarlo «2.0» antes de que terminara su primer berrido—. Este pequeño bastardo ha nacido para tomar la teta.
+
+—Lamento haberte despertado —dijo. Estaba casi en el centro de datos. A las dos de la mañana no había tráfico. Disminuyó la velocidad y aparcó antes de llegar a la entrada del garaje. No quería perder la señal de Kelly bajo tierra.
+
+—No es porque me despiertes —dijo ella—. Has estado ahí durante siete años. Tienes tres subalternos a tu cargo. Dales el teléfono a ellos. Ya has pagado tu derecho de piso.
+
+—No me gusta pedir a mis subalternos que hagan algo que yo no haría —dijo.
+
+—Lo has hecho —dijo—. Por favor. Odio despertarme sola a la noche. Te extraño más a la noche.
+
+—Kelly…
+
+—Ya no estoy enfadada. Te extraño, eso es todo. Me das dulces sueños.
+
+—De acuerdo —dijo.
+
+—¿Así de simple?
+
+—Exactamente. Así de simple. No me gusta que tengas pesadillas, y he pagado mi derecho de piso. Desde ahora, sólo tomaré llamadas nocturnas para cubrir vacaciones.
+
+Ella rió.
+
+—Los administradores de sistema no toman vacaciones.
+
+—Éste sí —dijo—. Lo prometo.
+
+—Eres maravilloso —dijo ella—. Oh, qué asco. Dos Punto Cero acaba de descargar líquido por toda mi bata.
+
+—Ése es mi nene —dijo.
+
+—Oh, claro que lo es —dijo ella y colgó.
+
+Él condujo el automóvil hacia el interior del edificio del centro de datos, mostró su identificación y levantó un legañoso párpado para que el escáner retinal le aplicase una buena inspección a su soñoliento globo ocular.
+
+Se detuvo en la máquina expendedora para servirse una barra energética de guaraná-medafonil y una taza de letal café robótico en una taza a prueba de derrames. Devoró la barra y sorbió el café, luego dejó que la puerta interior leyera la geometría de su mano y la analizara un momento. La entrada se abrió con un suspiro y lanzó sobre él una ráfaga de aire presurizado. Por fin entró en el santuario interior.
+
+Eso era un manicomio. Los cubículos estaban diseñados como para que maniobraran a la vez dos o tres administradores de sistema. Cada centímetro cúbico restante de espacio estaba ocupado por gabinetes de zumbantes servidores, ruteadores y unidades de disco. Apretujados entre los equipos había por lo menos veinte administradores. Una típica convención de camisetas negras con inexplicables leyendas y barrigas que desbordaban sobre los cinturones cargados de teléfonos y herramientas múltiples.
+
+Lo normal era que el aire estuviese helado en el cubículo, pero todos esos cuerpos recalentaban el espacio. Cuando se acercó, cinco o seis levantaron la vista e hicieron muecas. Dos de ellos le dieron la bienvenida por su nombre. Zigzagueó llevando su estómago entre la gente y las celdas de metal, hacia los gabinetes Ardent del fondo de la habitación.
+
+—Felix.
+
+Era Van, que no estaba de turno esa noche.
+
+—¿Qué estás haciendo aquí? —preguntó—. No hay ninguna necesidad de que mañana estemos destruidos los dos.
+
+—¿Qué? Oh. Ahí está mi caja personal. Se desconectó a eso de las 1:30 y mi monitor de procesamiento me despertó. Debería haberte llamado y decirte que venía yo… Ahorrarte el viaje.
+
+El servidor de Felix —un gabinete que compartía con otros cinco amigos— estaba en un rack en el piso de abajo. Se preguntó si también estaría fuera de línea.
+
+—¿Qué es lo que pasa?
+
+—Ataque masivo de un gusano veloz. Algún asno aprovechó el lapso antes de que se actualizara el antivirus[3] y logró que todas las cajas Windows de la red se pusieran a correr muestreos Monte Carlo en todos los bloques de IP, incluso en los IPv6. Todos los administradores de interfaz de los grandes Cisco[4] corren en v6, y se caen si reciben más de diez muestreos al mismo tiempo, lo que significa que casi todo el intercambio se ha venido abajo. El sistema de nombres también está chiflado, como si alguien hubiese envenenado la transferencia zonal anoche. Ah, y hay un correo electrónico y componente IM que envía unos mensajes que parecen normales a todos lo que están en tu libreta de direcciones, vomitando un diálogo Eliza que cierra tu conexión de correo electrónico para lograr que abras un Troyano.
+
+—Jesús.
+
+—Sí.
+
+Van era un adminsis tipo dos, de más de un metro ochenta de estatura, larga cola de caballo y nuez movediza. Sobre su pecho plano, su camiseta decía ESCOGE TU ARMA y mostraba una hilera de dados poliédricos RPG.
+
+Felix era un administrador de tipo uno que tenía unos treinta a cuarenta kilos de más alrededor de su sector central y una barba prolija aunque abundante sobre su gruesa papada. Su camiseta decía HOLA CTHULHU y exhibía un bonito Cthulhu sin boca, al estilo Hello-Kitty. Se conocían desde hacía quince años. Se habían conocido en Usenet, luego de unas sesiones de cerveza en el Freenet de Toronto, y otro par en convenciones de Star Trek, y finalmente Felix había contratado a Van para trabajar con él en Ardent. Van era confiable y metódico. Entrenado como ingeniero eléctrico, tenía una sucesión de cuadernos de espiral repletos de detalles de cada paso que había dado alguna vez, con hora y fecha.
+
+—Ni siquiera son PEETYS esta vez —dijo Van. Problema Existente Entre Teclado y Silla. Los troyanos de correo electrónico estaban en esa categoría… si las personas fueran lo bastante listas para no abrir adjuntos sospechosos, los troyanos de correo electrónico serían cosa del pasado. Pero los gusanos que comían los ruteadores Cisco no eran un problema de los usuarios… eran por culpa de ingenieros incompetentes.
+
+—No, es culpa de Microsoft —dijo Felix—. Cada vez que me veo trabajando a las dos de la mañana o es PEETYS o es Microsloth.
+
+
+
+* * *
+
+
+
+Terminaron desconectando los putos ruteadores de Internet. No Felix, por supuesto, aunque se estaba muriendo por hacerlo y reiniciarlos después de cerrar sus interfaces IPv6. Lo hicieron dos bastardos tecnicuchos operadores del infierno que tuvieron que girar dos llaves al mismo tiempo para acceder a su celda, como si fuesen guardias de un silo de misiles. El noventa y cinco por ciento del tráfico de larga distancia de Canadá pasaba a través de ese edificio. Tenía mejor seguridad que la mayoría de las bases de misiles.
+
+Felix y Van pusieron de vuelta en línea sus gabinetes Ardent simultáneamente. Estaban recibiendo el bombardeo de los muestreos del gusano; al poner los ruteadores de nuevo en línea directa exponían a las celdas que seguían en la red a continuación de esas. Todas las cajas en Internet estaban inundadas de copias del gusano, o estaban creando ataques de gusano, o ambas cosas. Felix logró llegar a NIST[5] y a Bugtraq[6] luego de unas cien interrupciones, y descargó algunos parches de kernel que reducirían la carga que le causaban los gusanos a las computadoras a su cargo. Eran las diez de la mañana, y estaba bastante hambriento como para comerse el trasero de un oso muerto, pero recompiló los programas de sus núcleos y puso las computadoras otra vez en línea. Los largos dedos de Van volaban sobre el teclado de administración, sacando la lengua mientras ponía instrucciones de carga en cada máquina.
+
+—Greedo tenía doscientos días de servicio —dijo Van. Greedo era el servidor más viejo del soporte, de la época en que les ponían a las cajas los nombres de los personajes de Star Wars. Ahora les ponían nombres de pitufos, y como se estaban quedando sin pitufos habían empezado a usar los nombres de McDonald, comenzando con la laptop de Van, McCheese Gigante.
+
+—Greedo renacerá —dijo Felix—. Tengo una 486 allá abajo con más de cinco años de servicio. Me va a romper el corazón reiniciarla.
+
+—¿Para qué eterna mierda usas una 486?
+
+—Para nada. ¿Pero quién apaga una máquina luego de un servicio de cinco años? Es como hacerle eutanasia a tu abuela.
+
+—Me voy a comer —dijo Van.
+
+—¿Sabes qué? —dijo Felix—. Activaremos tu caja, luego la mía, entonces te llevaré a Lakeview Lunch a desayunar pizzas, y luego puedes tomarte el resto del día libre.
+
+—Vale —dijo Van—. Hombre, eres demasiado bueno con nosotros los peones. Deberías meternos en un hoyo y golpearnos, como todos los otros jefes. Es todo lo que nos merecemos.
+
+
+
+* * *
+
+
+
+—Tu teléfono —dijo Van.
+
+Felix se apartó de las tripas de la 486, que se había negado rotundamente a encender. Había rapiñado una fuente de repuesto a unos tipos que hacían una operación antispam y estaba tratando de colocarla. Dejó que Van le pasara el teléfono, que se había caído de su cinturón mientras se retorcía para llegar a la parte posterior de la máquina.
+
+—Hey, Kel —dijo. Se escuchaba un extraño resoplido al fondo. ¿Estática, tal vez? ¿2.0 chapoteando en el baño?—. ¿Kelly?
+
+La línea quedó en silencio. Trató de devolver la llamada, pero no consiguió nada; ni sonido ni correo de voz. Su teléfono llegó al tiempo máximo y mostró un cartelito: ERROR DE LA RED.
+
+—Maldita sea —dijo con suavidad. Sujetó el teléfono a su cinturón. Kelly quería saber cuándo volvía a casa, o quería que recogiera algo para la familia. Le habría dejado un mensaje hablado.
+
+Estaba probando la fuente de la computadora cuando su teléfono volvió a sonar. Lo tomó y respondió.
+
+—Kelly, hey, ¿qué sucede?
+
+Procuró evitar un tono que sonara a irritación en su voz. Se sentía culpable: hablando en sentido técnico, había terminado sus obligaciones con Ardent Financial LLC en cuanto los servidores Ardent estuvieron de nuevo en línea. Las tres horas siguientes habían sido puramente personales; aunque pensara facturárselas a la compañía.
+
+Escuchó un sollozo en la línea.
+
+—¿Kelly? —Sintió que la sangre se le iba de la cara y los dedos de los pies.
+
+—Felix —dijo, de modo apenas comprensible entre los sollozos—. Está muerto, oh, Jesús, está muerto.
+
+—¿Quién? ¿Quién, Kelly?
+
+—Will —dijo.
+
+¿Will?, pensó. Quién demonios es… Cayó de rodillas. William era el nombre que habían escrito en la partida de nacimiento, aunque siempre lo habían llamado 2.0. Felix hizo un sonido de angustia, como un ladrido enfermo.
+
+—Estoy enferma —dijo ella—, ya ni siquiera puedo estar de pie. Oh, Felix. Te amo tanto.
+
+—¿Kelly? ¿Qué está ocurriendo?
+
+—Todos, todos… —dijo—. En la tele hay sólo dos canales. Cristo, Felix, parece la noche de todos los muertos en una ventana… —Escuchó su arcada. El teléfono empezó a fallar, repitiendo los ruidos de su vómito como un eco.
+
+—Quédate allí, Kelly —gritó mientras la línea moría. Marcó el 911, pero el teléfono dijo ERROR DE LA RED una y otra vez tan pronto tocaba ENVIAR.
+
+Tomó la McCheese Gigante de Van y la enchufó en el cable de red de la 486, entró en el Firefox por la línea de comandos y buscó el sitio de la Policía Metropolitana. Con rapidez, sin desesperarse, buscó una planilla de contacto en línea. Felix jamás perdía la cabeza. Su función era resolver problemas y ponerse frenético nunca ayudaba.
+
+Localizó una planilla en línea y escribió los detalles de su conversación con Kelly como si estuviera guardando un informe de errores, dedos rápidos, descripción completa, y luego le dio a ENVIAR.
+
+Van había leído por encima de su hombro.
+
+—Felix… —empezó.
+
+—Dios —dijo Felix. Estaba sentado sobre el piso de la celda; se irguió con lentitud. Van tomó la laptop y probó algunos sitios de noticias, pero todos estaban fuera. Era imposible decir si era porque ocurría algo terrible o porque la red estaba cojeando a causa del súper gusano.
+
+—Debo volver a casa —dijo Felix.
+
+—Te llevaré —dijo Van—. Puedes seguir llamando a tu esposa.
+
+Se abrieron paso hasta los ascensores. Allí estaba una de las pocas ventanas del edificio, una abertura de vidrio grueso y reforzado. Espiaron por ella mientras esperaban el ascensor. No mucho tráfico para ser miércoles. ¿Había más patrulleros de lo habitual?
+
+—Oh, mi Dios… —señaló Van.
+
+Hacia el este se veía la Torre CN, la gigantesca aguja de un enorme edificio. Estaba torcida, como una rama inserta en arena húmeda. ¿Se estaba moviendo? Sí. Se estaba inclinando, despacio, pero ganaba velocidad, cayendo hacia al noreste, sobre el centro financiero. En un segundo más se deslizó fuera de su centro de gravedad y se vino abajo. Sintieron la conmoción, luego la escucharon, y todo el edificio se meció por el impacto. De los restos se levantó una nube de polvo, y se escucharon más truenos mientras la estructura más alta del mundo chocaba un edificio tras otro.
+
+—Se está cayendo el Centro de Transmisión —dijo Van. Así era; el altísimo edificio de la CBC se estaba desplomando en cámara lenta. La gente que corría por todos lados resultaba aplastada por la mampostería que caía. Visto a través de la portilla era como observar un prolijo truco CGI descargado de un sitio de archivos compartidos.
+
+Los adminsis se estaban apiñando a su alrededor, abriéndose paso a empellones para ver la destrucción.
+
+—¿Qué ocurrió? —preguntó uno de ellos.
+
+—La torre CN se vino abajo —dijo Felix. Sonó lejano a sus propios oídos.
+
+—¿Fue el virus?
+
+—¿El gusano? ¿Qué? —Felix enfocó sus ojos en el tipo, un joven administrador de tipo dos con apenas un poco de grasa alrededor de su zona central.
+
+—No el gusano —dijo el tipo—. Recibí un correo electrónico que decía que toda la ciudad fue puesta en cuarentena por un virus. Arma biológica, dicen.
+
+Le pasó a Felix su Blackberry.
+
+Felix estaba tan concentrado en el informe —que se suponía enviado por Salud de Canadá— que ni siquiera notó que se habían apagado todas las luces. Entonces se dio cuenta, devolvió la Blackberry a su propietario, y dejó escapar un pequeño sollozo.
+
+
+
+* * *
+
+
+
+Los generadores de emergencia se pusieron en funcionamiento un minuto después. Los adminsis corrieron hacia las escaleras. Felix tomó a Van por el brazo, lo retuvo.
+
+—Tal vez deberíamos esperar en la celda a que esto termine —dijo.
+
+—¿Y qué me dices de Kelly? —dijo Van.
+
+Felix sentía que iba a vomitar.
+
+—Deberíamos meternos en la celda, ahora. —La celda tenía filtros de aire de micropartículas.
+
+Corrieron escaleras arriba hasta la celda grande. Felix abrió la puerta y luego dejó que se cerrara siseando detrás de él.
+
+—Felix, debes ir a casa…
+
+—Es un arma biológica —dijo Felix—. Súper gusano. Mientras los filtros aguanten estaremos bien aquí, creo.
+
+—¿Qué?
+
+—Métete al IRC —dijo.
+
+Lo hicieron. Van tenía la McCheese Gigante y Felix usaba a Pitufina. Cambiaron de canal de chat hasta que encontraron uno con algunas frases familiares.
+
+> Pentágono desaparecido / Casa Blanca también
+
+> MIS VECINOS VOMITAN SANGRE POR SU BALCÓN EN SAN DIEGO
+
+> Alguien golpeó el Pepinillo. Los banqueros están huyendo de la ciudad como ratas.
+
+> Oí que el Ginza estaba ardiendo
+
+Felix tecleó: estoy en Toronto. Acabamos de ver caer a la Torre CN. He escuchado informes de armas biológicas, algo muy rápido.
+
+Van lo leyó y dijo:
+
+—No sabes qué tan rápida es, Felix. Tal vez todos estuvimos expuestos hace tres días.
+
+Felix cerró los ojos.
+
+—Si eso fuera cierto creo que sentiríamos algunos síntomas.
+
+> Parece que un pulso electromagnético sacó a Hong Kong y tal vez a París… las secuencias satelitales las muestran totalmente oscuras, y todos los bloques de red allí no están ruteando
+
+> ¿Estás en Toronto?
+
+Era una frase poco familiar.
+
+> Sí - en Calle Front
+
+> Mi hermana está cerca de Toronto y no puedo contactar - ¿puede llamarla?
+
+> No hay servicio telefónico
+
+Felix tecleó, mirando PROBLEMAS DE LA RED.
+
+—Tengo un teléfono en McCheese Gigante —dijo Van, iniciando su aplicación de voz en IP—. Acabo de recordar.
+
+Felix tomó la laptop de sus manos y marcó el número de su casa. Sonó una vez, luego escuchó un sonido monotonal, gimoteante como de una sirena de ambulancia en una película italiana.
+
+> No hay servicio telefónico
+
+Felix tecleó otra vez.
+
+Levantó la mirada hacia Van, y vio que sus delgados hombros se sacudían.
+
+—Sagrada madreputa de mierda —dijo Van—. Es el fin del mundo.
+
+
+
+* * *
+
+
+
+Felix dejó de fisgonear en IRC una hora después. Atlanta se había quemado. Manhattan estaba radiactiva, lo bastante para retorcer las cámaras que tomaban el Lincoln Plaza. Todos culpaban al Islam hasta que se volvió claro que la Meca era un hoyo humeante y que los reyes sauditas habían sido colgados delante de sus palacios.
+
+Sus manos temblaban y Van lloraba serenamente en la esquina opuesta de la celda. Trató de llamar a casa otra vez, y luego a la policía. No fue mejor que las últimas veinte veces que había intentado.
+
+Se metió en su caja en el piso de abajo y abrió su correo. Spam, spam, spam. Más spam. Mensajes automáticos. Allí… un mensaje urgente del sistema de detección de intrusos en la celda Ardent.
+
+Lo abrió y leyó rápidamente. Alguien estaba sondeando sus ruteadores de una manera rudimentaria y repetida. No encajaba con la firma de un gusano, tampoco. Siguió la ruta del ataque y descubrió que se había originado en el mismo edificio, un sistema en una celda ubicada un piso más abajo.
+
+Tenía procedimientos para esto. Registró el puerto de su atacante y descubrió que el puerto 1337 estaba abierto; 1337 era «leet» o «elite» en el código de sustitución numérico de los piratas informáticos. Ése era justo el tipo de puerto que los gusanos dejaban abierto para deslizarse entrando y saliendo. Buscó gusanos conocidos que abrieran el puerto 1337, ajustó la búsqueda en base a los rastros en el sistema operativo del servidor comprometido, y entonces lo tuvo.
+
+Era un antiguo gusano, contra el cual todas las cajas deberían haber sido emparchadas muchos años atrás. No importaba. Tenía el cliente, y lo utilizó para crear una cuenta raíz propia en la caja. Ingresó y echó un vistazo.
+
+Había otro usuario registrado, «Scaredy». Revisó el monitor de proceso y vio que Scaredy había generado los cientos de procesos que estaban sondeando su caja y muchas otras.
+
+Abrió un chat:
+
+> Deja de sondear mi servidor
+
+Esperaba una jactanciosa y culpable negación. Quedó sorprendido.
+
+> ¿Estás en el centro de datos de Calle Front?
+
+> Sí
+
+> Cristo. Pensaba que era el último vivo. Estoy en el cuarto piso. Creo que afuera hay un ataque biológico. No quiero dejar el cuarto aislado.
+
+Felix resopló.
+
+> ¿Me estabas sondeando para que te siguiera el rastro?
+
+> Sí
+
+> Eso fue astuto
+
+Inteligente bastardo.
+
+> Estoy en el sexto piso, tengo uno más conmigo.
+
+> ¿Qué sabes?
+
+Felix pegó la información en el IRC y esperó mientras el otro tipo la digería. Van se puso de pie y caminó. Sus ojos estaban vidriosos.
+
+—¿Van? ¿Amigo?
+
+—Tengo que hacer pis —dijo.
+
+—Nada de abrir la puerta —dijo Felix—. Vi un botellón vacío de agua mineral allí en la basura.
+
+—Correcto —dijo Van. Caminó como un zombi al tacho de basura y sacó la botella vacía. Volvió la espalda.
+
+> Soy Felix
+
+> Will
+
+El estómago de Felix dio una lenta voltereta mientras pensaba en 2.0.
+
+—Felix, creo que debo salir —dijo Van. Se estaba dirigiendo hacia la puerta de la cámara de compresión. Felix dejó caer su teclado, se puso de pie como pudo y se lanzó de cabeza hacia Van, volteándolo antes de que llegara a la puerta.
+
+—Van —dijo, mirando dentro de los ojos vidriosos y perdidos de su amigo—. Mírame, Van.
+
+—Debo irme —dijo Van—. Debo llegar a casa y alimentar a los gatos.
+
+—Hay algo ahí afuera, algo letal que actúa velozmente. Tal vez se vaya con el viento. Tal vez ya se ha ido. Pero vamos a sentarnos aquí hasta que lo sepamos con seguridad o hasta que no tengamos elección. Siéntate, Van. Siéntate.
+
+—Tengo frío, Felix.
+
+Estaba helado. Los brazos de Felix tenían piel de gallina y sus pies se sentían como bloques de hielo.
+
+—Siéntate contra los servidores, junto a las ventilaciones. Toma el calor que sale. —Encontró un rack y se acomodó contra él.
+
+> ¿Estás ahí?
+
+> Todavía aquí - solucionando alguna logística
+
+> ¿Cuánto tiempo hasta que podamos salir?
+
+> No tengo idea
+
+Luego nadie tecleó nada durante bastante tiempo.
+
+
+
+* * *
+
+
+
+Felix tuvo que usar dos veces la botella de agua mineral. Van la usó otra vez. Felix trató de llamar a Kelly de nuevo. El sitio de la Policía Metropolitana estaba fuera de servicio.
+
+Al final deslizó la espalda contra los servidores, envolvió los brazos alrededor de sus rodillas y lloró como un bebé.
+
+Después de un minuto, Van se acercó y se sentó a su lado, con el brazo alrededor de los hombros de Felix.
+
+—Están muertos, Van —dijo Felix—. Kelly y mi hi… hijo. Mi familia está muerta.
+
+—No lo sabes con seguridad —dijo Van.
+
+—Estoy bastante seguro —dijo Felix—. Cristo, todo ha terminado, ¿verdad?
+
+—Lo limpiaremos en unas pocas horas más y saldremos. Las cosas deben regresar a la normalidad pronto. El Departamento de Bomberos lo arreglará. Movilizarán al Ejército. Estará todo bien.
+
+A Felix le dolían las costillas. No había llorado desde… desde que había nacido 2.0. Abrazó sus rodillas más fuerte.
+
+Entonces se abrieron las puertas.
+
+Los dos adminsis que entraron tenían mirada salvaje. Uno tenía una camiseta que decía HÁBLAME NERDY y el otro vestía una camisa de Electronic Frontiers Canada.
+
+—Vamos —dijo HÁBLAME NERDY—. Nos estamos reuniendo en el último piso. Usen las escaleras.
+
+Felix descubrió que estaba conteniendo la respiración.
+
+—Si hay un agente biológico en el edificio, estamos todos infectados —dijo HÁBLAME NERDY—. Vayan, los esperaremos allí.
+
+—Hay uno en el sexto piso —dijo Felix, mientras se ponía de pie.
+
+—Will, sí, ya lo tenemos. Está allá arriba.
+
+HÁBLAME NERDY era uno de los bastardos operadores del infierno que habían desenchufado los grandes ruteadores. Felix y Van subieron las escaleras con lentitud. Sus pasos resonaron en el desolado pozo. Después del aire frío de la celda, el hueco de la escalera se sentía como un sauna.
+
+Había una cafetería en el último piso, con sanitarios funcionando, agua, café y comida en una máquina expendedora. Había una inquieta cola de adminsis delante de cada una. Nadie miraba a los ojos de nadie. Felix se preguntó cuál de ellos sería Will, y luego se unió a la cola de la máquina expendedora de comida.
+
+Recibió un par de barras energéticas y una gigantesca taza de café de vainilla antes de quedarse sin cambio. Van había conseguido algo de espacio en la mesa. Felix colocó las cosas frente a él y se fue a la cola del sanitario.
+
+—Déjame algo para mí —dijo, lanzando una barra energética frente a Van.
+
+Satisfechas las necesidades de evacuar, cuando estuvieron instalados y comiendo, regresaron HÁBLAME NERDY y su amigo. Limpiaron la caja registradora que había en un extremo del área de preparación de comida y HÁBLAME NERDY se quedó con el dinero. Lentamente, la conversación amainó.
+
+—Soy Uri Popovich, éste es Diego Rosenbaum. Agradezco a todos ustedes por venir aquí. He aquí lo que seguro sabemos: el edificio está con generadores desde hace tres horas. La observación visual indica que somos el único edificio en Toronto central con potencia; y ésta debería resistir tres días más. Hay un agente biológico de origen desconocido suelto ahí fuera de nuestras puertas. Mata rápidamente, en unas horas, y es aéreo. Se pesca respirando el aire infectado. Nadie ha abierto ninguna de las puertas exteriores de este edificio desde las cinco esta mañana. Nadie abrirá las puertas hasta que dé el visto bueno.
+
+»Los ataques sobre las ciudades principales de todo el mundo han dejado a los servicios de emergencia en el caos. Los ataques son electrónicos, biológicos, nucleares y explosiones convencionales, y están muy extendidos. Soy ingeniero de seguridad, y en el lugar de dónde vengo este tipo de ataques se consideran oportunistas: un grupo B vuela un puente porque todos están ocupados haciéndose cargo del sucio evento nuclear del grupo A. Es astuto. Una célula Aum Shin Rikyo en Seúl gaseó los subterráneos allí a las dos de la mañana del Este; fue el primer evento que podemos ubicar, de modo que puede haber sido el Archiduque que le rompió la espalda al camello. Estamos bastante seguros de que Aum Shin Rikyo no estaría detrás de esta clase de caos: no tienen historia de guerra informática y nunca han mostrado la clase de perspicacia organizativa necesaria para ejecutar tantos objetivos a la vez. Básicamente, no son lo bastante listos.
+
+»Aguantaremos aquí en el futuro inmediato, por lo menos hasta que sea identificada y dispersada el arma biológica. Vamos a alimentar a los racks y mantener las redes. Es infraestructura crítica, y es nuestro trabajo asegurarnos que tenga cinco nueves de tiempo de operación. En un momento de emergencia nacional, nuestra responsabilidad se duplica.
+
+Un adminsis levantó su mano. Era muy atrevido, estaba vestido con una camiseta con el verde del Increíble Hulk y estaba en el lado joven de la escala.
+
+—¿Quién murió y te hizo rey?
+
+—Tengo control del sistema de seguridad principal, las claves de cada celda y los códigos de las puertas exteriores; están todas cerradas ahora, a propósito. Soy el primero que los llamó a todos aquí y convocó la reunión. No me importa si otra persona quiere este trabajo, es una mierda. Pero alguien tiene que hacerlo.
+
+—Tienes razón —dijo el chico—. Y yo puedo hacerlo tan bien como tú. Mi nombre es Will Sario.
+
+Popovich miró al chico desde arriba.
+
+—Bien, si me dejas terminar de hablar, tal vez te pasaré las cosas cuando haya terminado.
+
+—Termina, por supuesto. —Sario le volvió la espalda y caminó hasta la ventana. Se quedó mirando afuera con intensidad. Los ojos de Felix se fijaron en la ventana, y vio que había algunas columnas de humo aceitoso levantándose de la ciudad.
+
+El impulso de Popovich estaba cortado.
+
+—De modo que eso es lo que vamos a hacer —dijo.
+
+El chico miró a su alrededor después de un largo momento de silencio.
+
+—Oh, ¿es mi turno ahora?
+
+Se escuchó una ronda de risas cordiales.
+
+—He aquí lo que pienso: el mundo la va a cagar. Hay ataques coordinados sobre cada trozo crítico de infraestructura. Hay sólo una manera de coordinar tan bien esos ataques: vía la Internet. Incluso si suscriben la teoría de que los ataques son todos oportunistas, tenemos que preguntarnos cómo un ataque oportunista podría ser organizado en minutos: la Internet.
+
+—¿Así que piensas que debemos cerrar la Internet? —Popovich rió un poco, pero se detuvo cuando Sario no dijo nada.
+
+—Anoche vimos un ataque que casi acabó con la Internet. Un poco de DoS en los ruteadores críticos, un poco de DNS-foo, y se entrega como la hija de un pastor. Los polis y el ejército son un grupo de usuarios tecnofóbicos, apenas dependen de la red en absoluto. Si cerramos la Internet, pondremos a los atacantes en desventaja, mientras que a los defensores sólo los incomodaremos. Cuando llegue el momento, podemos reinstalarla.
+
+—Me estás viendo cara de tonto —dijo Popovich. Su mandíbula colgaba. Literalmente.
+
+—Es lógico —dijo Sario—. A un montón de personas no le gusta enfrentarse con la lógica cuando nos dicta decisiones difíciles. Ése es un problema con las personas, no con la lógica.
+
+Se escuchó un zumbido de conversaciones que rápidamente se convirtió en un rugido.
+
+—¡CÁLLENSE! —gritó Popovich. La conversación se atenuó un watt. Popovich gritó otra vez, dando un golpe sobre el mostrador. Finalmente había apariencia de orden—. Uno a la vez —dijo. Estaba rojo, con las manos en sus bolsillos.
+
+Un adminsis votaba por quedarse. Otro por irse. Deberían esconderse en las celdas. Deberían inventariar los suministros y nombrar a un intendente. Deberían salir y buscar a la policía, u ofrecerse en los hospitales. Deberían nombrar defensores para mantener segura la puerta principal.
+
+Felix descubrió, para su sorpresa, que tenía su mano en el aire. Popovich lo señaló.
+
+—Mi nombre es Felix Tremont —dijo, subiéndose a una de las mesas y sacando su PDA—. Quiero leerles algo.
+
+»Gobiernos del Mundo Industrial, exhaustos gigantes de carne y acero, vengo del Ciberespacio, la nueva casa de la Mente. En nombre del futuro, les pido a ustedes del pasado que nos dejen solos. No son bienvenidos entre nosotros. Donde nos reunimos no tienen soberanía.
+
+»No tenemos gobierno electo, ni es posible que tengamos uno, de modo que me dirijo a ustedes sin mayor autoridad que la de la propia libertad. Declaro al espacio social global que estamos construyendo de manera natural independiente de las tiranías que tratan de imponer ustedes sobre nosotros. No tienen ningún derecho moral de gobernarnos ni poseen ningún método de ejecución al que tengamos una verdadera razón para temer.
+
+»Los gobiernos obtienen sus justos poderes del consentimiento de los gobernados. Ustedes no han pedido ni recibirán el nuestro. No los invitamos. Ustedes no nos conocen, ni conocen nuestro mundo. El ciberespacio no está dentro de sus fronteras. No piensen que pueden construirlo como si fuera un proyecto público de construcción. No pueden. Es un acto de la naturaleza y crece a través de nuestras acciones colectivas.
+
+—Esto es de la Declaración de Independencia del Ciberespacio. Fue escrito hace doce años. Pensaba que era una de las cosas más hermosas que jamás había leído. Quería que mi niño creciera en un mundo donde el ciberespacio fuera libre; y donde esa libertad contagiara al mundo real de modo que el espacio carnal se volviera más libre también.
+
+Tragó con dificultad y se frotó los ojos con el revés de la mano. Van le palmeó torpemente el zapato.
+
+—Mi bello hijo y mi hermosa esposa murieron hoy. Millones más, también. La ciudad está literalmente en las llamas. Enormes ciudades han desaparecido del mapa.
+
+Tosió un sollozo y lo tragó otra vez.
+
+—Por todo alrededor del mundo, personas como nosotros están reunidas en edificios como éste. Estaban tratando de recuperarse del gusano de anoche cuando nos impactó el desastre. Tenemos energía independiente. Comida. Agua.
+
+»Tenemos la red, que los tipos malos usan tan bien y que los tipos buenos nunca han comprendido.
+
+»Tenemos un amor compartido por la libertad que viene de preocuparnos y cuidar de la red. Estamos a cargo de la herramienta organizativa y gubernamental más importante que el mundo jamás ha visto. Somos la cosa más cercana a un gobierno que el mundo tenga en este momento. Ginebra es un cráter. El East River está ardiendo y la ONU está evacuada.
+
+»La República Distribuida del Ciberespacio soportó esta tormenta básicamente intacta. Somos los custodios de una maravillosa máquina inmortal y monstruosa, una con el potencial de reconstruir un mundo mejor.
+
+»No tengo nada por qué vivir excepto eso.
+
+Había lágrimas en los ojos de Van. No era el único. No lo aplaudieron, pero hicieron algo mejor. Mantuvieron silencio respetuoso, completo silencio por segundos que se estiraron hasta un minuto.
+
+—¿Cómo lo hacemos? —dijo Popovich, sin rastros de sarcasmo.
+
+
+
+* * *
+
+
+
+Los grupos de noticias se estaban llenando rápido. Se habían anunciado en news.admin.net-abuse.email, donde pasaban el rato los combatientes de spam, y donde se había formado una tensa cultura de camaradería ante el masivo ataque.
+
+El nuevo grupo era alt.november5-disaster.recovery con .recovery.goverance, .recovery.finance, .recovery.logistics y .recovery.defense colgando de él. Bendita sea la confusa jerarquía alt. y todos los que navegan en ella.
+
+Los adminsis salieron a la luz. El centro de computación de Google, Googleplex, estaba en línea, con una robusta adminsis llamada Reina Kong dirigiendo una pandilla de patinadores que volaban a través del gigantesco centro de datos intercambiando compus muertas y dándole a los pulsadores de reinicio. El Internet Archive estaba fuera de línea en Presidio, pero el espejo en Ámsterdam estaba vivo y ellos habían redireccionado el DNS de modo que casi nadie notara la diferencia. Amazon estaba muerto. Paypal estaba vivo. Blogger, Typepad y Livejournal estaban funcionando, y se llenaban de millones de mensajes de atemorizados sobrevivientes que se acurrucaban junto al calor electrónico.
+
+Las oleadas de fotografías en Flickr[7] eran horrendas. Felix tuvo que cancelar su conexión después de pescar una foto de una mujer y su bebé, muertos en una cocina, retorcidos en un agonizante jeroglífico por el agente biológico. No se parecían a Kelly y 2.0, pero no hacía falta que lo fueran. Empezó a temblar y no pudo parar.
+
+Wikipedia estaba en línea, pero cojeaba bajo la carga. El spam llegaba en tropel como si nada hubiera cambiado. Los gusanos vagaban por la red.
+
+Donde estaba la mayor parte de la acción era en .recovery.logistics.
+
+> Podemos usar el mecanismo de votación del grupo de noticias para tener
+
+> elecciones regionales
+
+Felix sabía que esto serviría. Los votos de los grupos de noticias de Usenet habían estado funcionando por más de veinte años sin una sustancial dificultad.
+
+> votaremos representantes regionales y ellos elegirán un Primer Ministro.
+
+Los estadounidenses insistían en un presidente, que a Felix no le gustaba. Le parecía demasiado partidista. Su futuro no sería el futuro estadounidense. El porvenir estadounidense se había ido con la Casa Blanca. Él estaba construyendo una carpa más grande que eso.
+
+Había adminsis franceses en línea desde France Telecom. El centro de datos del EBU había sido eliminado en los ataques que golpearon a Ginebra y estaba lleno de irónicos alemanes cuyo inglés era mejor que el de Felix. Se arreglaban con los restos del equipo de la BBC en Canary Wharf.
+
+Hablaban inglés políglota en .recovery.logistics y Felix tenía ventaja de su lado. Algunos de los administradores estaban enfriando las estúpidas e inevitables guerrillas de insultos con la práctica de muchos años. Algunos estaban pasando sugerencias útiles.
+
+Sorprendentemente, pocos pensaban que Felix estuviera mal de la cabeza.
+
+> Creo que deberíamos tener las elecciones lo antes posible. Mañana a más tardar. No podemos gobernar justamente sin el consentimiento del gobernado.
+
+En segundos la respuesta aterrizó en su bandeja de entrada.
+
+> No puedes hablar con seriedad. ¿El consentimiento del gobernado? A menos que yerre mi conjetura, la mayoría de las personas a quienes estás proponiendo gobernar están vomitando sus tripas, escondidas bajo sus escritorios, o paseando traumatizadas por la guerra por las calles de la ciudad. ¿Cuándo han tenido voto ELLOS?
+
+Felix tuvo que admitir que ella tenía alguna razón. Reina Kong era aguda. No muchos adminsis eran mujeres, lo que era una verdadera tragedia. Las mujeres como Reina Kong eran demasiado buenas para ser excluidas de ese campo. Tendría que montar una solución para equilibrar a las mujeres en su nuevo gobierno. ¿Pedir que cada región votase a una mujer y a un hombre?
+
+Con felicidad y teclado se puso a discutir con ella. Las elecciones serían al día siguiente; se ocuparía de eso.
+
+
+
+* * *
+
+
+
+—¿Primer Ministro del Ciberespacio? ¿Por qué no llamarte a ti mismo el Gran Poobah[8] de la Global Data Network? Es más digno, suena mejor y te llevará tan lejos. —Will tenía el sitio de dormir junto a él, en la cafetería, con Van del otro lado. La habitación apestaba a heces: veinticinco adminsis que no se habían bañado en por lo menos un día todos apiñados en la misma habitación. Para algunos de ellos, había sido mucho, mucho más que un día.
+
+—Cállate, Will —dijo Van—. Tú querías tratar de sacar la Internet de línea.
+
+—Corrección: yo quiero sacar la Internet de línea. Tiempo presente.
+
+Felix abrió un ojo. Estaba tan cansado que era como levantar pesas.
+
+—Mira, Sario… si no te gusta mi plataforma, pon la tuya. Hay muchas personas que piensan que estoy lleno de mierda y los respeto por eso, ya que todos están corriendo contra mí o apoyando a alguien que lo hace. Ésa es tu decisión. Lo que no está en el menú es fastidiar y quejarse. Es hora de dormir ahora, o levántate y pon tu plataforma.
+
+Sario se incorporó con lentitud, desdoblando la chaqueta que había estado usando como almohada. Se la puso.
+
+—Jódanse, estoy fuera de aquí.
+
+—Pensé que nunca se iría —dijo Felix y se dio la vuelta, permaneciendo despierto un largo rato, pensando en la elección.
+
+Había otras personas con posibilidades. Algunos ni siquiera eran adminsis. Un senador de los EE.UU. retirado en su casa de veraneo en Wyoming tenía un generador de energía y teléfono satelital. De algún modo había encontrado el correcto grupo de noticias y lanzó su desafío. Algunos piratas informáticos anarquistas en Italia bombardearon el grupo toda la noche, enviando parloteo en inglés que chapuceaba sobre la quiebra política del «gobierno» en el nuevo mundo. Felix miró su bloque de red y determinó que probablemente se habían refugiado en un pequeño instituto de Diseño de Interacción cerca de Turín. Italia había sido golpeada muy duramente, pero esta célula de anarquistas había tomado residencia en el pequeño pueblo.
+
+Una sorprendente cantidad planteaba como plataforma cerrar la Internet. Felix tenía sus dudas sobre si esto era posible aún, pero creía comprender ese impulso de terminar con el trabajo y el mundo. ¿Por qué no? Según todas las señales, parecía que el trabajo hasta la fecha había sido una cascada de desastres, ataques y oportunismo, todo eso sumándose al Ocaso Final. Un ataque terrorista aquí, una mortal contraofensiva allí de un gobierno que se excede… Antes de mucho tiempo habrían despachado al mundo.
+
+Se quedó dormido pensando en la logística necesaria para cerrar la Internet, y tuvo malos sueños en los que era el único defensor de la red.
+
+Despertó por un sonido crujiente y hormigante. Dio la vuelta y vio que Van se había incorporado, la chaqueta ovillada en su regazo, rascándose con energía los flacos brazos. Ya tenían el color de la carne en conserva, y un aspecto escamoso. A la luz que entraba a través de las ventanas de la cafetería, unos copos de piel flotaban y bailaban en grandes nubes.
+
+—¿Qué estás haciendo? —Felix se incorporó. Al observar las uñas de Van rascando su piel sintió que la suya le picaba en resonancia. Habían pasado tres días desde que se lavara el pelo por última vez y a veces sentía que su cuero cabelludo tenía pequeños insectos que ponían huevos y caminaban. Se había ajustado las gafas la noche anterior y había tocado las partes posteriores de sus orejas; su dedo había regresado brillante de sebo espeso. Cuando no se duchaba por un par de días le salían puntos negros detrás de sus orejas, y algunas veces unos grandes forúnculos, que Kelly finalmente abría con deleite enfermizo.
+
+—Me rasco —dijo Van. Pasó a trabajar en su cabeza, lanzando una nube de porquería polvorosa al cielo, para unirse allí con la que ya había eliminado de sus extremidades—. Cristo, pica por todas partes.
+
+Felix tomó a McCheese Gigante de la mochila de Van y la enchufó en uno de los cables de Ethernet que serpenteaban por todo el piso. Buscó todo lo que pensó que podía estar relacionado con esto. Con la palabra «Picazón» encontró 40.600.000 enlaces. Probó búsquedas compuestas y obtuvo enlaces ligeramente más precisos.
+
+—Pienso que es eccema relacionada con el estrés —dijo Felix, al final.
+
+—No tengo eccema —dijo Van.
+
+Felix le mostró algunas fotos chocantes de piel roja, inflamada, con escamas blancas.
+
+—Eccema relacionada con el estrés —dijo, leyendo el pie de foto.
+
+Van examinó sus brazos.
+
+—Tengo eccema —dijo.
+
+—Aquí dice que la mantengas humectada y que intentes con crema de cortisona. Podrías probar el equipo de primeros auxilios en los sanitarios del segundo piso. Creo que vi algo allí. —Como todos los adminsis, Felix había revuelto un poco en las oficinas, baños, cocina y depósitos, almacenando un rollo de papel higiénico en su bolso junto a tres o cuatro barras energéticas. Estaban compartiendo la comida en la cafetería por acuerdo tácito, cada adminsis observando a los otros a ver si surgía alguna evidencia de gula y acaparamiento. Todos estaban convencidos de que había acaparamiento y gula cuando no se los veía, porque todos eran culpables cuando nadie los estaba observando.
+
+Van se levantó y cuando su cara se puso bajo la luz, Felix vio lo hinchados que estaban sus ojos.
+
+—Enviaré un mensaje a la lista pidiendo algún antihistamínico —dijo Felix. Había cuatro listas de distribución y tres wikis para los sobrevivientes en el edificio en las horas de la primera reunión, y en los días posteriores había quedado sólo una. Felix todavía estaba en una pequeña lista con cinco de sus amigos de más confianza, dos de los cuales estaban atrapados en celdas en otros países. Sospechaba que el resto de los adminsis estaba haciendo lo mismo.
+
+Van salió tambaleándose.
+
+—Buena suerte en las elecciones —dijo, palmeando a Felix sobre el hombro.
+
+Felix se paró y paseó de un lado para otro, deteniéndose a mirar por las sucias ventanas. Aún ardían incendios en Toronto, más que antes. Había tratado de encontrar listas o blogs a los que estuviera enviando mensajes la gente de Toronto, pero los únicos que encontró eran operados por otros técnicos en otros centros de datos. Era posible —incluso probable— que hubiera sobrevivientes allí afuera que tuviesen prioridades más urgentes que enviar un mensaje a la Internet. El teléfono de su casa todavía funcionaba más o menos la mitad de las veces, pero había dejado de llamar después del segundo día, cuando escuchar la voz de Kelly en el correo de voz por quincuagésima vez lo hizo llorar en medio de una reunión de planificación. No era el único.
+
+Día de elecciones. Tiempo de afrontar las consecuencias.
+
+> ¿Estás nervioso?
+
+> Nope,
+
+… tecleó Felix.
+
+> Para ser honesto, no me importa mucho si gano. Sólo me alegra que lo estemos haciendo. La alternativa era holgazanear con nuestros pulgares en el culo, esperando que alguien enloquezca y abra la puerta.
+
+El cursor quedó quieto. Reina Kong tardaba bastante en dar sus respuestas, ya que dirigía su pandilla de Googloides en el Googleplex, haciendo todo lo posible para mantener su centro de datos en línea. Tres de las celdas cerca de la costa estaban muertas y dos de sus seis enlaces redundantes estaban quemados. Suerte para ella, las consultas por segundo estaban bajando.
+
+> Todavía está China
+
+… tecleó ella. Reina Kong tenía una gran pizarra con un mapa del mundo en color en el que aparecían las consultas de Google por segundo, y podía hacer magia con él, mostrando la disminución de los contactos a lo largo del tiempo en coloridas tablas. Había cargado muchos videoclips que mostraban cómo la plaga y las bombas habían barrido el mundo: la marea ascendente inicial de consultas de personas que querían averiguar lo que estaba ocurriendo, luego el descenso horroroso y acelerado a medida que la peste se arraigaba.
+
+> China todavía está funcionando aproximadamente 90% nominal.
+
+Felix sacudió la cabeza.
+
+> No pensarás que son los responsables
+
+> No
+
+… tecleó ella, pero entonces empezó a escribir algo y luego se detuvo.
+
+> No, por supuesto que no. Creo en la Hipótesis Popovich. Cada estúpido del mundo está utilizando a los demás estúpidos para cubrirse. Pero China los sofocó más duro y más rápido que otros. Tal vez finalmente hemos encontrado una utilidad para los estados totalitarios.
+
+Felix no pudo resistir. Tecleó:
+
+> Tienes suerte de que tu jefe no pueda verte escribiendo eso. Ustedes eran participantes muy entusiastas en el Gran Cortafuegos de China.
+
+> No fue mi idea
+
+… tecleó ella.
+
+> Y mi jefe está muerto. Probablemente todos están muertos. Toda el Área de la Bahía recibió un duro golpe, y luego hubo un temblor.
+
+Habían observado el flujo de datos automatizados del USGS desde que el 6.9 azotara California del norte desde Gilroy hasta Sebastapol. Las cámaras soma revelaban el alcance de los daños, explosiones de cañerías principales de gas, edificios sísmicamente reforzados que se abollaban como pilas de bloques de niños después de una buena patada. El Googleplex, flotando sobre una serie de gigantescos resortes de acero, se sacudía como una fuente de gelatina, pero los soportes se habían quedado en su lugar y la peor lesión que habían tenido era el ojo de un adminsis con moretones recibidos por causa de un cable volador.
+
+> Lo siento. Lo olvidé.
+
+> Está bien. Todos perdimos personas, ¿correcto?
+
+> Sí. Sí. De todos modos, no estoy preocupado por la elección. Quien sea que gane, por lo menos estamos haciendo ALGO
+
+> No si ellos votan por uno de los fuckrags
+
+Fuckrag era el epíteto que algunos de los adminsis estaban usando para describir al contingente que quería cerrar la Internet. Reina Kong lo había acuñado; había nacido, aparentemente, como un término para describir a los despistados administradores de IT a quienes había puteado durante su carrera.
+
+> No lo harán. Sólo están cansados y tristes, eso es todo. Tu plataforma triunfará
+
+Los Googloides eran de los bloques más grandes y fuertes que quedaban, junto con los equipos de enlace de satélite y los transoceánicos. El apoyo de Reina Kong había llegado como una sorpresa y le envió un correo electrónico que ella había respondido lacónicamente:
+
+—No puedo tener fuckrags a cargo.
+
+> tengo que irme
+
+… tecleó ella, y entonces su conexión cayó. Lanzó un navegador y llegó a google.com. El navegador cayó. Volvió a recargar, y luego otra vez, y entonces la portada de Google reapareció. Fuera lo que fuese que había golpeado el lugar de trabajo de Reina Kong —corte de energía, gusanos, otro temblor— lo había arreglado. Bufó cuando vio que habían reemplazado las O en el logotipo de Google con pequeñas Tierras con nubes en forma de hongo saliendo de ellas.
+
+
+
+* * *
+
+
+
+—¿Tienes algo para comer? —le dijo Van. Era media tarde, y no es que el tiempo pasara particularmente rápido en el centro de datos. Felix se palmeó los bolsillos. Pondrían un intendente a cargo, pero no antes de que todos hubieran pescado algo de comida de las máquinas. Tenía una docena de barras energéticas y algunas manzanas. Había tomado un par de emparedados, pero los había comido antes de que se pusieran malos.
+
+—Queda una barra energética —dijo. Había notado cierta holgura en su talle esa mañana y lo había disfrutado por un momento. Entonces recordó a Kelly molestándolo por su peso y lloró un poco. Luego se había comido dos barras energéticas, lo que le dejaba sólo una.
+
+—Oh —dijo Van. Su cara estaba más hueca que nunca, sus hombros combados sobre su pecho plano.
+
+—Toma —dijo Felix—. Vota a Felix.
+
+Van tomó la barra y luego la puso sobre la mesa.
+
+—De acuerdo, quiero devolvértela diciendo «No, no podría», pero estoy muy hambriento, de modo que voy a tomarla y comérmela, ¿de acuerdo?
+
+—Está bien para mí —dijo Felix—. Disfrútala.
+
+—¿Cómo vienen las elecciones? —dijo Van, después de lamer toda la envoltura.
+
+—No lo sé —dijo Felix—. No he mirado por un rato. —Unas horas atrás estaba ganando por un corto margen. No tener su laptop era una desventaja muy importante cuando se trataba de cosas como ésas. Arriba, en las celdas, había una docena más como él, pobres bastardos que habían dejado la casa en Der Tag sin pensar en coger algo con capacidad WiFi.
+
+—Te quemarás —dijo Sario, deslizándose hacia ellos. Se había vuelto famoso en el centro por no dormir, por escuchar a escondidas, por buscar disputas en la vida real con el imprudente calor de una guerra de mensajes en Usenet—. El ganador será alguien que comprenda un par de hechos fundamentales. —Levantó un puño, luego enumeró sus ideas levantando un dedo a la vez—. Punto: Los terroristas están utilizando la Internet para destruir el mundo, y necesitamos destruir la Internet primero. Punto: Aún si estoy equivocado, toda la cosa es una broma. Pronto nos quedaremos sin combustible para el generador. Punto: O si no, será porque el mundo viejo está de regreso y funcionando, y no dará una mierda por tu nuevo mundo. Punto: Vamos a quedarnos sin comida antes de quedarnos sin una mierda que discutir o de razones para no salir. Tenemos la oportunidad de hacer algo para ayudar a que se recupere el mundo: podemos acabar con la red y evitar que sea una herramienta para los chicos malos. O podemos llevar algunas tumbonas al puente de tu Titanic personal puesto al servicio de un dulce sueño sobre un «ciberespacio independiente».
+
+La cuestión era que Sario tenía razón. Se quedarían sin combustible en dos días; el consumo intermitente de la grilla había estirado la vida útil del generador. Y si uno se tragaba su hipótesis de que la Internet era utilizada como herramienta para organizar más caos, cerrarla sería lo correcto.
+
+Pero el hijo de Felix y su esposa estaban muertos. No quería reconstruir el mundo viejo. Quería uno nuevo. El mundo viejo no tenía ningún lugar para él. Ya no más.
+
+Van se rascó la piel herida y escamada. Nubes de piel y caspa giraron en el aire rancio y grasoso. Sario hizo una mueca.
+
+—Eso es repugnante. Estamos respirando aire reciclado, lo sabes. Sea cual sea la lepra que tienes, es muy antisocial meterla en el suministro de aire.
+
+—Tú eres la autoridad mundial de lo antisocial, Sario —dijo Van—. Vete o te mataré con mi herramienta múltiple.
+
+Dejó de rascarse y palmeó los alicates que tenía envainados como un pistolero.
+
+—Sí, soy antisocial. Tengo síndrome de Asperger[9] y no he tomado ningún medicamento en cuatro días. La tuya es una excusa de mierda.
+
+Van se rascó algo más.
+
+—Lo siento —dijo—. No lo sabía.
+
+Sario lanzó una carcajada.
+
+—Oh, eres divertidísimo. Apostaría a que tres cuartos de este grupo están al borde del autismo. Yo soy sólo un estúpido. Pero soy uno que no teme decir la verdad, y eso me hace mejor que tú, pelmazo.
+
+—Fuckrag —dijo Felix—, vete a la mierda.
+
+
+
+* * *
+
+
+
+Les quedaba menos de un día de combustible cuando Felix fue electo Primer Ministro, el primero del Ciberespacio. El primer escrutinio fue arruinado por un robot que envió spam al proceso de votación y perdieron un día crítico mientras sumaban los votos por segunda vez.
+
+Pero para ese entonces todo se parecía más a una broma. La mitad de los centros de datos se habían quedado a oscuras. Las redes de mapas de consultas de Google de Reina Kong se veían más y más horrorosos a medida que más del mundo quedaba fuera de línea, aunque ella mantenía actualizada una tabla de nuevas consultas; en gran parte relacionadas con salud, refugio, saneamiento y defensa propia.
+
+La carga del gusano aflojaba. La energía se iba de muchas casas de usuarios de PC y no regresaba, de modo que sus PCs comprometidas se quedaban a oscuras. Los nodos centrales todavía estaban encendidos y parpadeando, pero las misivas de esos centros de datos se veían más y más desesperadas. Felix no había comido en un día ni tenía a nadie en una estación satélite-tierra de extremo transoceánico.
+
+El agua se estaba acabando, también.
+
+Popovich y Rosenbaum vinieron y lo apartaron antes de que pudiera hacer más que responder algunos mensajes de felicitación y poner un discurso de aceptación grabado en los grupos de noticias.
+
+—Vamos a abrir las puertas —dijo Popovich. Como todos, había perdido peso y se veía desaliñado y aceitoso. Su olor corporal brotaba como el vaho de un basurero en la parte de atrás de un mercado de peces en un día soleado. Felix estaba muy seguro de que no olía mejor.
+
+—¿Vas a hacer un reconocimiento? ¿Conseguir más combustible? Podemos enviar a un grupo de trabajo para eso… buena idea.
+
+Rosenbaum sacudió la cabeza tristemente.
+
+—Vamos a buscar a nuestras familias. Sea lo que sea que haya afuera ya se ha quemado. O no. De cualquier manera, no hay futuro aquí.
+
+—¿Y qué me dices del mantenimiento de la red? —dijo Felix, aunque sabía las respuestas—. ¿Quién mantendrá los ruteadores?
+
+—Te daremos las contraseñas de todo —dijo Popovich. Sus manos temblaban y sus ojos estaban nublados. Como muchos de los fumadores atorados en el centro de datos, estaba en abstinencia esta semana.[10] Se habían quedado sin productos de cafeína dos días atrás también. Los fumadores lo pasaban mal.
+
+—¿Y yo me quedaré aquí y mantendré todo en línea?
+
+—Tú y cualquier otro a quien le interese.
+
+Felix sabía que había perdido su oportunidad. La elección había parecido noble y valiente, pero en retrospectiva había sido excusa para luchas internas cuando deberían haber estado imaginando qué hacer en el futuro. El problema era que no había nada que hacer después.
+
+—No puedo obligarte a que te quedes —dijo.
+
+—No, no puedes. —Popovich giró sobre sus talones y se alejó. Rosenbaum lo observó, y entonces sujetó los hombros de Felix con fuerza.
+
+—Gracias, Felix. Fue un hermoso sueño. Todavía lo es. Tal vez encontremos algo para comer y algo de combustible, entonces volveremos.
+
+Rosenbaum tenía una hermana con quien había estado en contacto por IM durante los primeros días después de que estallara la crisis. Ella había dejado de responder. Los adminsis estaban divididos entre los que habían tenido oportunidad de decir adiós y los que no. Cada uno estaba seguro de que el otro lo pasaba mejor.
+
+Pusieron mensajes sobre el asunto en el grupo de noticias interno; todavía eran tecnólogos, después de todo, y había una pequeña guardia de honor en la planta baja, tecnólogos que los observaron al pasar hacia las puertas dobles. Manipularon los teclados y se levantaron los cierres de acero, y el primer conjunto de puertas se abrió. Entraron en el vestíbulo y cerraron las puertas detrás de ellos. Las puertas principales se abrieron. Afuera estaba muy brillante y soleado, y aparte de que estaba vacío, parecía muy normal. Angustiosamente normal.
+
+Lo dos avanzaron un paso vacilante hacia el mundo. Luego otro. Se volvieron para saludar con la mano a la multitud reunida. Entonces ambos se agarraron la garganta y empezaron a sacudirse y temblar, cayendo uno sobre otro en el suelo.
+
+—¡Mier…! —fue todo lo que Felix pudo decir antes de que ambos se sacudieran el polvo y se pusieran de pie, riéndose tanto que se tomaban el estómago. Saludaron con la mano otra vez y giraron sobre sus talones.
+
+—Hombre, esos tipos están enfermos —dijo Van. Se rascó los brazos, que ya tenían largas rayas ensangrentadas. Su ropa estaba tan cubierta de caspa que se veía como si la hubieran rociado con azúcar impalpable.
+
+—Creo que fue muy gracioso —dijo Felix.
+
+—Cristo, estoy hambriento —dijo Van, en tono coloquial.
+
+—Para tu suerte, tenemos todos los paquetes que podamos comer —dijo Felix.
+
+—Eres demasiado bueno con nosotros los peones, Sr. Presidente —dijo Van.
+
+—Primer Ministro —corrigió—. Y tú no eres ningún peón, eres el Asistente del Primer Ministro. Eres mi cortador de cinta designado y entregador de los extra grandes cheques de novedades.
+
+Los alentó a los dos. Observar que Popovich y Rosenbaum se iban los alentó a los dos. Felix supo entonces que pronto todos se estarían yendo.
+
+Eso había sido predefinido por el suministro de combustible, ¿pero quién quería esperar a que el combustible se agotara, de todos modos?
+
+
+
+* * *
+
+
+
+> la mitad de mi equipo se retiró esta mañana
+
+… tecleó Reina Kong. Google estaba aguantando bastante bien de todos modos, por supuesto. La carga sobre los servidores era mucho más liviana que lo que había sido en los días cuando Google cabía en un puñado de PCs armadas a mano debajo de un escritorio en Stanford.
+
+> estamos a un cuarto
+
+… respondió Felix tecleando. Sólo había pasado un día desde que Popovich y Rosenbaum partieran, pero el tráfico en los grupos de noticias había caído hasta cerca de cero. Él y Van no habían tenido mucho tiempo para jugar a la República del Ciberespacio. Habían estado demasiado ocupados aprendiendo los sistemas que les había pasado Popovich, los grandes ruteadores que habían continuado actuando como principales intercambiadores para todos los nodos centrales de red en Canadá.
+
+Sin embargo, alguien enviaba un mensaje a los grupos de noticias de vez en cuando, para decir adiós, generalmente. Las viejas rencillas sobre quién sería PM, o si deberían cerrar la red, o quién había tomado demasiada comida… todo había acabado.
+
+Volvió a cargar el grupo de noticias. Había un mensaje típico:
+
+> Procesos descontrolados en Solaris TK
+
+> Uh, hola. Soy sólo un MSCE[11] peso ligero pero soy el único despierto aquí y cuatro de los DSLAM[12] se vinieron abajo. Parece que hubiera algún programa de contabilidad tratando de calcular cuánto facturar a los clientes de nuestra corporación, y ha creado diez mil secuencias y se come todo el intercambio. Sólo quiero cerrarlo pero no puedo hacerlo, parece. ¿Hay alguna invocación mágica que hacer para que esta maldita caja weenix[13] acabe con esta mierda? Quiero decir, no parece que alguno de nuestros clientes vuelva a pagarnos. Le preguntaría al tipo que escribió el código, pero por lo que sé está muerto.
+
+Recargó. Había una respuesta. Era breve, autorizada y útil, justamente el tipo de cosa que no se ve en un grupo de noticias de alto nivel cuando un novato envía una pregunta tonta. El Apocalipsis había despertado un espíritu de amabilidad y paciencia en la comunidad mundial de sistemas operativos.
+
+Van miró por encima de su hombro. —Remierda, ¿puedes creer que haya actuado así?
+
+Miró el mensaje otra vez. Era de Will Sario.
+
+Cambió a su ventana de chat.
+
+> Sario, creía que querías la red muerta, ¿por qué estás ayudando a un msce a arreglar su compu?
+
+> Vaya, Sr. PM, a lo mejor porque no puedo soportar que una computadora sufra en manos de un novato.
+
+Cambió al canal con Reina Kong.
+
+> ¿Cuánto tiempo?
+
+> ¿Desde la última vez que dormí? Dos días. ¿Hasta que nos quedemos sin combustible? Tres días. ¿Desde que nos quedamos sin comida? Dos días.
+
+> Vaya. Tampoco dormí anoche. Estamos escasos de personal aquí.
+
+> ¿ASL? Soy monica y vivo en pasadena y estoy aburrida de mi tarea escolar. ¿te gustaría descargar mi imagen???
+
+Los robots troyanos invadían el IRC estos días, saltando por todos los canales con algo de tráfico. A veces se podía encontrar a cinco o seis coqueteando entre ellos. Era muy raro ver un trozo de malware tratando de convencer a una copia de sí mismo para que descargase un troyano.
+
+Los dos sacaron de una patada al robot del canal al mismo tiempo. Él tenía texto ahora. El spam no había disminuido para nada.
+
+> ¿Cómo es que no se reduce el spam? La mitad de los malditos centros de datos se han quedado a oscuras
+
+Reina Kong hizo una larga pausa antes de teclear. Como de costumbre cuando ella se ponía en espera, recargó la página de inicio de Google. Seguro, estaba fuera de servicio.
+
+> Sario, ¿tienes algo de comida?
+
+> No extrañará la falta de un par de comidas más, Su Excelencia
+
+Van había regresado a McCheese Gigante pero estaba en el mismo canal.
+
+—¡Qué pelmazo! Sin embargo te ves bonito en pelotas, muchacho.
+
+Van no se veía tan bien. Parecía que un soplo de brisa podría voltearlo y su voz era débil y flemosa.
+
+> Hey, kong, ¿todo bien?
+
+> todo está bien, sólo tuve que ir a patear algún trasero
+
+—¿Cómo está el tráfico, Van?
+
+—Por debajo del 25% desde esta mañana —dijo. Había un grupo de nodos cuyas conexiones pasaban a través de ellos. Al parecer la mayor parte eran clientes en casas o comercios donde aún había energía y donde las compañías telefónicas todavía estaban vivas.
+
+De vez en cuando, Felix intervenía las conexiones telefónicas para ver si podía encontrar a una persona que tuviese noticias del mundo. Sin embargo, casi todo era tráfico automatizado: copias de seguridad de la red, actualizaciones de estado. Y spam. Montones de spam.
+
+> El spam continúa porque los servicios que lo detienen están fallando más rápido que los servicios que lo crean. Las cosas anti-gusanos están centralizadas en un par de lugares. La basura está en un millón de computadoras zombi. Qué bueno si los usuarios hubiesen tenido el sentido común de apagar sus PC en casa antes de desplomarse o largarse
+
+> a este ritmo, a la hora de cenar sólo estaremos ruteando spam
+
+Van se aclaró la garganta, un sonido doloroso.
+
+—Respecto a eso —dijo—: creo que va a palmar antes. Felix, no creo que nadie lo note si nos alejamos de aquí.
+
+Felix lo observó. Su piel tenía el color de la carne en conserva y estaba surcada con largas costras inflamadas. Sus dedos temblaban.
+
+—¿Estás bebiendo suficiente agua?
+
+Van asintió.
+
+—Todo el puto día, cada diez segundos. Cualquier cosa para mantener el estómago lleno.
+
+Señaló una botella de Pepsi Max llena de agua a su lado.
+
+—Hagamos una reunión —dijo.
+
+
+
+* * *
+
+
+
+El Día-D eran cuarenta y tres; ahora había quince. Seis respondieron al llamado a reunión con sólo dejar lo que estaban haciendo. Sin que se los dijera, todos sabían sobre qué era la reunión.
+
+—Así que esto es todo, ¿vas a dejar que se derrumbe? —Sario era el único que tenía energía suficiente como para enfadarse de manera apropiada. Llegaría enfadado hasta su tumba. Las venas de su garganta y frente destacaban airadamente. Sus puños temblaban de furia.
+
+Todos los otros técnicos se quedaron cabizbajos en sus lugares y levantaron la mirada al mismo por única vez en la discusión, dejando de prestar atención a su chat o informe de servicio.
+
+—Sario, me estás tomando de idiota —dijo Felix—. ¡Tú querías arrancar el maldito enchufe!
+
+—Quería que se fuera limpia —gritó—. No quería que sangrara y se derrumbara entre vómitos y gritos entrecortados. Quería que fuera un acto voluntario de nuestra comunidad internacional de cuidadores. Quería que fuera un acto firme realizado por manos humanas y no por la entropía o por el triunfo de los malos códigos o los gusanos. Cágate, eso es exactamente lo que ha ocurrido.
+
+La cafetería del último piso tenía ventanas a todos los lados, reforzadas y con persianas, que por costumbre estaban bajas. Ahora Sario corría alrededor de la habitación, levantando las persianas. ¿Cómo diablos puede tener esa energía para correr?, se preguntó Felix. Él a duras penas había podido subir las escaleras hasta el sitio de la reunión.
+
+El lugar quedó inundado de luz. Afuera había un buen día soleado, pero hacia cualquier lado que se mirara, sobre el horizonte de ese paisaje de Toronto se elevaban plumas de humo. La torre TD, un gigantesco edificio modernista de ladrillos de vidrio negro, goteaba llamas hacia el cielo.
+
+—Se viene abajo, como lo todo lo demás.
+
+—Escucha, escucha. Si dejamos que la red caiga de a poco, habrá secciones que quedarán en línea durante meses. Tal vez años. ¿Y qué funcionará allí? Malware. Gusanos. Spam. Programas de sistema. Transferencias zonales. Lo que usamos se viene abajo y requiere mantenimiento constante. Las cosas que abandonamos y no se utilizan duran para siempre. Vamos a abandonar la red dejándola como un pozo repleto de residuos industriales. Ése será nuestro legado de mierda… el legado que quedará de todos los botones que tú, y yo, y los demás, pulsamos alguna vez en los lugares donde estuvimos. ¿Comprendes? Vamos a dejar que se muera de a poco como un perro herido, en lugar de darle un tiro limpio en la cabeza.
+
+Van se rascó las mejillas, entonces Felix vio que se estaba secando las lágrimas.
+
+—Sario, no te equivocas, pero tampoco tienes razón —dijo—. Dejarla cojeando es correcto. Todos vamos a estar cojeando por mucho tiempo, y tal vez sea de utilidad para alguien. Si lleva un paquete de datos desde un usuario a otro usuario cualquiera, hacia cualquier lugar en el mundo, estará haciendo su trabajo.
+
+»Si quieres darle una muerte limpia, hazlo —dijo Felix—. Soy el PM y lo digo. Te estoy dando vía libre. A todos ustedes. —Se volvió hacia la pizarra blanca donde los trabajadores de la cafetería solían anotar los especiales del día. Ahora estaba cubierto de los restos de los acalorados debates técnicos en los que habían participado los adminsis desde El Día.
+
+Limpió un sector con la manga y empezó a escribir largas contraseñas alfanuméricas, complicadas, cortadas por puntuaciones. Felix tenía el don de recordar esa clase de contraseñas. Dudaba que esa habilidad le sirviera de mucho, nunca más.
+
+
+
+* * *
+
+
+
+> Nos estamos yendo, kong. Combustibles casi terminados de todos modos
+
+> sí, bien, eso es correcto entonces. Fue un honor, Sr. Primer Ministro
+
+> ¿Vas a estar bien?
+
+> He asignado a un joven administrador de sistema para que se encargue de mis necesidades femeninas y hemos encontrado otro caché de comida que nos alcanzará un par de semanas, ahora que quedan quince administradores - estoy en gran regocijo, amigo
+
+> Eres asombrosa, Reina Kong, seriamente. Sin embargo, no juegues al héroe. Cuando debas irte, hazlo. Tiene que haber algo ahí afuera
+
+> Seguro, Felix, lo digo en serio - a propósito ¿te dije que aparecieron consultas en Rumania? Tal vez se están poniendo de pie
+
+> ¿De veras?
+
+> Sí, realmente. Somos duros de matar - como esas cucarachas de mierda
+
+Su conexión murió. Cambió a Firefox y recargó Google, pero estaba fuera de servicio. Pidió recargar y pidió recargar y pidió recargar, pero no subió. Cerró los ojos y escuchó a Van rascándose las piernas y luego lo escuchó teclear.
+
+—Están otra vez arriba —dijo.
+
+Felix suspiró con fuerza. Envió el mensaje al grupo de noticias, uno que había pasado por cinco correcciones antes de que decidiera que estaba bien.
+
+—Cuiden el lugar, ¿de acuerdo? Algún día volveremos.
+
+Se estaban yendo todos excepto Sario. Sario no partiría.
+
+Sin embargo, bajó para verlos salir.
+
+Los adminsis se reunieron en el vestíbulo. Felix hizo que la puerta de seguridad se levantara y la luz entró a raudales.
+
+Sario extendió la mano.
+
+—Buena suerte —dijo.
+
+—Suerte a ti, también —dijo Felix. Sario le dio la mano con firmeza, con más fuerza que la que esperada—. Tal vez tenías razón —dijo.
+
+—Tal vez —dijo.
+
+—¿Vas a desconectarlos?
+
+Sario miró hacia el techo, como si observara a los racks activos de arriba a través de los pisos reforzados. —¿Quién sabe?— dijo por fin.
+
+Van se rascó y una nevisca de motas blancas bailó en la luz del sol.
+
+—Busquemos una farmacia para ti —dijo Felix. Caminó hacia la puerta y los otros adminsis lo siguieron.
+
+Esperaron que las puertas interiores se cerraran detrás de ellos y luego Felix abrió las exteriores. El aire olía y sabía a hierba cortada, como las primeras gotas de lluvia, como el lago y el cielo, como el aire libre, y el mundo, un viejo amigo del que no hemos sabido nada por una eternidad.
+
+—Adiós, Felix —dijeron los otros adminsis. Se alejaron mientras él permanecía de pie, paralizado, en la pequeña escalera de hormigón. La luz lastimaba sus ojos y lo hacía lagrimear.
+
+—Creo que hay una farmacia en la calle King —dijo a Van—. Lanzaremos un ladrillo contra la vidriera y tomaremos un poco de cortisona para ti, ¿de acuerdo?
+
+—Eres el Primer Ministro —dijo Van—. Ve adelante.
+
+
+
+* * *
+
+
+
+No vieron ni un alma en la caminata de quince minutos. No se escuchaba ni un sonido excepto algunos pitidos de aves y lamentos distantes, y el viento en los cables eléctricos allá arriba. Era como caminar en la superficie de la Luna.
+
+—Te apuesto a que tienen barras de chocolate —dijo Van.
+
+El estómago de Felix dio un tumbo. Comida.
+
+—Wow —dijo, tragando saliva.
+
+Pasaron junto a un pequeño vehículo utilitario y en el asiento delantero estaba el cuerpo deshidratado de una mujer que sujetaba el cuerpo deshidratado de un bebé. Su boca estaba llena de bilis amarga, aunque el olor era aislado por las ventanas cerradas.
+
+No había pensado en Kelly ni en 2.0 durante días. Cayó de rodillas y volvió a sufrir arcadas. Aquí afuera, en el mundo real, su familia estaba muerta. Todos sus conocidos estaban muertos. Lo único que quería era echarse sobre la acera y esperar la muerte él también.
+
+Las ásperas manos de Van se deslizaron bajo sus axilas y tiraron de él sin fuerza.
+
+—No ahora —dijo—. Cuando estemos seguros en algún lugar y hayamos comido algo, recién ahí y sólo ahí puedes hacer eso, pero no ahora. ¿Me comprendes, Felix? No ahora, mierda.
+
+La blasfemia lo hizo reaccionar. Se puso de pie. Sus rodillas temblaban.
+
+—Sólo una cuadra más —dijo Van, y puso el brazo de Felix alrededor de sus hombros y lo llevó hacia adelante.
+
+—Gracias, Van. Lo siento.
+
+—No hay problema —dijo—. Necesitas una ducha, mucho. Sin ofender.
+
+—De ningún modo.
+
+La tienda tenía una puerta metálica de seguridad, pero la habían arrancado y a las vidrieras las habían destrozado con violencia. Felix y Van pasaron por el hueco y entraron en la farmacia en penumbras. Algunos de los exhibidores estaban caídos; pero fuera de eso, todo parecía bien. Felix y Van vieron los estantes de barras de dulce junto a las cajas registradoras; se acercaron con rapidez y tomaron un puñado, como para llenarse la boca.
+
+—Usted dos comen como cerdos.
+
+Giraron hacia la voz de la mujer. Sostenía un hacha de incendios casi tan grande como ella. Llevaba una bata de laboratorio y zapatos bajos.
+
+—Tomen lo que necesitan y se van, ¿de acuerdo? No tiene sentido que tengamos un problema. —Su barbilla era puntiaguda y sus ojos intensos. Parecía tener unos cuarenta años. No se parecía nada a Kelly, algo que era bueno, porque Felix tenía ganas de correr y darle un abrazo. ¡Otra persona viva!
+
+—¿Eres médico? —dijo Felix, viendo que ella usaba vestimenta de quirófano bajo la bata.
+
+—¿Van a irse? —Blandió el hacha.
+
+Felix levantó las manos.
+
+—De veras, ¿eres médico? ¿Farmacéutica?
+
+—Hace diez años era enfermera diplomada. Ahora soy, más que nada, una diseñadora web.
+
+—Me viste cara de tonto —dijo Felix.
+
+—¿No has conocido chicas que supieran de computadoras?
+
+—En realidad una amiga mía que administra el centro de datos de Google es una chica. Una mujer, quiero decir.
+
+—No te burles de mí —dijo ella—. ¿Una mujer administraba el centro de datos de Google?
+
+—Administra —dijo Felix—. Todavía está en línea.
+
+—Increíble —dijo. Bajó un poco el hacha.
+
+—Lo es. ¿Tienes algo de crema de cortisona? Puedo contarte nuestra historia. Mi nombre es Felix y éste es Van, que necesita algún antihistamínico del que luego pueda prescindir.
+
+—¿Del que pueda prescindir? Felix, viejo amigo, tengo suficiente droga aquí para cien años. Estas cosas se van a vencer mucho antes de que se terminen. ¿Pero estás diciéndome que la red todavía está activa?
+
+—Todavía —dijo—. Un poco. Es lo que hemos estado haciendo toda la semana. Manteniéndola en línea. Puede que no dure mucho más tiempo, sin embargo.
+
+—No —dijo ella—. Supongo que no. —Dejó el hacha—. ¿Tienes algo para canjear? No necesito mucho, pero he tratado de mantener el ánimo comerciando con los vecinos. Es como jugar a la civilización.
+
+—¿Tienes vecinos?
+
+—Al menos diez —dijo—. Las personas del restaurante al otro lado de la calle hacen una muy buena sopa, aun cuando la mayor parte de los vegetales son enlatados. Me dejaron sin Sterno[14] sin embargo.
+
+—¿Tienes vecinos y comercias con ellos?
+
+—Bien, de alguna manera. Sin ellos estaría muy sola. He cuidado de todos los resfriados que pude. Arreglé un hueso fracturado en una muñeca. Escucha, ¿quieres un poco de Pan Maravilla y mantequilla de maní? Tengo una tonelada de eso. Parece que tu amigo necesita una comida.
+
+—Sí, por favor —dijo Van—. No tenemos nada para cambiar, pero ambos hemos sido adictos al trabajo y aprendimos lo nuestro. ¿No necesitas ayudantes?
+
+—No realmente. —Hizo girar el hacha sobre su cabeza—. Pero no me molestaría un poco de compañía.
+
+Comieron los emparedados y luego un poco de sopa que trajeron las personas del restaurante, quienes les dieron la bienvenida, aunque Felix vio que arrugaban la nariz. Supieron que había unas cañerías activas en la habitación trasera. Van entró a tomar un baño con esponja y luego lo hizo él.
+
+—Ninguno de nosotros sabe qué hacer —dijo la mujer. Su nombre era Rosa, y les había conseguido una botella de vino y algunas tazas de plástico desechables del pasillo de artículos domésticos—. Pensé que vendrían helicópteros o tanques o incluso saqueadores, pero está tranquilo.
+
+—Ustedes parecen haberse mantenido muy silenciosos —dijo Felix.
+
+—No queríamos atraer la atención de gente errónea.
+
+—¿Has pensado alguna vez en que tal vez haya muchas personas ahí afuera que hacen lo mismo? Si nos juntásemos quizás se nos ocurra algo que hacer.
+
+—O tal vez nos corten la garganta —dijo Rosa.
+
+Van asintió.
+
+—Ella tiene razón.
+
+Felix estaba de pie.
+
+—Ni hablar, no podemos pensar así. Señora, estamos en un momento crítico. Podemos elegir abandonarnos, extinguiéndonos en nuestros agujeros ocultos, o podemos tratar de construir algo mejor.
+
+—¿Mejor? —Ella hizo un ruido descortés.
+
+—Bien, no mejor. Algo, quizás. Construir algo nuevo es mejor que extinguirnos. Cristo, ¿qué vas a hacer cuando hayas leído todas las revistas y comido todas las papas fritas que hay aquí?
+
+Rosa sacudió la cabeza.
+
+—Linda charla —dijo—. ¿Pero qué diablos vamos a hacer, de todos modos?
+
+—Algo —dijo Felix—. Vamos a hacer algo. Algo es mejor que nada. Vamos a tomar esta parte del mundo donde las personas hablan con otras personas, y vamos a ampliarlo. Vamos a buscar a todos los que podamos y vamos a cuidarlos y ellos van a cuidarnos. Es probable que lo echemos a perder. Probablemente fallemos. Sin embargo, prefiero fallar antes que rendirme.
+
+Van se rió.
+
+—Felix, eres más loco que Sario, ¿sabes?
+
+—Mañana, a primera hora, vamos a ir a sacarlo de allí. Será parte de esto, también. Todos lo serán. A la mierda el fin del mundo. El mundo no termina. Los humanos no son la clase de cosas que tienen un fin.
+
+Rosa sacudió la cabeza otra vez, pero sonreía un poco ahora.
+
+—¿Y tú serás qué, el Papa-Emperador del mundo?
+
+—Prefiere ser Primer Ministro —dijo Van en un susurro teatral. Los antihistamínicos habían hecho milagros en su piel, y se había desteñido del rojo furioso a un agradable rosado.
+
+—¿Quieres ser Ministro de Salud, Rosa? —dijo.
+
+—Niños —dijo—. Están jugando. Qué me dices de esto. Ayudaré cuando pueda, siempre que no me pidas que te llame Primer Ministro y que nunca me llames Ministro de Salud.
+
+—Trato hecho —dijo.
+
+Van volvió a colmar sus vasos, invirtiendo la botella de vino para sacarle las últimas gotas.
+
+Levantaron las copas.
+
+—Por el mundo —dijo Felix. Por la humanidad, pensó con fuerza. Por la reconstrucción.
+
+—Por algo —dijo Van.
+
+—Por cualquier cosa —dijo Felix—. Por todo.
+
+—Por todo —dijo Rosa.
+
+Bebieron. Quería ir a ver la casa; ver a Kelly y a 2.0, aunque su estómago se revolvía ante la idea de lo que podría encontrar. Al día siguiente, empezaron a reconstruir. Y meses después, volvieron a empezar otra vez, cuando los desacuerdos rompieron el grupo pequeño y frágil que habían logrado. Y un año después, volvieron a empezar otra vez. Y cinco años después, comenzaron otra vez.
+
+Cuando se dirigió a su casa, habían pasado casi seis meses. Van lo ayudaba, montado detrás de él en una bicicleta como las que usaban para recorrer la ciudad. Cuanto más al norte iban, más fuerte se ponía el olor a madera quemada. Había montones de casas calcinadas. A veces los merodeadores quemaban las casas que habían saqueado, pero más a menudo era la naturaleza, la clase de incendios que había en los bosques y en las montañas. Había seis manzanas humeantes y ardientes en las que todas las casas estaban quemadas.
+
+Pero el viejo complejo habitacional de Felix aún estaba en pie, un inquietante oasis de edificios inmaculados en los que parecía que sus propietarios, un poco descuidados, hubieran salido a comprar algo de pintura y hojas nuevas de cortadoras de césped para poner en condiciones sus viejas casas.
+
+Eso, de algún modo, era peor. Descendió de la bicicleta en la entrada de casa y caminaron con las bicicletas en silencio, escuchando el susurro del viento en los árboles. El invierno se había atrasado ese año, pero estaba llegando, y a medida que su sudor se secaba al viento, Felix empezó a temblar.
+
+Ya no tenía sus llaves. Estaban en el centro de datos, meses y mundos atrás. Probó la manija, pero no giró. Aplicó su hombro a la puerta y la arrancó de la jamba húmeda, podrida, con un fuerte sonido de astillas. La casa se estaba pudriendo desde adentro.
+
+La puerta chapoteó al caer al suelo. La casa estaba llena de agua estancada, diez centímetros de hedionda agua espumosa en la sala. Fue metiendo sus pies con cautela por ella, sintiendo que las tablas del piso se hundían como esponja debajo de cada paso.
+
+Subió la escalera, con la nariz llena de ese terrible hedor mohoso. En el dormitorio, el mobiliario era familiar como un amigo de la infancia.
+
+Kelly estaba en el lecho con 2.0. Por la forma en que estaban tendidos, quedaba claro que su muerte no había sido fácil; era una doble rosca, Kelly curvada alrededor de 2.0. Sus cuerpos estaban hinchados, lo que los hacía casi irreconocibles. El olor… Dios, el olor.
+
+La cabeza de Felix dio vueltas. Pensó que iba a caer y se agarró del tocador. Una emoción que no podía nombrar —¿rabia, cólera, pena?— le hizo respirar con fuerza, tragar aire como si se estuviera ahogando.
+
+Y entonces ya estaba. Ese mundo estaba terminado. Kelly y 2.0… acabados. Y tenía un trabajo que hacer. Los envolvió con la manta; Van lo ayudó, con solemnidad. Fueron al jardín delantero y se turnaron para cavar, usando la pala del garaje que Kelly utilizaba para la jardinería. Para aquel entonces ya tenían mucha experiencia en cavar tumbas. Mucha experiencia manejando muertos. Cavaron mientras unos perros atentos los observaban desde la hierba alta de los jardines cercanos. Pero también eran buenos para alejar perros, lanzándoles huesos con precisión.
+
+Cuando la tumba estuvo lista, pusieron a descansar en ella a la esposa y al hijo de Felix. Felix buscó las palabras que debía decir allí, sobre el montículo, pero no le vino nada. Había cavado tantas tumbas para las esposas de tantos hombres y para los maridos de tantas mujeres y para tantos niños… Las palabras se habían ido mucho tiempo atrás.
+
+Felix cavó zanjas, recuperó latas y enterró muertos. Plantó y cosechó. Arregló algunos automóviles y aprendió a hacer biodiesel. Finalmente fue a parar a un centro de datos de un pequeño gobierno; los pequeños gobiernos iban y venían, pero éste era lo bastante inteligente como para querer guardar registros, y necesitaba que alguien mantuviera todo en funcionamiento. Y Van fue con él.
+
+Pasaron mucho tiempo en salas de chat y a veces se encontraron con los viejos amigos de aquel extraño tiempo en que habían estado dirigiendo la República Distribuida del Ciberespacio, técnicos que insistían en llamarlo PM, aunque nunca nadie en el mundo real lo llamó así.
+
+La mayor parte del tiempo no era una buena vida. Las heridas de Felix nunca sanaron, ni tampoco las de la mayoría de las otras personas. Había enfermedades prolongadas y otras repentinas. Tragedia sobre tragedia.
+
+Pero a Felix le gustaba su centro de datos. Allí, en el murmullo de los racks, nunca sentía que fueran los primeros días de una nación mejor, pero tampoco que alguno de esos días fuera el último.
+
+> vete a dormir, felix
+
+> Pronto, kong, pronto - casi tengo esta copia de seguridad corriendo
+
+> eres insaciable, muchacho.
+
+> Mira quién habla
+
+Recargó la página de inicio de Google. Reina Kong la había tenido en línea hasta ahora, durante un par de años. Las O de Google cambiaban todo el tiempo, siempre que lo deseaba. Hoy eran pequeños globos de tira cómica, uno sonriendo, el otro frunciendo el ceño.
+
+Lo miró durante un largo rato y volvió a una terminal para verificar su copia de seguridad. Estaba corriendo bien, para variar. Los registros del pequeño gobierno estaban seguros.
+
+> de acuerdo, buenas noches
+
+> Ten cuidado
+
+Van agitó una mano mientras él rechinaba hacia la puerta, enderezando su espalda con una larga serie de crujidos.
+
+—Duerme bien, jefe —dijo.
+
+—No te quedes aquí toda la noche otra vez —dijo Felix—. También necesitas dormir.
+
+—Eres demasiado bueno con nosotros los peones —dijo Van, y volvió a teclear.
+
+Felix fue a la puerta y entró en la noche. Detrás de él, el generador biodiesel zumbaba y lanzaba sus emanaciones acres. La luna de la cosecha estaba alta, y le encantaba. Mañana volvería y arreglaría otra computadora y lucharía contra la entropía otra vez. ¿Y por qué no?
+
+Es lo que sabía hacer. Era un adminsis.
+
+
+
+
+
+CORY DOCTOROW EFRAIN es novelista de ciencia ficción, blogger y activista de tecnología. Nació en Ontario, Canadá, el 17 de julio de 1971.
+
+Es el coeditor del popular weblog Boing Boing (Boingboing.net), y colaborador de Wired, Popular Science Make, New York Times, y muchos otros periódicos, revistas y sitios web.
+
+Antes fue Director de Asuntos Europeos para la Electronic Frontier Foundation (Eff.org), un grupo de libertades civiles sin fines de lucro que defiende la libertad en leyes de tecnología, política, estándares y tratados.
+
+En tal calidad, trabajó para equilibrar tratados, políticas y estándares internacionales sobre derechos de autor y derechos relacionados, abogando en casas de gobierno, Naciones Unidas, organismos de estándares, corporaciones, universidades e instituciones sin fines de lucro.
+
+Sus novelas son publicadas por Tor Books y simultáneamente liberadas en la Internet bajo licencia Creative Commons que alientan su lectura y divulgación, una medida que incrementa sus ventas enrolando a sus lectores en la promoción de su trabajo.
+
+Fue co-fundador de la compañía de software (P2P) de fuente abierta OpenCola, la vendió a OpenText, Inc en 2003, y actualmente presta servicio en las juntas de consejo de Participatory Culture Foundation, MetaBrainz Foundation, Technorati, Inc, y en la Onion Networks, Inc.
+
+
+
+
+
+Notas
+
+
+[1] El Protocolo Gateway de Frontera (BGP) es el protocolo de direccionamiento principal de la Internet. Trabaja manteniendo una tabla de redes de IP o «prefijos» que designan la accesibilidad de la red entre sistemas autónomos (AS). Es descrito como un protocolo vectorial de itinerario. BGP no usa métricas IGP tradicionales, sino que toma decisiones de direccionamiento sobre la base del itinerario y políticas de red. (N del T) <<
+
+
+
+[2] Sistema de energía ininterrumpida. (N del T) <<
+
+
+
+[3] Tiempo entre el lanzamiento de un virus informático y la vigencia de su antivirus. (N del T) <<
+
+
+
+[4] Marca comercial. Los productos más rentables de la compañía Cisco son los ruteadores y los interruptores; la línea de interruptores incluye equipamiento con base en tecnologías Ethernet, Gigabit Ethernet, and ATM. (N del T) <<
+
+
+
+[5] División de Seguridad Informática, depende de la Cámara de Comercio, USA. (N del T) <<
+
+
+
+[6] Lista de correo especializada en temas de seguridad de redes. (N del T) <<
+
+
+
+[7] Sitio de fotografías compartidas (http://www.flickr.com/). (N del T) <<
+
+
+
+[8] Gran Poobah es un término que nace del Mikado de Gilbert y Sullivan. En esta opereta, el todopoderoso personaje arrogante tiene numerosos oficios eminentes, incluyendo Lord Jefe de Justicia, Amo de los Buckhounds, Alto Lord Auditor, Novio de las Escaleras de Servicio, y Alto Lord de Todo Lo Demás. El nombre ha llegado a ser usado como un título burlón para alguien presumido o de alto rango y que presentar una personalidad pomposa. En lo popular: La expresión «El Gran Pooh-Bah» primero fue lanzado en el programa de televisión Los Picapiedras. Pedro Picapiedras y su amigo Pablo Mármol eran miembros de la Leal Orden de los Búfalos de Agua Casa 26. Un puesto de alto rango por voto dentro de esta organización es el Gran Poobah o Gran Poobah Imperial. (N del T) <<
+
+
+
+[9] Vulgarmente conocido como autismo. (N del T) <<
+
+
+
+[10] Abstinencia. El original usa la expresión «cold turkey». Fue una canción escrita por John Lennon, grabado por la Plastic Ono Band, y estrenado como un single en octubre de 1969. De acuerdo con Peter Brown en su libro The Love You Make, la canción fue escrita en un «arrebato creativo» que siguió a la recuperación de Lennon y Yoko Ono de su breve adicción a la heroína. Brown también dice que Lennon presentó la canción a Paul McCartney como un potencial single por The Beatles, pero fue rechazada y lo publicó como un single de la Plastic Ono Band con los créditos de letra de él. (N del T) <<
+
+
+
+[11] Microsoft Certified Systems Engineer. (N del T) <<
+
+
+
+[12] Digital subscriber line access multiplexer. (N del T) <<
+
+
+
+[13] Un sistema operativo parecido a Unix desarrollado para fines de enseñanza en la Brown University. (N del T) <<
+
+
+
+[14] Gelatina inflamable utilizada para cocinar, vendida en latas. Es alcohol desnaturalizado. (N del T) <<
+
+
+
+
+

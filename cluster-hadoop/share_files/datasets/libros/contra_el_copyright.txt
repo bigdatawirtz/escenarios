@@ -1,0 +1,679 @@
+El rostro de la industria cultural está cambiando en el mundo. Todos los días millones de personas se saltan las legislaciones sobre copyright, ya sea porque se volvieron obsoletas o porque no disimulan su avaricia y afán monopólico, dos estrategias de acaparamiento que han puesto en riesgo la libre circulación de la cultura. Contra el copyright habla sobre cómo la tecnología, y con ella una capacidad de reproducción sin precedentes, ha puesto en jaque las barreras con que se protejan las obras, a la par que ha desvelado la avidez de las multinacionales del entretenimiento, que vieron amenazados sus beneficios.
+
+En este libro, cuatro escritores y activistas argumentan en contra de los esfuerzos corporativos por hacer de quienes intercambiamos libros, música, imágenes o códigos informáticos una clase más de criminales. A partir de los mismos principios que subyacen al copyright, propugnan por que se respeten los derechos de los autores sin restringir las libertades asociadas al disfrute de sus obras.
+
+
+
+
+
+AA. VV.
+
+
+
+
+
+Contra el copyright
+
+
+Cinco ensayos combativos
+
+
+
+ePub r1.0
+
+Titivillus 30.11.2018
+
+
+
+
+
+Título original: “The Right to Read”, “Copyleft e maremoto”, “Il copyleft spiegato ai bambini”, “The Digital Future”
+
+AA. VV., 2008
+
+Diseño de portada: Éramos Tantos
+
+Se permite la copia, ya sea de uno o más artículos completos de esta obra —excepto cuando se indique lo contrario— o del conjunto de la edición, en cualquier formato, siempre y cuando no se haga con fines de lucro, no se modifique el contenido de los textos, se respete su autoría y esta nota se mantenga
+
+
+
+Editor digital: Titivillus
+
+ePub base r2.0
+
+
+
+
+
+Índice de contenido
+
+EL DERECHO A LA LECTURA
+
+Richard Stallman (1996)
+
+COPYRIGHT Y MAREMOTO
+
+Wu Ming 1 (2002)
+
+EL COPYLEFT EXPLICADO A LOS NIÑOS
+
+Wu Ming 1 (2003)
+
+COPIAR, ROBAR, MANDAR
+
+César Rendueles (2003)
+
+EL FUTURO DIGITAL Y EL PASADO ANALÓGICO
+
+Kembrew McLeod (2005)
+
+GLOSARIO BÁSICO
+
+Notas
+
+
+
+
+
+EL DERECHO A LA LECTURA
+
+
+
+
+RICHARD STALLMAN
+
+
+
+
+
+Tomado de El camino a Tycho, una colección de
+
+artículos sobre los antecedentes de la Revolución
+
+Lunar, publicado en Luna City en 2096.
+
+
+
+Para Dan Halbert el camino a Tycho comenzó en la universidad, cuando Lissa Lenz le pidió prestada su computadora. La suya se había estropeado y a menos de que pudiera usar otra reprobaría su proyecto de fin de semestre. No había nadie a quien se atreviera a pedírselo, excepto a Dan.
+
+Esto situó a Dan ante un dilema. Debía ayudarle, pero si le prestaba su computadora ella podría leer sus libros. Dejando de lado el riesgo de ir a la cárcel durante muchos años por consentir que otra persona los leyera, la simple idea lo sorprendió al principio. Como a todo el mundo, se le había enseñado desde la escuela primaria que compartir libros era algo equivocado y desagradable, algo que sólo haría un pirata.
+
+Además, era muy probable que la Autoridad de Protección del Software (Software Protection Authority, SPA) los descubriera. En sus clases de programación Dan había aprendido que cada libro tenía un control de copyright que informaba a la oficina central de licencias acerca de cuándo y dónde y por quién había sido leído (usaban esa información para capturar a los piratas, pero también para vender perfiles de intereses personales a otras compañías). La próxima vez que su computadora se conectara a la red, la oficina central de licencias sería notificada. Él, como propietario de la computadora, recibiría el castigo más severo, puesto que no había tomado las medidas adecuadas para prevenir el delito.
+
+Por supuesto, Lissa no necesariamente querría leer sus libros. Probablemente lo único que necesitaba era escribir su proyecto. Pero Dan sabía que ella provenía de una familia de clase media que a duras penas se podía permitir pagar la colegiatura y ya ni se diga cubrir las cuotas de lectura. Tal vez leer los libros de Dan era su única forma de terminar la carrera. Entendía la situación; él mismo se había visto en la necesidad de pedir un préstamo para pagar por los artículos de investigación que leía (el 10% de los ingresos por ese concepto iba a parar a los autores, y como Dan pretendía hacer carrera en la universidad, esperaba que sus artículos de investigación, en caso de ser citados frecuentemente, le dieran beneficios suficientes para pagar el crédito).
+
+Tiempo después Dan descubriría que hubo una época en la que todo el mundo podía ir a una biblioteca y leer artículos de revistas especializadas —incluso libros— sin tener que pagar ni un centavo. Había estudiantes que podían leer miles de páginas sin necesidad de becas gubernamentales para la lectura. Pero desde los años noventa del siglo XX, tanto las editoriales comerciales como las no comerciales habían empezado a cobrar cuotas por el acceso a sus publicaciones. Para el 2047, las bibliotecas de acceso público eran ya sólo un recuerdo lejano.
+
+Naturalmente, había formas de evitar los controles de la SPA y la oficina central de licencias, pero también eran ilegales. Dan había tenido un compañero en la clase de programación, Frank Martucci, que había conseguido un parche informático, una herramienta ilegal para saltarse el control de copyright de los libros. Pero se lo contó a demasiados amigos y uno de ellos lo denunció a la SPA a cambio de una recompensa (los estudiantes muy endeudados eran presas fáciles de la tentación, de modo que traicionaban a sus amigos). En 2047 Frank había ido a parar tras las rejas; no por pirateo de la lectura, sino por poseer un parche.
+
+Dan supo más tarde que hubo un tiempo en que cualquiera podía tener una herramienta de las denominadas parches. Incluso se podía disponer de ellas libremente en la red. Pero los usuarios normales empezaron a utilizarlas para saltarse los controles de copyright, y finalmente un juez dictaminó que este era su uso práctico más extendido. El dictamen equivalía a decir que los parches eran ilegales, de modo que los programadores que los habían desarrollado fueron a dar a la cárcel.
+
+Obviamente, los programadores siguieron necesitando parches, pero en el 2047 sólo había copias numeradas de parches comerciales, y estaban disponibles únicamente para programadores oficiales autorizados, que hubieran depositado la fianza preceptiva con la que cubrían posibles responsabilidades penales. El parche que Dan había usado en sus clases de programación estaba protegido para que sólo pudiera ser utilizado en los ejercicios de clase.
+
+También era factible saltarse el control de copyright instalando un núcleo (kernel) del sistema modificado. Dan llegó a saber que hacia fines del siglo pasado había habido núcleos libres, incluso sistemas operativos completos libres. Pero ahora no sólo eran ilegales, como los parches, sino que era imposible instalarlos sin saber la contraseña del superusuario de la computadora, cosa que ni el FBI ni el servicio técnico de Microsoft te proporcionarían nunca.
+
+Dan llegó a la conclusión de que simplemente no podía prestarle su computadora a Lissa. Pero tampoco podía negarse a ayudarla, pues estaba enamorado de ella. Cada oportunidad de hablar con Lissa era para él algo maravilloso. Y el hecho de que lo hubiera elegido para pedir ayuda podía significar que ella sentía lo mismo.
+
+Dan resolvió el dilema de la forma más increíble: le prestó su computadora y le dio su clave. De esta forma, si Lissa leía sus libros, la oficina central de licencias pensaría que quien estaba leyendo era él. Desde luego seguía siendo un delito, pero la SPA no lo detectaría automáticamente. Sólo podrían darse cuenta si Lissa lo denunciaba.
+
+Si la universidad llegaba a enterarse de que le había proporcionado su clave a Lissa sería el fin para ambos: significaría su expulsión, independientemente de para qué hubiera sido usada. La política de la universidad era clara: cualquier interferencia con sus métodos de control sobre el uso de las computadoras era motivo para tomar medidas disciplinarias. No importaba si se había producido o no algún daño, el delito consistía en dificultar el control a los administradores. Se asumía que esto significaba estar involucrado en algo prohibido y no necesitaban saber exactamente de qué se trataba.
+
+En general los estudiantes no eran expulsados por esa causa —al menos no directamente. Sólo se les prohibía el acceso a los computadoras de la universidad, lo que inevitablemente significaba reprobar todas las asignaturas.
+
+Dan supo después que este tipo de políticas universitarias empezaron en la década de 1980, cuando entre los estudiantes se extendió masivamente el uso de computadoras. Antes de que eso sucediera, las universidades tenían una política disciplinaria diferente: se penalizaban las actividades dañinas, no las que eran simplemente sospechosas.
+
+Lissa no denunció a Dan a la SPA. Su decisión de ayudarla los condujo al matrimonio y también a cuestionarse las enseñanzas que desde niños habían recibido en materia de piratería. Empezaron a leer sobre la historia del copyright, sobre la Unión Soviética y sus restricciones sobre las copia, e incluso sobre la Constitución original de los Estados Unidos. Se mudaron a Luna City, donde se encontraron con otros que también buscaban eludir el largo brazo de la SPA. Cuando estalló la sublevación de Tycho en 2062, el derecho universal a la lectura se convirtió en uno de sus objetivos fundamentales.
+
+
+
+NOTA DEL AUTOR
+
+El derecho a la lectura es una batalla que se está librando en nuestros días. Aunque podrían transcurrir cincuenta años antes de que nuestra actual forma de vida desaparezca en la oscuridad, muchas de las leyes y prácticas descritas más arriba ya han sido propuestas o bien por el gobierno de los Estados Unidos o bien por las editoriales.
+
+Hasta cierto momento había una sola excepción: la idea de que el FBI y Microsoft se guardaran las contraseñas del superusuario de las computadoras personales y no dejaran obtenerlas a sus dueños. Esto no se propuso sino hasta el año 2002, y se le llamó “computación confiable” o “palladium”.
+
+En 2001, el senador Hollings, apoyado financieramente por Disney, propuso un proyecto de ley, llamado SSSCA, a fin de que cada computadora nueva contara con restricciones para producir copias, restricciones que los usuarios no podrían evitar. En la misma línea que la del chip Clipper y otras propuestas similares del gobierno de los Estados Unidos sobre la custodia de claves de encriptación, ésta es una tendencia a largo plazo: los sistemas se configuran cada vez más para dar control sobre las computadoras a terceras instancias, en lugar de a las personas que realmente las utilizan. La SSSCA ha sido rebautizada desde entonces como la CBDTPA (para denotar Consume But Don’t Try Programming Act, es decir, Ley de Consume Pero No Intentes Programar).
+
+También en 2001 los Estados Unidos, a través del Tratado del Área de Libre Comercio de las Américas (ALCA), buscaron imponer las mismas reglas en todos los países del hemisferio occidental. El ALCA es uno de esos tratados “de libre comercio” en realidad diseñados para dar a las empresas mayor poder frente a los gobiernos democráticos. Imponer leyes del tipo de la DMCA (Digital Millenium Copyright Act o Ley de Copyright del Milenio Digital) es típico de este espíritu. La Fundación Frontera Electrónica solicita a las personas que expliquen a sus gobiernos por qué deberían oponerse a dichos planes.
+
+La SPA, que realmente significa Software Publisher’s Association (Asociación de Editores de Software), ha sido reemplazada en este papel policiaco por la BSA o Business Software Alliance. Pese a que oficialmente no es una fuerza policiaca, sí actúa oficiosamente como si lo fuera. Utilizando métodos que recuerdan a la antigua Unión Soviética, invita a la gente a delatar a sus compañeros de trabajo y a sus amigos. En 2001, una campaña de terror de la BSA en Argentina amenazó veladamente a aquellos que compartieran programas de computadora, insinuando que terminarían siendo violados en prisión.
+
+Cuando esta historia se escribió, la SPA estaba amenazando a pequeños proveedores de internet (ISP) para que les permitiera controlar a sus usuarios. La mayoría de ellos cedieron ante la intimidación, ya que no podían costearse el litigio judicial en los tribunales (The Atlanta Journal-Constitution, 1/X/1996, D3). Al menos un ISP, Community ConneXion, de Oakland, California, se negó a aceptar las presiones, y de hecho fue demandado. La SPA retiró luego la demanda, pero obtuvo la Ley de Copyright del Milenio Digital, la cual les otorgó el tipo de poder que buscaban.
+
+Las políticas de seguridad descritas en el relato no son imaginarias. Por ejemplo, una computadora universitaria del área de Chicago muestra el siguiente mensaje cuando uno se conecta al sistema (las comillas están en el original):
+
+“Este sistema sólo puede utilizarse por usuarios autorizados. Cualquier individuo que use este sistema sin autorización o excediendo su autorización estará sujeto a ser rastreado y registrado por el personal a cargo del sistema. Durante el seguimiento de usuarios que realicen actividades no autorizadas, o durante el mantenimiento del sistema, las actividades de usuarios autorizados pueden ser rastreadas. Cualquiera que use este sistema acepta expresamente dicho rastreo y queda advertido de que si ese control revela posibles indicios de actividades ilegales o violaciones de las normas de la Universidad, el personal de mantenimiento a cargo del sistema puede proporcionar esas pruebas a las autoridades de la Universidad o a las fuerzas de seguridad.”
+
+Se trata de una aproximación interesante a la Cuarta Enmienda de la Constitución de los Estados Unidos: presionar a los usuarios, por adelantado, para que cedan en sus derechos.
+
+
+
+
+Se permite la distribución y la copia literal de este artículo en su totalidad y por cualquier medio siempre y cuando se conserve esta nota. (Fue publicado originalmente en el Communications of the ACM, Vol. 40, número 2, febrero de 1997). Traducción de Sebastián Pilovsky.
+
+RICHARD STALLMAN (Nueva York, 1953) es el fundador del proyecto para el desarrollo del sistema operativo libre GNU y de la Free Software Foundation. Este proyecto nació en 1983 como respuesta al sesgo mercantilista de los fabricantes de software privativo y a las restricciones que imponían a los usuarios para su uso y modificación. El objetivo de GNU es promover el desarrollo del software libre, a fin de que se conceda entera libertad para el uso, copia, redistribución y modificación de los programas, sin otro constreñimiento que el de impedir que alguien se apropie legalmente de los cambios y mejoras. Stallman, que comenzó su carrera como hacker del laboratorio de Inteligencia Artificial del MIT, es reconocido por su activismo y resistencia como el gurú del movimiento copyleft.
+
+
+
+
+
+COPYRIGHT Y MAREMOTO
+
+
+
+
+WU MING 1
+
+
+
+
+
+Un vasto movimiento de protesta y transformación social se extiende en la actualidad en gran parte del planeta. Tiene potencialidades constituyentes desmesuradas, pero aún no es completamente consciente de ello. Aunque su origen es antiguo, se ha manifestado sólo en fechas recientes, apareciendo la mayoría de las veces bajo los reflectores mediáticos, aunque en realidad su trabajo cotidiano se desarrolla muy lejos de ellos. Está compuesto por multitudes y por individualidades, por las retículas capilares del territorio. Va montado sobre las últimas innovaciones tecnológicas. Le quedan cortas las definiciones acuñadas por sus adversarios. Pronto será imparable y la represión nada podrá contra él.
+
+Es lo que el poder económico llama “piratería”.
+
+Es el movimiento real que suprime el estado actual de las cosas.
+
+Desde que se impuso —no hace más de tres siglos— la creencia en la propiedad intelectual, los movimientos underground y alternativos, así como las vanguardias más radicales, la han criticado en nombre del “plagio” creativo, de la estética del cut-up y del sampling, de la filosofía do it yourself. Un vistazo retrospectivo nos llevaría del hip hop al punk al protosurrealista Conde de Lautréamont (“El plagio es necesario. El progreso lo implica. Retoma la frase de un autor, se vale de sus expresiones, cancela una idea falsa y la sustituye por la idea correcta”). En nuestros días esta vanguardia es de masas.
+
+Durante decenas de miles de años las civilizaciones humanas han prescindido del copyright, del mismo modo que han prescindido de otros axiomas falsos semejantes, como la “centralidad del mercado” o el “crecimiento ilimitado”. Si hubiera existido la propiedad intelectual, la humanidad no habría conocido La epopeya de Gilgamesh, el Mahabharata y el Ramayana, la Ilíada y la Odisea, el Popol Vuh, la Biblia y el Corán, las leyendas del Santo Grial y del ciclo artúrico, el Orlando enamorado y el Orlando furioso, Gargantúa y Pantagruel, todos frutos felices de un amplio proceso de mezcla y combinación, reescritura y transformación, es decir, de lo que se denomina plagio, casi siempre unido a la libre difusión y a presentaciones en vivo (sin la interferencia de los inspectores tributarios).
+
+Hasta hace poco, las empalizadas de los recintos culturales imponían una visión muy limitada, pero entonces llegó internet. Ahora la dinamita de los bits por segundo hace que salten por los aires esas murallas, de modo que es posible emprender excursiones aventuradas en las selvas de signos y en los claros iluminados por la luna. Noche y día millones de personas, solas o en grupo, rodean/violan/rechazan el copyright. Lo hacen apropiándose de las tecnologías digitales de compresión (mp3, mpeg, entre otras), distribución (redes telemáticas) y reproducción de datos (quemadores, escáner). Gracias a las tecnologías que cancelan la distinción entre “original” y “copia”, usando redes telemáticas peer to peer (redes entre iguales, descentradas) para compartir los datos de sus propios discos duros, le dan la vuelta con astucia a cualquier obstáculo técnico o legislativo. Toman a contrapié a las multinacionales del entertainment y erosionan sus (hasta ahora) excesivos beneficios. Como es natural, ponen en graves predicamentos a las entidades que administran los llamados derechos de autor.
+
+No nos estamos refiriendo a la piratería gestionada por el crimen organizado, rama extralegal del capitalismo, no menos desplazada y jadeante que la legal a consecuencia del crecimiento de la piratería autogestionada y de masas. Hablamos más bien de una democratización general del acceso a las artes y a los productos del ingenio, de un proceso que se brinca las barreras geográficas y sociales. Y digámoslo también con todas sus letras: las barreras de clase. (¿De veras es necesario que despliegue algún dato sobre los precios de los CDs?).
+
+Este proceso está cambiando el rostro de la industria cultural del mundo, pero no se limita a ello. Los “piratas” debilitan al enemigo y amplían los márgenes de maniobra de las corrientes más políticas del movimiento: nos referimos a los que producen y difunden el software libre (programas de código abierto que pueden ser modificados con toda libertad por los usuarios), los que buscan extender a cada vez más sectores de la cultura las licencias copyleft (que permiten la reproducción y distribución de las obras a condición de que queden “abiertas”), los que quieren hacer del “dominio público” fármacos indispensables para la salud, quienes rechazan la apropiación, el registro y la frankensteinización de especies vegetales y secuencias genéticas, etcétera.
+
+En el conflicto entre copyright y anticopyright se expresa en su forma más inmediata la contradicción fundamental del sistema capitalista: la contradicción entre las fuerzas productivas y las relaciones de producción y de propiedad. A partir de cierto punto, el desarrollo de las fuerzas productivas pone inevitablemente en crisis las relaciones de producción y de propiedad. Las mismas corporaciones que venden samplers, fotocopiadoras, escáneres y quemadores de CDs, controlan la industria global del entretenimiento, que un día se descubre dañada por el uso de tales instrumentos. La serpiente se muerde la cola y entonces presiona a los diputados para que legislen en contra de la autofagia.
+
+La consiguiente reacción en cadena de paradojas y episodios grotescos permite comprender que una fase de la cultura ha llegado a su fin, y que leyes más duras no bastarán para detener una dinámica social que ya se puso en marcha y es arrolladora. Lo que se está modificando es la relación misma entre producción y consumo de la cultura, un cambio que involucra aspectos de mayor calado: el régimen de propiedad de los productos del intelecto en general, el estatuto jurídico y la representación política del “trabajo cognoscitivo”, etcétera.
+
+En cualquier caso, el movimiento real está dirigido a superar por completo la legislación en materia de propiedad intelectual y a reescribirla desde el principio. Ya se han puesto las piedras angulares sobre las que se levantará el edificio de un verdadero derecho de autor, que realmente tenga en cuenta cómo opera la creación —es decir, por ósmosis, mezcla, contagio, plagio. A menudo, los legisladores y las fuerzas del orden tropiezan con estas piedras y se lastiman las rodillas.
+
+En la actualidad, el código abierto y el copyleft se extienden mucho más allá de la programación de software: las licencias abiertas están en todas partes, y de seguir la tendencia podrían convertirse en el paradigma de un nuevo modo de producción en el cual la cooperación social (ya existente y visiblemente desplegada) se libere del control parasitario, la expropiación y la renta de la que se benefician los altos potentados industriales y corporativos.
+
+La potencia del copyleft deriva de ser una innovación jurídica que surge desde abajo, que supera la simple piratería y pone el acento en la pars construens del movimiento real. En la práctica, en todos los rincones del globo se le está dando la vuelta a la intención original de las leyes vigentes sobre el copyright (que se fijaron durante la Convención de Berna de 1971, es decir, en el Pleistoceno), a fin de que en lugar de obstaculizar la libre circulación, se vuelvan garantía de que eso precisamente suceda. El colectivo Wu Ming —del que formo parte— contribuye a este movimiento ya imparable insertando en sus libros la siguiente leyenda (que sin duda puede mejorarse): “Está permitida la reproducción total o parcial de esta obra y su difusión telemática siempre y cuando sea para uso personal de los lectores y no con fines comerciales”. Lo que significa que la difusión debe permanecer gratuita… o de lo contrario se deberán pagar los derechos correspondientes.
+
+Cancelar una idea falsa, sustituirla con la correcta. La vanguardia es un saludable “retorno a lo antiguo”: estamos abandonando la “cultura de masas” de la era industrial (centralizada, estandarizada, unívoca, obsesionada por la atribución del autor, regulada por incontables sofismas y quisquillosidades) para adentrarnos en una dimensión productiva que, en un nivel de desarrollo superior, presenta no pocas afinidades con la propia de la cultura popular (excéntrica, deforme, horizontal, basada en el plagio, regulada por el menor número posible de leyes).
+
+Las legislaciones vigentes sobre el copyright (entre las que se cuenta la amañadísima ley italiana de diciembre de 2000) no tienen en cuenta el copyleft: a la hora de legislar, el Parlamento ignoraba por completo su existencia, como han podido confirmar, en diversos encuentros con diputados, los productores de software libre (equiparados sic et simpliciter a los piratas).
+
+Como es obvio, dada la composición actual de las Cámaras italianas, no se puede esperar más que una diabólica reincidencia en el error, la estulticia y la represión. Sus Señorías no se dan cuenta de que, bajo la superficie de este mar en el que ellos sólo ven piratas y barcos de guerra, el fondo ya se ha colapsado. Y también en la izquierda, los que no quieren agudizar la vista y los oídos y proponen soluciones a destiempo, de “reformismo” pávido (disminuir el IVA en el precio de los CDs, por ejemplo), podrían darse cuenta demasiado tarde del maremoto y ser arrastrados por la ola.
+
+
+
+
+Se permite la libre reproducción de este texto por cualquier medio siempre y cuando sea sin ánimo de lucro y esta nota se mantenga. Traducción de Carlo Nono.
+
+En el comienzo fue Luther Blisset, un grupo de escritores italianos que irrumpieron en el panorama de las letras con la novela Q y una revolucionaria noción del autor y su papel en la sociedad. Después se les unió un quinto integrante, y entonces se formó un nuevo colectivo, Wu Ming, bautizado así con la clara voluntad de desmarcarse de la fábrica de celebridades en serie que produce la industria editorial, como un gesto inequívoco de rechazo a la cadena de montaje en la que un autor, avalado por los grandes consorcios editoriales, se convierte en estrella. (Wu ming es una expresión china que significa “sin nombre” o también “cinco nombres” , dependiendo de cómo se pronuncie la primera sílaba). Hasta ahora, la obra más ambiciosa de Wu Ming (además de la creación del colectivo) es 54, una novela con decenas de protagonistas ubicada precisamente en 1954, ya traducida al español y disponible para su descarga en: www.wumingfoundation.com.
+
+
+
+
+
+EL COPYLEFT EXPLICADO A LOS NIÑOS
+
+PARA DESMONTAR ALGUNOS EQUÍVOCOS
+
+
+
+
+WU MING 1
+
+
+
+
+
+“Pero… ¿si cualquiera puede copiar sus libros sin necesidad de comprarlos, de qué comerán ustedes?”. Esta pregunta nos la han planteado a menudo, la mayoría de las veces acompañada de la observación siguiente: “El copyright es necesario, ¡es preciso proteger a los autores!”.
+
+Esta clase de afirmaciones revela cuánto humo y cuánta arena ha llegado a arrojar la cultura dominante (basada en el principio de propiedad) y la industria del entretenimiento a los ojos del público. Lo mismo en los medios que en nuestros encéfalos se perpetúa una enredada ideología en materia de derechos de autor y propiedad intelectual, pese a que el nuevo auge de los movimientos y las transformaciones en curso la estén poniendo en crisis. Sólo a los parásitos y gorrones de todo género les conviene hacer creer que copyright y derecho de autor son una y la misma cosa, o que exista una contraposición entre derecho de autor y “piratería”. No es así en absoluto.
+
+Los libros del colectivo Wu Ming se publican con la siguiente leyenda: “Está permitida la reproducción total o parcial de esta obra y su difusión telemática siempre y cuando sea para uso personal de los lectores y no con fines comerciales”. Esta leyenda está basada en el concepto de copyleft inventado en los años ochenta por el “movimiento a favor del software libre” de Richard Stallman y compañía, y está siendo utilizado en muchos sectores de la comunicación y la creatividad, la divulgación científica y las artes. Copyleft (un denso juego de palabras intraducible) es una filosofía que se convierte en diversos tipos de licencias comerciales, la primera de las cuales fue la GPL (GNU General Public License) del software libre, creada para la tutela de este último e impedir que alguien (por ejemplo Microsoft) se adueñe y privatice los resultados del trabajo de comunidades libres de usuarios y programadores. (Para quien no lo sepa, el software libre se caracteriza por tener el “código abierto”, lo que hace que, al menos potencialmente, pueda ser controlado, modificado, mejorado y copiado por los usuarios).
+
+Si el software libre hubiera permanecido simplemente como de dominio público, tarde o temprano habría caído bajo el control de los buitres de la industria. La solución fue darle la vuelta al copyright, como si se tratara de un calcetín, de manera que en vez de funcionar como un obstáculo para la libre reproducción se convirtiera en su garantía suprema. Dicho en pocas palabras, si yo coloco un signo de copyright a mi obra, soy su propietario, y este acto me otorga poderes suficientes para proclamar que con esa obra tú puedes hacer lo que te plazca. Puedes copiarla, difundirla, modificarla, etc., pero en cambio no tienes derecho a impedir que otro haga lo mismo, es decir, no puedes apropiarte de ella y frenar su libre circulación: no puedes poner a tu vez un copyright en ella, porque ya hay uno y me pertenece, y además si lo haces te romperé la cara.
+
+En resumen, un ciudadano normal, que no tiene dinero para comprar un libro de Wu Ming o que no quiere comprarlo encuadernado, puede con toda tranquilidad fotocopiarlo, escanearlo usando un software que reconozca caracteres, o bien, lo que nos parece la solución más cómoda, descargarlo gratis de nuestro sitio web: www.wumingfoundation.com. Puesto que esta reproducción no tiene fines de lucro, cuenta con nuestra autorización irrestricta. Ahora bien, si un editor extranjero quiere mandarlo traducir y comercializarlo en su país o si un productor cinematográfico pretende llevarlo a la pantalla grande, entonces se trata de una reproducción con ánimo de lucro y por tanto estos señores deberán ponerse en contacto con nosotros y pagarnos una cantidad (porque es justo que “nos lucremos” también, ya que a fin de cuentas el libro lo escribimos nosotros).
+
+Volviendo a la pregunta inicial: ¿no estamos perdiendo dinero?
+
+La respuesta es un rotundo no. Cada vez más experiencias editoriales demuestran que la lógica “copia pirata = ejemplar no vendido” no tiene la menor lógica. Si no fuera así, no se comprendería el hecho de que nuestra novela Q, que se puede descargar gratuitamente de internet desde hace varios años, haya llegado a la duodécima edición impresa y haya superado los doscientos mil ejemplares vendidos.
+
+En realidad, en el ámbito editorial, cuanto más circula una obra más vende. Otros ejemplos inequívocos de lo anterior provienen de Estados Unidos (un país, por cierto, obsesionado con la propiedad intelectual) y han sido descritos con precisión meridiana por mi colega Wu Ming 2 en un artículo que puede leerse en nuestra página web.[1]
+
+Aun sin necesidad de incomodar al Massachusetts Institute of Technology, basta explicar lo que está pasando con nuestros libros en lo que se refiere a la venta. Un usuario X se conecta a nuestro sitio y descarga, digamos, 54. Si lo hace desde el trabajo o la universidad y lo imprime allí mismo, no gasta ni un centavo. X lo lee y le gusta. Le gusta a tal grado que decide regalarlo y, por supuesto, no puede presentarse a la fiesta de cumpleaños con un engargolado de hojas tamaño carta. De modo que se dirige a la librería y lo compra. Una copia “pirateada” = un ejemplar vendido. Hay quienes tras descargar nuestro libro lo han regalado seis o siete veces. Una copia “pirateada” = varios ejemplares vendidos. Aun aquellos que no cuentan con dinero para hacer regalos pueden comentarle a sus conocidos que han leído el libro y que les ha gustado, con lo cual tarde o temprano alguien lo comprará o seguirá el proceso anteriormente descrito (descarga-lectura-compra-regalo). Si el libro no le gusta a alguno de ellos, por lo menos no habrá malgastado su dinero.
+
+De este modo, como sucede con el software libre y el código abierto, se reconcilia la exigencia de una recompensa justa por el trabajo realizado por un autor (o con más exactitud, por un trabajador del saber) con la salvaguarda de la reproductibilidad de la obra (es decir, de su uso social). Se exalta el derecho de autor al mismo tiempo que se reprime el copyright en las mismas narices de quienes creen que son la misma cosa.
+
+Si la mayoría de las editoriales no se han percatado todavía de esta realidad y son conservadoras en materia de copyright es por cuestiones más ideológicas que mercantiles, aunque creemos que no tardarán en abrir los ojos. El mercado editorial no está en riesgo de extinción como la industria discográfica: sus lógicas son distintas, distintos los soportes y los circuitos, también la forma de consumo es diferente y, sobre todo, el mercado editorial no ha perdido todavía la cabeza: no ha reaccionado con redadas en masa, denuncias y procesos penales ante la gran revolución tecnológica que “democratiza” el acceso a los medios de reproducción. Hasta hace unos cuantos años, un quemador de CDs sólo estaba a disposición de los estudios de grabación, mientras que hoy lo tenemos en casa, en nuestra computadora personal. (Por no hablar del peer to peer, las redes informáticas entre iguales, etc.). Esto es un cambio irreversible, frente al cual toda la legislación en materia de propiedad intelectual queda en buena medida obsoleta, en estado de putrefacción.
+
+Cuando se inventó el copyright, hace cosa de tres siglos, no existía la más remota posibilidad de una “copia privada” o una “reproducción sin ánimo de lucro”, ya que sólo los editores tenían acceso a la imprenta tipográfica. Los demás estaban obligados a renunciar al libro si no podían comprarlo. El copyright no se percibía como antisocial, era más bien el arma de un empresario contra otro, no de un empresario contra el público. Hoy la situación ha cambiado drásticamente: el público ya no está obligado a comprar, tiene acceso a la maquinaria (computadoras, fotocopiadoras y lo que venga) y el copyright es un arma que dispara contra la multitud.
+
+Quedan muchas cosas por decir, pero debemos volver a lo básico: partimos del reconocimiento de la génesis social del saber. Nadie tiene ideas que no hayan sido directa o indirectamente influidas por las relaciones sociales que mantiene en las comunidades de las que forma parte, y si la génesis es social, el uso y disfrute, a su vez, debe permanecer social. Pero esta es otra larga historia. Espero haberme explicado bien.
+
+
+
+
+Se permite la libre reproducción de este texto por cualquier medio siempre y cuando sea sin ánimo de lucro y esta nota se mantenga. (Este texto fue publicado en Il Mucchio Selvaggio, número 526, marzo de 2003). Traducción de Carlo Nono.
+
+
+
+MÁS ACERCA DE WU MING
+
+Pese a la declaración de principios que implica el hecho de escribir sin nombre en el contexto de una cultura de masas que fomenta la mitificación del autor, esto no significa que los escritores que forman o formaron parte del colectivo Wu Ming sean anónimos o se esfuercen particularmente porque sus identidades permanezcan secretas. Nada de eso. Quienquiera que entre a la página de este grupo de escritores radicales, de esta turba inclasificable de activistas y defensores del copyleft, puede saber de inmediato que los miembros de la banda son los siguientes: Roberto Bui, alias Wu Ming 1; Giovanni Cattabriga, alias Wu Ming 2; Luca Di Meo, alias Wu Ming 3 (quien hace poco se separó del grupo); Federico Guglielmi, alias Wu Ming 4, y Riccardo Pedrini, alias Wu Ming 5. Además de activistas y magníficos escritores, los integrantes de Wu Ming escribieron el guión de Lavorare con lentezza, cinta dirigida en 2004 por Guido Chiesa. Su novela más reciente, Manituana, obtuvo el premio Sergio Leone 2007 y Emilio Salgari 2008.
+
+
+
+
+
+COPIAR, ROBAR, MANDAR
+
+
+
+
+CÉSAR RENDUELES
+
+
+
+
+
+El crecimiento de los beneficios derivados de la propiedad intelectual constituye uno de las principales componentes de la reorganización del capitalismo mundial de los últimos veinte años. Ya a principios de los años noventa la propiedad intelectual constituía el 30% de las exportaciones de Estados Unidos. Precisamente una de las principales diferencias de la Organización Mundial de Comercio (OMC) respecto al GATT (Acuerdo General sobre Comercio y Aranceles) fue la inclusión del comercio invisible entre sus áreas de competencia y la aceptación de las normas de la Organización Mundial de la Propiedad Intelectual (OMPI). En este sentido, al menos, es evidente que la industria del copyright guarda una estrecha relación con el gigantesco desarrollo del capitalismo financiero de las últimas décadas. Pero se puede ir más lejos y afirmar que el comercio intelectual comparte con la especulación financiera e inmobiliaria rasgos formales de eso que la tradición marxista ha llamado “capital ficticio”. En principio, la legitimidad del capital ficticio se basa en las expectativas de que será validado por futuras actividades productivas; por ejemplo, en el campo inmobiliario, su razón de ser sería atender las previsiones de la próxima demanda de vivienda. No obstante, en la economía actual es la fuente de beneficios de rentistas y especuladores que sacan provecho de su poder monopolista pero que, recordémoslo, “en principio, no son un elemento integral del capitalismo”.[1] Es decir, en los mercados financieros, como en las grandes operaciones inmobiliarias o en el comercio invisible existen regalías que no proceden de la producción sino que constituyen una auténtica usura social.
+
+Así, en aquellos medios de comunicación de masas en los que el coste marginal de cada nuevo uso tiende a cero y es posible limitar su acceso, las multinacionales pueden cobrarnos por productos virtualmente gratuitos. Esto marca una diferencia considerable respecto a la industria de la copia tradicional, donde por mucho que existan asombrosas economías de escala cada nuevo uso implica una nueva mercancía con tiempo de trabajo social incorporado. Es como si los mercaderes del copyright, cumpliendo una añeja fantasía infantil, tuvieran en su oficina la máquina de fabricar dinero.
+
+No es raro que la mayor parte de los debates que existen hoy día en torno a la propiedad intelectual se desarrollen en el nivel de los grupos de consumidores que intuyen que la industria del copyright no respeta las reglas del sistema mercantil. El alza artificial de los precios inmobiliarios por obra y gracia de los especuladores se traduce en el hecho de que las familias españolas dedican ya el 50% de su renta a la vivienda. De modo análogo, la especulación cultural genera dinero como por arte de magia en la medida en que la sociedad asume como costes los beneficios de los oligopolios que o bien incrementan el precio de las mercancías en más de un 300% (por ejemplo en los CDs) o sencillamente están en condiciones de añadir consumidores sin coste adicional (internet, televisión vía satélite…); todo ello sin dejar de saquear las inversiones públicas en tecnología, educación, arte o investigación.[2] En este contexto, la industria lleva más de una década buscando métodos para poder aprovechar al máximo las potencialidades monopolistas de la propiedad intelectual: técnicamente se han desarrollado distintos métodos que van desde el pay-per-view hasta los mecanismos de codificación; en el plano legal se ha tratado de desfigurar la legislación tradicional sobre propiedad intelectual; en el ámbito ideológico (en abierta contradicción con la estrategia anterior) se ha ensalzado el derecho de autor como pilar de la creación no sólo porque Stephen King despierta más simpatías que Random House, sino porque en el sector cultural los autores constituyen uno de los pilares históricos de la diferenciación del producto, un recurso comercial típico de los sectores oligopolistas. Si se acepta discutir en este plano que propone la industria, el debate parece retornar a los topoi clásicos sobre propiedad intelectual y derecho de autor que, en términos muy generales, se pueden resumir en tres puntos de vista distintos:
+
+1. Si algo merece el nombre de propiedad es la propiedad intelectual, su legitimidad está fuera de duda pues es creación exclusiva de su autor. Autoría y propiedad intelectual vendrían a ser prácticamente sinónimos. Esta tesis suele ir acompañada de la idea (1b) de que la remuneración es el único medio para incentivar la creatividad.
+
+2. La propiedad intelectual no es como las demás, no sólo por su inalienabilidad sino porque guarda una relación intrínseca con la comunidad que le da sentido. Asociada a esta idea suele estar la de aquellos que mantienen (2b) que es imprescindible encontrar un equilibrio entre el uso público de los productos culturales y su explotación comercial.
+
+3. La propiedad intelectual es una farsa que se fundamenta en un mito romántico (el autor), al que la sociedad burguesa ha dado estatuto jurídico. Desde esta posición —mantenida por un confuso magma entre surrealista, postestructuralista y situacionista— se tiende a postular el plagio como máximo momento de resistencia al capital en el ámbito de la cultura.[3]
+
+Es importante notar que 1a) y 2b) no son corolarios de 1) y 2) sino meros anejos contextuales. En mi opinión, la única postura sensata es la 2), si bien de ningún modo comparto 2b). A diferencia de lo que ocurre con las patentes, la creación cultural no se confronta con la cosa misma sino con una comunidad de oyentes que le da sentido. Esto no significa que la idea de autor sea un mito —o al menos que sea un mito peor que la noción místicokeatsiana de una posesión del poeta por parte de las musas—, sino que el concepto de autor, como el de literatura o música, es insignificante al margen de un marco público. De este modo, 2) es compatible con un concepto de autor y de originalidad basados en el manejo y la reelaboración de un conjunto de utensilios heredados cuyo significado se define en contextos retóricos renovables.[4] Lo que sí implica 2) es la necesidad de proteger esa esfera pública de cualquier práctica mercantil que la ponga en peligro. Obviamente esta idea supone una extensión en el ámbito cultural de una tesis que Polanyi ha mantenido respecto al trabajo, la tierra y el dinero. Es preciso ser prudente a la hora de manejar este tipo de argumentos pues es fácil confundir los efectos poco saludables de la mercantilización del arte (una crítica antiburguesa) con las consecuencias de la concentración monopolística (una crítica anticapitalista); como veremos, mi razonamiento tiene que ver con este último aspecto por mucho que también simpatice con el primero. Finalmente, reconozco mi abierta hostilidad hacia las formas más desaforadas de 3). Me parece uno de esos alardes ideológicos que llevan a asumir versiones caricaturizadas de los propios argumentos. Por ejemplo, una de las respuestas más frecuentes a las que uno se enfrenta al abogar por la propiedad colectiva de los medios de producción viene a recordar lo desagradable que resulta compartir el cepillo de dientes o vivir en comunas. Curiosamente, nunca tarda en aparecer un compañero de viaje terriblemente contracultural que proclama la absoluta necesidad de compartir el cepillo de dientes y vivir en comunas.
+
+En cualquier caso, lo importante aquí es advertir que las distintas nociones de autor no están asociadas unívocamente a una forma de retribución o de difusión determinada: tal vez el único incentivo del autor sea económico, pero de ahí no se deduce quién tiene que asumir la carga de la retribución. En definitiva, los planos estéticos, laborales y comerciales de la propiedad intelectual no están ligados inextricablemente por conexiones lógicas, sino que son el producto de una evolución contingente que admite enormes matices.
+
+
+
+LOS LÍMITES DEL DERECHO DE AUTOR
+
+A estas alturas ya debería ser ocioso recordar la estrecha relación que existe entre la aparición de la imprenta, la propiedad intelectual y la noción moderna de autor: “La lucha por hacerse con el derecho de publicar determinado texto suscitó debates novedosos sobre temas como el monopolio y la piratería. La imprenta forzó la definición legal de aquello que pertenecía al dominio público. La propiedad común literaria quedó sujeta a ‘procesos de enclosure’ y el individualismo posesivo comenzó a caracterizar la actitud de los escritores hacia su obra”[5]. No obstante, es muy cierto que, como ha señalado D. Saunders, la conciencia de este vínculo a menudo ha llevado a establecer narraciones teleológicas en que la situación actual se muestra prefigurada en procesos que tuvieron un desarrollo relativamente independiente.[6]
+
+Como es sabido, las primeras ordenaciones legales de la industria de la imprenta aparecieron en Venecia a finales del siglo XV en forma de monopolios otorgados por la autoridad a ciertos impresores a cambio de lealtad política. Se trata de un modelo muy difundido, y que en Francia sólo desapareció tras la Revolución Francesa (con resultados económicos catastróficos). De modo análogo, en Inglaterra las primeras leyes que regulaban el copiado estaban muy vinculadas a la censura y al control político. Lo fundamental de esta primera fase legislativa es que en ningún caso se tenían en cuenta los derechos de autor, sólo se pretendía amparar a editores y libreros frente a la piratería. La primera legislación moderna del copyright, el Estatuto de la Reina Ana de 1710, era una ley de protección de la inversión que trataba la propiedad intelectual desde el punto de vista de las patentes.[7] Para que esto cambiara se tuvo que dar no sólo una transformación del sistema de mecenazgo tradicional, sino una larga batalla judicial por parte de los escritores que pretendían obtener remuneración de la venta de sus libros.
+
+Al mismo tiempo, se estaba produciendo un debate sobre el interés público implícito en la propiedad intelectual, con muy diferentes ramificaciones, que iban desde la crítica de la mercantilización del arte hasta la censura del carácter inevitablemente monopolístico de la producción editorial. Las constituciones burguesas sancionaron la necesidad de salvaguardar el interés público al vincularlo explícitamente a la función difusora de los editores y al incentivo a la creatividad que supone la remuneración del autor. A fines del siglo XVIII, las disposiciones para garantizar el equilibrio entre estos elementos llevaron a situaciones sorprendentes. Algunos estados de la Unión Americana imponían límites al monopolio del copyright en forma de justiprecios, es decir, que si el propietario del copyright vendía un libro a un precio que superara su inversión en trabajo y gastos, más una compensación razonable por el riesgo asumido, entonces los tribunales podían determinar uno más adecuado.[8] Dejo al lector la tarea de imaginar lo que ocurriría si este mecanismo se aplicase hoy en día a la producción de, por ejemplo, los discos compactos.
+
+El último de los principios generales del derecho de autor en hacer su aparición fue el derecho moral, el principio de la propiedad intelectual más vinculado a la categoría estética de autor en sentido romántico.[9] Lo curioso es que en los sistemas modernos de copyright —al menos en los de la Europa continental— se ha dado una completa inversión de la cronología, de modo que el droit moral ha pasado a ser el mascarón de proa de la propiedad intelectual, el elemento del que se hace depender la retribución del autor y del difusor.[10]
+
+El resultado de todos estos procesos complejos e interrelacionados es un sistema legal internacional de propiedad intelectual más o menos coherente (a menudo menos que más) con tres planos fundamentales:
+
+1. Un sistema de protección de la inversión de los productores de copias por medio de los derechos conexos. Generalmente, su legitimidad se hace depender de la contribución de los “auxiliares de la creación” a la difusión de las obras.
+
+2. Un sistema de protección del derecho moral y patrimonial del autor.
+
+3. Un sistema de protección del interés público a través de un mecanismo de excepciones que libera la propiedad intelectual en determinadas circunstancias.[11] Es sorprendente la frecuencia con que se obvia este elemento fundamental de las legislaciones sobre la propiedad intelectual. Básicamente, hay dos modelos de protección del dominio público: por un lado, está el del derecho europeo basado en un sistema de excepciones bien establecido para, por ejemplo, usos relacionados con la educación, la información o la parodia y, por el otro, un sistema de excepciones abierto como es el fair use estadounidense.
+
+Es muy importante recordar hasta qué punto la interpretación diferencial de estos elementos podría haber dado lugar a situaciones muy distintas. Por ejemplo, una sociedad con leyes antimonopolistas estrictas, en la que la remuneración de los autores no dependiera o sólo dependiera parcialmente de la venta de la obra, con grandes inversiones en medios de comunicación públicos y con una interpretación generosa del fair use tendría un régimen cultural sustancialmente distinto del que hoy existe sin modificar apenas los factores en juego.
+
+Sin embargo, el panorama legislativo está cambiando a marchas forzadas a resultas del desarrollo y la concentración de la industria de la copia. Más allá de la persecución de las redes peer to peer en internet, se está produciendo un profundo giro legislativo por lo que toca a la propiedad intelectual.[12] Existe una evidente conexión entre los intereses de las multinacionales del copyright y las reformas políticas que se están produciendo en todo el mundo y, muy especialmente, en la Unión Europea. Las leyes de propiedad intelectual se están transformando en un sistema de protección de la inversión extrañamente arcaico en el que la propiedad misma se concibe como una forma de remuneración del difusor. Una de las más peligrosas consecuencias de este desplazamiento del derecho moral del autor como núcleo normativo del copyright es que (de forma muy posmoderna) la creación de formas originales deja de ser condición indispensable del reconocimiento de la propiedad intelectual y la propia materialidad se muestra como apropiable. Esto resulta particularmente perspicuo en la legislación sui generis sobre bases de datos, pero tiene connotaciones mucho más amplias que alcanzan asuntos como las patentes biológicas.[13] Por último, se están produciendo restricciones de los sistemas de excepciones que protegían el interés público de la mercantilización de la cultura.
+
+Por todo esto, situar el debate actual sobre la propiedad intelectual en el plano del derecho de autor tradicional es una maniobra ideológica. Desde el punto de vista ilustrado buena parte del comercio intelectual contemporáneo podría ser considerado simplemente ilegal. Creo que esta transformación supone la sanción legal definitiva de un régimen de expropiación estructural de un importantísimo ámbito de nuestra vida pública, un régimen que se lleva gestando desde hace décadas a través de un proceso de concentración de los medios de comunicación de masas.
+
+
+
+OLIGOPOLIO Y OLIGARQUÍA
+
+Me parece llamativo cuán a menudo las defensas de un régimen de propiedad intelectual más respetuoso con el ámbito público se limitan a tratar formas artísticas y culturales de vanguardia. Es cierto que en los últimos años algunos artistas se han enfrentado a limitaciones en su trabajo a causa del copyright,[14] pero se trata de un asunto tradicional que guarda relación con lo difícil que resulta establecer los límites del plagio y la originalidad.[15]
+
+Este culteranismo resulta particularmente curioso si observamos dichas prácticas desde el punto de vista que, con enorme valentía, propone Eric Hobsbawm al señalar la patente ineficacia política del arte contemporáneo.[16] Por supuesto, el caso de las artes plásticas es particularmente sangrante dada la obsesión de sus autores por un imposible activismo artístico político (de preferencia posmoderno), pero el argumento es perfectamente extensible a la literatura o la música culta. Evidentemente, la única conclusión que cabe sacar de esa esterilidad política del arte actual es que no es arte en ningún sentido razonable. La posibilidad (no la necesidad, claro) de resultar políticamente eficaz es un buen indicador de la diferencia entre el arte y la decoración de interiores, entre la literatura y la prosa comercial, esto es, de la existencia de una estructura retórica significativa cuya convencionalidad queda difuminada por su capacidad para transformar las vidas de sus partícipes. Por eso no es exagerado decir que la literatura, las artes plásticas, la música y el cine cultos han pasado a ser actividades privadas que poco tienen que ver con ese universo que a duras penas designamos con la palabra cultura. Para comprender esta transformación basta comparar esas prácticas con la música popular contemporánea. La forma en que millones de personas se sienten incumbidas por la música, el modo en que afecta su modo de habitar el mundo, nos recuerda la forma en que antes se miraba un cuadro o se leía una novela. De hecho, no es raro que la música juegue un papel decisivo en la educación política de muchos jóvenes. Por eso, resultan particularmente irritantes los intentos de elevar la música popular a los altares de la gran cultura. Más bien deberíamos preguntarnos qué clase de mundo es este en el que la más sofisticada expresión artística digna de tal nombre es un concierto de rock.
+
+Esto viene a cuento porque creo que a menudo nos limitamos a denunciar la evidente estafa que caracteriza al mercado cultural contemporáneo, sin señalar los peores efectos de la capitalización de la industria del copyright. En las discusiones clásicas sobre el dominio público se daba por hecho que no había usura en los intercambios, que las mercancías culturales se vendían a su valor y aun así se planteaban los perjuicios para la esfera pública de ese mercadeo. Y precisamente quienes intentan hoy recuperar dicho debate yerran completamente su objetivo al identificar ese common expropiado con alguna tradición literaria o artística. Dentro del capitalismo del copyright uno puede seguir leyendo a Musil o escuchando a Satie (precisamente porque han pasado al ámbito privado), lo que no se puede hacer es leer un periódico o ver la televisión sin escuchar una sarta de mentiras completamente absurdas. Es por eso que creo que el auténtico lugar de expresión estética de un mundo tan grotescamente estetizado como el nuestro es la prensa. Sé que resulta extraño pensar que en vez de Virgilio tenemos la CNN pero es la única conclusión que, al menos, hace justicia a Virgilio. Del mismo modo, la única forma de entender tanto a Goya como al Equipo Crónica es compararlos con algún tipo de contrainformación sobre la España del XIX y de la transición respectivamente y no, desde luego, con las ingentes muestras de manierismo pequeño burgués que se conservan en la Tate Modern.
+
+En realidad, no es crucial para mi argumentación la tesis sobre el estatuto privado del arte contemporáneo o su pasado público. Lo único importante es que se reconozca que la prensa actual dispone de una considerable eficacia política, al margen de si el arte la ha tenido alguna vez o no. Cuando hablo de “prensa” no me refiero a las crónicas de sucesos sino al hecho de que literalmente resulta difícil discernir esas crónicas de un abigarrado conjunto de acontecimientos deportivos, tertulias radiofónicas y películas de Hollywood con los que nos sentimos políticamente concernidos (por supuesto, el rechazo visceral es una forma de vínculo como cualquier otra).
+
+Pues bien, la industria del copyright —toda ella, desde el mercado del libro hasta las patentes biológicas— ha propiciado una concentración mediática clave para entender las estructuras de poder político en el mundo actual. El derecho de autor es el instrumento legal que ha permitido a algunos medios de comunicación crecer desmesuradamente, fagocitando a sus competidores y anulando de paso la presencia pública de las alternativas políticas a la dictadura de los intereses capitalistas. Cuando se discute sobre copyright no hay que olvidar que actualmente en España hay, tirando por lo alto, dos únicas plataformas mediáticas (ampliamente participadas por multinacionales) que controlan la totalidad del mercado de la información. Habría sido imposible llegar a esta situación si la industria mediática no ofreciera unas plusvalías ridículamente elevadas merced a una legislación del copyright que protege los privilegios de las multinacionales frente a los intereses —económicos, pero también culturales y políticos— de los usuarios. Más aún, este oligopolio mediático ha transformado las relaciones laborales en los medios de comunicación condicionando la calidad de la información y propiciando considerables dosis de (auto)censura.[17] Y esto ocurre en un mundo en el que han desaparecido los antiguos círculos en los que se conformaba la identidad política: los amigos, el sindicato o la familia, así como no pocos colectivos y organizaciones políticas, se han alejado también de una esfera pública en la que sólo la prensa ejerce ya alguna influencia. Uno puede mantener con coherencia —aunque poco convincentemente— que los beneficios derivados de la comercialización cultural son mayores que los perjuicios que supone para el dominio público; puede hacerlo porque desgraciadamente los antiguos argumentos que alertaban sobre el peligro de mercantilizar la cultura han pasado a mejor vida al igual que las formas culturales que trataban de defender. Lo que nadie podría negar son los fascinantes efectos que el crecimiento de la industria del copyright y su proceso de concentración han obrado sobre la prensa, esto es, sobre un ámbito crucial en la formación política de las masas. Si cabe calificar de auténtica expropiación esa concentración, es porque la prensa es un elemento clave en la consolidación de un panorama político en el que está virtualmente excluida cualquier alternativa que no acepte como condición previa el sometimiento a una estructura de injusticia inaceptable. El capitalismo del copyright no sólo nos está robando un montón de dinero con cada producto que nos vende sino que, sobre todo, se ha apropiado del único ámbito discursivo cuya eficacia política está fuera de toda duda. Así pues, el peor efecto del sistema de copyright —un efecto al que difícilmente podemos escapar a través de iniciativas tan encomiables como la del copyleft— es que propicia el monopolio de la esfera pública por parte de los grupos de poder económico y político. No creo que sea muy difícil de entender cómo la tendencia a la concentración —una característica crucial de la reproducción ampliada del capital— favorece la complicidad entre el poder político y la prensa. Como respuesta a las posibles objeciones de los fanáticos del individualismo metodológico me gustaría señalar que esta no es tanto una tesis funcionalista como una mera constatación empírica. Resulta relativamente sencillo establecer los mecanismos concretos de conexión entre poder político, poder mediático y poder financiero. A modo de ejemplo y sin entrar en el terreno de los intereses materiales, resulta revelador que, en España, el consejero delegado de Antena 3, el ex presidente de Telefónica (uno de los grupos propietarios de Antena 3), el consejero delegado de PRISA y el presidente del gobierno coincidieran en las aulas de un famoso colegio madrileño.
+
+Hasta donde yo consigo entenderlo, resulta difícil pensar en una práctica cultural antagonista que no tome como punto de partida una profunda conciencia de esta relación entre el desarrollo económico de la industria de la copia y la formación de plataformas mediáticas que hacen posible la manipulación ideológica a gran escala. El análisis del modo en que la mercantilización de la propiedad intelectual fomenta la consolidación de cauces informativos sesgados en beneficio de los intereses del capital constituye un buen antídoto, tanto contra las reflexiones sobre los efectos del copyright en términos únicamente discursivos, como contra el espíritu endogámico (por no decir onanista) que preside buena parte de las reflexiones de la izquierda cultural. Por raro que parezca, el único consejo sensato que hoy podría darle Rilke a un adolescente sería que se dedicara a la contrainformación en internet o en una radio libre y dejara la composición de elegías para sus ratos de ocio.
+
+
+
+
+Se otorga permiso para copiar y distribuir este documento completo en cualquier medio si se hace de forma literal y se mantiene esta nota. (Publicado originalmente en la revista Archipiélago, número 55, marzo de 2003).
+
+CÉSAR RENDUELES es doctor en filosofía y profesor asociado de sociología en la Universidad Carlos III de Madrid. Experto y colaborador de la Wikipedia, crítico musical y estudioso de la ciencia ficción, es autor de Los límites de las ciencias sociales (2006) y de varios libros colectivos, entre ellos Arte, ideología y capitalismo (2008), en compañía de Slavoj Zizek y Jorge Alemán. Colabora activamente en revistas especializadas en filosofía y crítica.
+
+
+
+
+
+EL FUTURO DIGITAL
+
+Y EL PASADO ANALÓGICO
+
+
+
+
+KEMBREW MCLEOD
+
+
+
+
+
+Ni hablar: la ley es ciega y muda. No fue sino hasta fines de 2003 cuando las personas ciegas pudieron escuchar legalmente ciertos libros electrónicos (e-books) sin el permiso del dueño del copyright. Por motivos relacionados con una protección excesiva del contenido, no era extraño que los editores inhabilitaran la función de síntesis de voz —encargada de la “lectura en voz alta”— en las computadoras que almacenaban e-books. Las compañías de software tenían demasiado miedo de abrir dicha cerradura digital —sin importar lo fácil que fuera, o cuánto involucrara al sentido común— porque suponía una violación a la Ley de Copyright del Milenio Digital (Digital Millenium Copyright Act, DMCA). Se sobrecogieron, entre otras cosas, ante el arresto de Dmitry Sklyarov, programador de computadoras ruso que fue enviado a prisión con cargos por infringir la DMCA. Su empleador desarrolló un software que quebrantaba las restrictivas normas de un editor, como las siguientes que aparecen en la nota del copyright de la edición electrónica de Alicia en el país de las maravillas, elaborada por Adobe:
+
+COPIAR Ningún fragmento del libro puede ser copiado en el portapapeles.
+
+IMPRIMIR Queda prohibido imprimir este libro.
+
+PRESTAR Este libro no puede ser prestado o cedido a terceros.
+
+CEDER Este libro no puede ser cedido a terceros.
+
+LEER EN VOZ ALTA Este libro no puede ser leído en voz alta.
+
+
+
+Sólo tras las intensas presiones de la Fundación Americana para los Ciegos, el bibliotecario del Congreso convino una exención del DMCA que legaliza el injurioso crimen de leer e-books en voz alta. El copyright fue originalmente concebido como una forma de difundir el conocimiento y la cultura. Sin embargo, por cerca de cinco años el DMCA tuvo una buena cuota de responsabilidad en impedir el acceso de las personas ciegas a e-books como Alicia en el país de las maravillas. Alicia… y muchos otros e-books son de dominio público, pero las compañías, a partir de convertir obras al formato digital, pueden volver a poseerlas, aun cuando su copyright haya vencido. Al hacerlo, crean nuevos e innovadores modos de erosionar nuestro patrimonio cultural que van más allá de los meros términos de protección del copyright. También tienen la posibilidad de elaborar medidas de protección virtualmente infinitas, en vez de respetar el pacto de equilibrio que constituyó el núcleo del copyright durante dos siglos. Es un signo de los tiempos que los idiotas fanáticos del copyright transformen cualquier cosa en una ocasión para el lucro, controlando de manera inflexible el acceso a su propiedad.
+
+En los viejos tiempos, por ejemplo, podíamos comprar un libro, llevarlo a casa, leerlo, hacer anotaciones en sus páginas, conservarlo por años en nuestra biblioteca, fotocopiar algún capítulo, prestárselo a un amigo o lo que fuera. Este tipo de usos se ampara en lo que los abogados llaman Doctrina de la primera venta, que en esencia establece que cuando adquirimos un bien protegido con copyright podemos revenderlo, dárselo a un amigo y hacer copias personales, entre otras cosas. Desafortunadamente, dicha doctrina se está esfumando con rapidez en el mundo digital. Bajo la égida del DMCA, los proveedores de contenido regulan quién ve su producto, cuánto tiempo será visto, si puede o no copiarse y qué puede hacerse con él. Esta situación reescribe de modo significativo las reglas que han estado en vigor durante años, encaminadas a encontrar un equilibrio justo entre los titulares de copyright y el público.
+
+
+
+ACEPTAR UN FUTURO EN ARRENDAMIENTO
+
+(EN TANTO SE OLVIDA EL PASADO)
+
+Poco después de que Apple introdujera su tienda de iTunes —que vende legalmente archivos de música digital con “cerrojos” que impiden la copia gratuita—, un desarrollador web generó una violenta disputa a partir de un performance en línea. George Hotelling subió una canción —adquirida en la tienda de iTunes— al sitio de subastas eBay, prometiendo donar los fondos recaudados a la Fundación Frontera Electrónica. “Sólo quisiera constatar que si compro algo, ya sea una propiedad física o intelectual, se reconocerá mi derecho de ‘primera venta’”, afirmó Hotelling. Fred von Lohmann, que encabeza el plantel de abogados de la Fundación Frontera Electrónica, agregó: “Esto subraya el hecho de que en la actualidad, cuando compras música digital en línea, quizás obtengas menos por tu dinero que cuando compras un CD en una tienda”. Eventualmente eBay eliminó sin más la canción de Hotelling por violar la prohibición de adquirir bienes y distribuirlos en el ámbito electrónico. En la medida en que Apple nunca tuvo la oportunidad de analizarlo en un debate, el estatus de la doctrina de la primera venta en relación con la descarga legal de música sigue siendo un asunto turbio.
+
+A fin de justificar sus acciones, los dueños de copyright argumentan que sin una rigurosa vigilancia de la filtración digital, no podrían continuar haciendo dinero. Constantemente nos recuerdan que la distribución vía internet y digital es diferente de la que hubo antes. Si bien esto tiene algo de verdad, lo que hacen es sacar de su contexto histórico la situación presente. Siempre que surge una nueva tecnología, las compañías de copyright reaccionan con la misma histeria y de manera hiperbólica. Después de todo, a principios del siglo XX se creyó que ¡el fonógrafo destruiría a la industria musical! Por supuesto, la industria musical debió reorganizarse, pero la música en sí misma no sufrió —y en cambio, la industria creció muchísimo.
+
+“La gente que produce las mejores cosas es la que acoge nuevas tecnologías. Lo observamos históricamente”, dice Brian Zisk, cofundador de la Coalición para el Futuro de la Música. “Los King Oliver’s y ese tipo de personajes que se anticiparon a su tiempo y grabaron su trabajo en discos edificaron lo que vino a continuación”. Los músicos de principios del siglo XX que se negaron a grabar su obra han sido olvidados. “Tal vez pensaron que era legítimo decir: ‘No queremos que otros copien nuestros licks ni nuestras estrofas’ —prosigue Zisk—, pero se trata de lograr que la mayor cantidad posible de personas escuche tu música”. Más tarde se creyó que la radio arruinaría la emergente industria discográfica porque, bueno, si las personas no tienen que pagar por la música que escuchan, ¿por qué habrían de comprar discos? Pronto la respuesta fue obvia: mientras más oportunidades tengan de escuchar ciertas canciones gratis, es más probable que compren el disco (ya se familiarizaron con él). La radio resultó ser un mecanismo de promoción fantástico.
+
+“También se temió que la radio acabara con la música en vivo, porque la gente optaría por quedarse en casa”, relata Steve Albini, que algo sabe sobre la industria musical. En el último cuarto de siglo, Albini produjo o fue ingeniero de sonido de más de mil álbumes urdidos por más de mil artistas —que van de predilecciones relativamente oscuras y decisivas (Nina Nastasia, Man or Astroman?, Low), artistas de nivel medio (los Pixies, P. J. Harvey, Weezer), hasta estrellas multiplatino (Nirvana, Bush, Cheap Trick). “Sucede, en realidad, que cada una de estas innovaciones incrementó la participación del público general en la música”, me cuenta el ingeniero. A continuación, Albini literalmente se acomoda dentro de un overol con un diseño especial, que usa su equipo de ingenieros, y pone manos a la obra en su estudio de audio electrónico, situado en Chicago. El grupo de trabajo parece una cuadrilla súper cool de paladines de la justicia.
+
+“Todo esto fue posible gracias a los avances tecnológicos —comenta— y no a pesar de ellos. La radio hizo que la gente se enfervorizara ante la idea de escuchar bandas en vivo porque ya las había visto en clubes nocturnos y había experimentado esa emoción. A la vez, la popularidad de los clubes nocturnos estalló definitivamente con la radio”. A posteriori, quizá sea demasiado fácil mirar atrás y ridiculizar la estrechez de miras de quienes creyeron que la radio auguraba el fin del negocio musical. Pero no es difícil imaginar por qué se pensó eso: después de todo, era una nueva tecnología, un medio de comunicación inalámbrico que teóricamente reorganizaría a la sociedad —algo similar a lo que hemos oído acerca de internet.
+
+Lawrence Lessig[1], profesor de derecho en Stanford, expone que la controversia alrededor de la televisión por cable presagió la polémica que desataría Napster. En su calidad de nueva tecnología comercial, enfureció a las tres cadenas televisivas: las compañías de cable estaban “robando” su contenido. (Las compañías de cable captaban emisiones a través de las ondas de televisión y las copiaban en su sistema). En los años sesenta, la Comisión Federal de Comunicaciones (FCC) detuvo, mediante presión, el crecimiento del sistema de cable: otro ejemplo de cómo el conflicto del copyright puede frenar el desarrollo de tecnologías mediáticas relevantes. A principios de los setenta, cuando la FCC comenzó a revertir dicho fallo, los dueños del copyright de contenidos televisivos llevaron a las compañías de cable a la corte en dos ocasiones.
+
+Los jueces se pusieron del lado de las compañías de cable y le dejaron al Congreso de Estados Unidos la tarea de llegar a un acuerdo; el Congreso legisló una “licencia libre” (blanket license) obligatoria, similar a la que la radio y los locales de música en vivo adquirieron en agencias de cobro de regalías (como ASCAP). Esta licencia permite a la radio y la televisión transmitir materiales protegidos a cambio de una tarifa reglamentada por el Congreso, y no por los titulares del copyright. Limita los derechos de monopolio de los dueños de copyright, garantizando que no sofocarán a la competencia con precios artificiosamente altos. Bajo el sistema forzoso de licencia libre, los dueños de copyright no pueden negar de modo arbitrario permisos para retransmitir sus programas o favorecer a una compañía en su esquema de precios. De esta forma, la industria del cable pudo prosperar, los consumidores tuvieron más opciones de entretenimiento y los dueños de copyright recibieron una compensación justa.
+
+La licencia libre es un concepto peculiar, relacionado en cierta medida con la ficción legal del “individuo corporativo”. El tema llega hasta sus últimas consecuencias en el universo de los medios y la televisión por cable, y genera importantes preguntas. Antes que nada, ¿quién es el “autor” de un programa de televisión o una película? ¿Los innumerables escritores, el director, los actores, los productores —que ponen el dinero—, los editores, el equipo técnico —indispensable en cualquier producción—, o el canal que emite la obra? En un sentido práctico, es un asunto inextricable que revela las grietas en el liso esmalte con que la industria cultural ha recubierto la idea de “autor”. En su ensayo “¿Qué es un autor?”, Michel Foucault sostiene que “debemos reexaminar el vacío que ha dejado la desaparición del autor; debemos observar atentamente, junto con sus huecos y fallas geológicas, su nueva demarcación”.
+
+En Hollywood, la muerte del autor deja tras de sí la silueta de una víctima de homicidio trazada con gis, representación caricaturizada de una persona. Es un autor de imitación, un individuo corporativo. El estudio de televisión o cinematográfico que financia y produce entretenimiento se vuelve un autor virtual, apropiándose de una obra creada por incontables personas. Cuando las compañías de cable emiten un programa, pagan tarifas reglamentarias a una agencia de cobro independiente que luego redistribuye las ganancias entre los dueños particulares del copyright. Bajo el sistema obligatorio de licencia libre, el producto se convierte en una propiedad simulada: cierta fórmula estadística, basada en parte en datos de Nielsen Ratings, se utiliza para repartir los trozos del pastel, es decir, las regalías. Thomas Streeter, experto en medios de comunicación, apunta que con la licencia libre no hay un intercambio económico de productos protegidos bajo la ley del copyright: es, más bien, como pagar y cobrar impuestos.
+
+Si bien la televisión por cable se parecía a Napster en aspectos importantes, algunos dicen que el carácter descentralizado de internet podía dificultar aún más el funcionamiento de un sistema de licencia similar. Comparativamente, hay menos compañías de cable que usuarios de internet comunicándose peer to peer (red entre iguales, es decir, de un equipo a otro sin la mediación de un servidor), lo cual hace más fácil regular las emisoras de cable. Cuando se trata de lidiar con una compañía inescrupulosa, los dueños de copyright pueden literalmente seguir el dispositivo de cables hasta su fuente y exigir el pago.
+
+No ocurre lo mismo en internet, donde es más difícil rastrear direcciones físicas —aunque no del todo imposible, puesto que existen tecnologías capaces de monitorear intercambios de archivos entre dos personas. Una vez que se asiente el polvo en todos los juicios que la Asociación Americana de la Industria de la Grabación (Recording Industry Association of America, RIAA) lleva a cabo, y concluya tanto altercado legislativo, el acuerdo más factible y razonable en torno al intercambio de información de computadora a computadora, consistirá en añadir una pequeña suma en el recibo de internet de los consumidores. El dinero podría ser redistribuido a partir de un procedimiento similar al que efectúan las emisoras de televisión desde hace décadas.
+
+La llegada de la videocasetera también predijo la controversia suscitada por Napster. Hollywood percibió a la videocasetera nada menos que como a un asesino en masa que apresaría a los estudios cinematográficos como si fueran adolescentes despavoridos en una cinta slasher tipo Halloween. No exagero en lo absoluto. Jack Valenti, director ejecutivo de la Asociación Cinematográfica de Estados Unidos, expuso lo siguiente ante el Congreso, con mucho tacto, en 1982: “Les aseguro que la videocasetera es para el productor cinematográfico y el público estadounidenses lo que el estrangulador de Boston es para una mujer que está sola en casa”. También Valenti había aseverado que gracias a la videocasetera habría “una disminución en el suministro de alta calidad, y material caro, de gran presupuesto, en tanto hoy dudamos seriamente si se recuperará la inversión”.
+
+Con anterioridad, la RCA había desarrollado una versión de la videocasetera, pero cuando se aproximó a los estudios de Hollywood su proyecto fue censurado. Varias compañías, entre ellas Disney, se rebelaron ante la idea de perder el control sobre su trabajo protegido con copyright. Poco importaba que la RCA propusiera una versión mecánica de la actual tecnología de gestión de derechos digitales. El esquema era el siguiente: cuando un videocasete llegaba al final de su recorrido, la cinta se cerraba y sólo podía volver a abrirse si el consumidor pagaba una cuota en el videoclub. Pero el problema no terminaba allí. “¿Cómo pueden saber cuánta gente se sentará a ver la película? —inquirió, perturbado, un ejecutivo de Disney—, ¿qué impedirá que otros se acerquen y la vean gratis?”.
+
+La idea de que la audiencia podía disfrutar y grabar libremente productos de la industria del entretenimiento era muy novedosa —tanto como lo ha sido internet en tiempos recientes—: resulta entendible que los ejecutivos se sintieran amenazados. Sea como fuere, Hollywood careció de visión y erró el tiro por completo. En 1984, los estudios cinematográficos fueron compelidos a transigir después de perder el caso Betamax en la Suprema Corte. Por fortuna, el Tribunal Supremo decretó que el público tenía derecho a grabar y ver películas las veces que quisiera —y con tantas personas en la sala de su casa como quisiera—, para disgusto de los ejecutivos de Disney. Poco comprendía Disney que permitir que millones de niños vieran sus películas una y otra vez dispararía las ventas de playeras, juguetes y otros artículos relacionados.
+
+En tanto las videocaseteras penetraban en el mercado con ímpetu, los ingresos en taquilla crecían sin cesar, y los réditos de los sistemas VHS y DVD se volvieron una máquina de hacer dinero para compañías de entretenimiento que antes temblaban, acobardadas. Los ingresos de taquilla se han mantenido en ascenso desde los años ochenta, y en 2002 las ganancias de la industria del video sumaron un total de 11.9 mil millones de dólares, cifra que supera los 4.2 mil millones por venta de boletos en los cines. También en 2002, Jack Valenti dijo lo siguiente acerca de la descarga de películas: “Queda claro —y de manera alarmante, debo añadir— que estamos ante la posibilidad de un Armagedón”. No se refería a la película de Ben Affleck; comenzaba a asemejarse más y más a Chicken Little cuando se desquició creyendo que el cielo se le caía encima.
+
+A principios de los noventa, la Asociación de la Industria de Grabación de Estados Unidos colocó los reproductores de cintas digitales de audio (Digital AudioTape, DAT) frente al pelotón de fusilamiento. Echando mano de litigios, legislación y tácticas regulatorias, la RIAA obstruyó una y otra vez la introducción de las DAT en Estados Unidos, y eventualmente aniquiló el mercado potencial de esta nueva tecnología. Al final de la década entabló una demanda para impedir que los reproductores portátiles de mp3 se vendieran en el país (y esta vez perdió el juicio). Más tarde, Hollywood acometió contra los reproductores personales de video que, como TiVo, ofrecen la posibilidad de grabar la programación televisiva en formato digital usando palabras clave y menús, algo que las cadenas y los estudios de televisión han intentado vedar. Pese a que el juicio que entabló la Metro Goldwyn Meyer (MGM) en 2002 tuvo un blanco preciso —SonicBlue, que produce la gama más sofisticada de reproductores personales de video—, en realidad apuntaba a todas las compañías de este ramo. Los abogados de la MGM arguyeron que sus funciones de búsqueda de palabras clave “provocaría un daño sustancial en el mercado de DVD pregrabado, videocasete y otras copias de episodios televisivos y películas”.
+
+No dudo que muchos ejecutivos del entretenimiento estén sinceramente asustados. Los artistas no sienten menos preocupación que las corporaciones: temen que las nuevas tecnologías de registro, reproducción y distribución difundan su obra hasta el infinito y de manera gratuita, y les quiten su medio de sustento. Hasta el momento, existe evidencia de que ese miedo es infundado —y se presume que seguirá siéndolo en el futuro. De hecho, los cambios recientes tienen el potencial de divulgar una selección artística más diversa y democrática de lo que permitían las industrias culturales de antaño. No debemos matar el potencial creativo de las nuevas tecnologías antes de darles la oportunidad de ampliar positivamente los recursos para producir, distribuir y consumir cultura.
+
+
+
+LOS ARCHIVOS COMPARTIDOS Y LOS CDS QUEMADOS
+
+ESTÁN MATANDO A LAS GRABACIONES CASERAS
+
+A principios de los años ochenta, cuando la industria musical se desplomaba tras un paroxismo de cultura disco y cocaína —durante una recesión, por cierto—, las compañías discográficas culpaban a los reproductores de casetes, y a la gente que los usaba, de abatir sus ventas. Incluso inventaron un eslogan listo para imprimirse en calcomanías y adornar automóviles: “Las grabaciones caseras están matando a la música”. Los ejecutivos de las discográficas recelaban de la conveniencia de los casetes: suponían que una generación entera crecería asumiendo que no tenía que pagar por la música. “Nunca antes” —frase que irrumpe con frecuencia en este tipo de debates— tan tos melómanos pudieron copiar música por su cuenta. Entonces, ante la insistencia de la RIAA, el Congreso echó a andar un estudio sobre las grabaciones caseras. La Oficina de Evaluación Tecnológica (Office of Technology Assessment, OTA) hizo público un reporte que contradecía muchos de los alegatos de las discográficas. El reporte determinaba, entre otras cosas, que los aficionados a las grabaciones caseras compraban más discos que los no involucrados en dicha actividad. Y a la inversa: la mayoría de la gente que no confeccionaba grabaciones caseras tampoco escuchaba o adquiría música pregrabada.
+
+El único estudio emprendido por una discográfica, Warner Brothers Records, también concluyó que hay una correlación entre cuánto copias y cuánto compras. “Esta inferencia indica que, aunque el hábito de copiar se relaciona directamente con el de comprar, el primero debe ser visto como una expresión independiente de un compromiso más general y profundo con la música —declaró el reporte de Warner—; de hecho, los datos señalan con claridad que cuanto más intenso es dicho compromiso, mayor es la disposición tanto a grabar como a adquirir música pregrabada. Los consumidores revelan una variedad de comportamientos que expresa este compromiso e interés hacia la música”. El reporte del Congreso también halló en las grabaciones caseras un efecto “estimulante” que impulsa las ventas; sin embargo, sostuvo que las discográficas deben encontrar el modo de hacer que los consumidores inviertan todo su dinero en discos y nada en casetes vírgenes.
+
+Intercambiar música es un acto social. Compartir canciones con gente afín nos expone a música desconocida y aumenta las posibilidades de que alguien compre un nuevo disco. Esto ha sido corroborado por mi propia experiencia, la experiencia de otros y los reportes del Congreso y de Warner. Tengo fama de urdir innumerables compilaciones para mis amigos. Y sé que mis selecciones han generado ventas de álbumes. Por ejemplo, le regalé a mi amiga Megan Levad un CD mezclado que incluía una canción, “Iowa City”, sobre nuestra pequeña ciudad universitaria. Eleni Mandell canta esa linda melodía, similar a un country waltz, cuyo estribillo dice: “Iowa, Iowa, skies are blue / Not so Chicago, never New York…” (“Iowa, Iowa, el cielo es azul / No tanto en Chicago, nunca en Nueva York”). Tras escucharla, Megan le compró el CD de Mandell, a modo de tarjeta postal, a alguien que acababa de mudarse de nuestra querida ciudad del Medio Oeste. Cuando en 2004 Mandell visitó Iowa como parte de una gira, le conté la historia con cierto nerviosismo, sin saber si mi disco pirata la ofendería. La compositora, cuya base de operaciones está en Los Ángeles, simplemente respondió: “Cool”.
+
+El artista más conocido que ha exportado Iowa es Greg Brown, músico folk, una de las ásperas joyas de la corona de la escena rockera que echó raíces en la ciudad. Otro que está en la escala superior de la jerarquía local es David Zollo, de 35 años, pianista, cantante, líder de una banda, dueño de su propio sello discográfico y, recientemente, padre de un niño llamado Rocco (sí, el nombre es Rocco Zollo). Un par de semanas antes de que naciera Rocco, estuve en la casa de Dave y charlamos sobre la vida, los hijos y la música. La conversación nos llevó al tema de la ley del copyright. Le confesé que obviamente no tenía problemas en hacer CDs mezclados con la música de otros, pero me sentía incómodo cuando se trataba de su obra. Se rió y dijo que apreciaba mi sensibilidad. “Pero yo siempre he hecho antologías en casetes. La idea es que uno se involucre en el arte y de algún modo se transforme en artista. Y cuando alguien está realmente involucrado, copiar música es parte de la experiencia”, dijo. Una de las formas en que cortejó a su esposa, Beth, fue creando cintas para ella. Reunir música en compilaciones personales ha sido un elemento clave del ritual de apareamiento desde que los geeks melómanos descubrieron el botón para grabar en sus aparatos de sonido.
+
+“El acto de hacer una cinta mezclada supone un compromiso creativo”, insiste Dave Zollo. “Puedo escuchar una grabación de Chuck Berry y escribir un tema: me involucro con la música que ejerce una influencia sobre mí. Reinterpreto esa música, saco un disco y alguien copia una de mis canciones en un casete. Y luego me lo cuentan”. Dave no hace una distinción inequívoca entre las actividades que realizan los aficionados a la música y su propio proceso creativo —en parte porque se dedica a ambas cosas. “Una vez que mi música forma parte de una cinta mezclada, comienza a vivir. Ha sido colocada en un contexto diferente, y su importancia se exacerba a partir del repertorio elegido: a Tom Waits le sigue David Zollo. ¡Mierda! ¿Cómo llegué ahí? De pronto, eso valida el trabajo”.
+
+Lee Ranaldo, guitarrista de Sonic Youth, me contó que él y Leah, su esposa, inauguraron la tradición de hacer CDs con “viejos clásicos” para los cumpleaños de sus hijos. “Los niños que vienen a la fiesta reciben un CD. Esperamos que esta música, que no se cataloga como ‘infantil’, los atrape”, escribió en un e-mail. “El año pasado la antología tuvo un eje temático: los colores. Así que incluimos ‘Yellow Submarine’, ‘White Wedding’, ‘99 Red Balloons’, ‘Goodbye Yellow Brick Road’, ‘Black or White’ de Michael Jackson, ‘Purple Rain’, ‘Green River’, etcétera”. Será difícil crear este tipo de yuxtaposiciones musicales si la industria discográfica adopta medidas aún más duras para proteger la propiedad de archivos digitales, ya sea en línea o en CD. Si se sale con la suya, dejaremos de poseer la música, como cuando comprábamos discos y casetes y atesorábamos colecciones en casa.
+
+La introducción en el mercado de CDs que no se pueden copiar ejemplifica cómo los dueños de la propiedad intelectual están dispuestos a proteger sus productos a cualquier costo, aun cuando eso signifique alienar a los consumidores. Es la pretensión de EMI. La empresa pertenece a la principal red discográfica, que controla la distribución del 80% de la música que se vende en el mundo (y está conformada, en la actualidad, por sólo cuatro compañías). La respuesta de EMI a Holger Turck —un consumidor que en 2002 le escribió una carta de reclamo tras haber comprado un CD con protección anticopia y sin una etiqueta que lo especificara— evidencia la arrogancia (combinada con miedo) de una corporación que se siente amenazada:
+
+Aun cuando no tenga estudios formales en economía, cualquiera que lea esto debe entender que la industria musical no podrá seguir existiendo si esta tendencia continúa. La copia generalizada de material de audio pregrabado a través de la quema de CDs sólo puede contrarrestarse de una manera: a saber, la protección anticopia. Mucho nos tememos, no obstante, que estos hechos no le interesarán en lo absoluto, en la medida en que anuncian el fin de la música gratuita, algo que sin duda no le agradará… En caso de que tenga pensado objetar futuras medidas de protección anticopia, le aseguramos que sólo es cuestión de meses para que prácticamente cada CD lanzado en el mundo cuente con este candado. Haremos lo que esté en nuestro poder para tal fin, le guste o no.
+
+Atentamente,
+
+Su equipo de EMI
+
+
+
+
+
+De conformidad con la condescendiente amenaza de EMI, que ignoró el hecho de que Turck había comprado el álbum, en 2003 los principales sellos comenzaron a lanzar CDs con protección anticopia. Algunos cientos de millones de estos CDs ya se habían introducido en Europa, pero fue la primera vez que esta tecnología se utilizó en Estados Unidos, aunque en una escala limitada. En 2004, el número de CDs con protección anticopia (el término de la industria es “gestión de derechos digitales”) se incrementó significativamente en el país. Fue difícil, o imposible, descargar ciertos CDs en un iPod.
+
+EMI y otras compañías tienden cada vez más a tratar a sus propios clientes como criminales. En 2003, la RIAA contrató al antiguo director del Buró de Alcohol, Tabaco y Armas de Fuego a fin de que liderara sus esfuerzos contra la piratería. Al año siguiente, la RIAA logró la aprobación del FBI para incluir el logo de la agencia del orden público en los paquetes de sus productos. Esto irritó a varios artistas de las principales disqueras: no tuvieron otra alternativa que aceptar que la leyenda “Advertencia del FBI contra la piratería” (“FBI Anti-Piracy Warning”) dominara el extremo inferior del diseño de arte de su CD. “Sí, lo del FBI me parece espeluznante —dice Lee Ranaldo—, es extremadamente estúpido”. El álbum de Sonic Youth de 2004, Sonic Nurse, ostentó la inscripción de rigor desde su primera semana en el mercado. “Nuestro lanzamiento coincidió con la agenda de esta nueva invasión estilística —me cuenta Thurston Moore— todos estaban muy ENCABRONADOS —entiendo por qué— pero, de alguna forma, era tan absurdo que me gustaba”.
+
+En contra del espíritu primigenio del copyright, que se originó como un acuerdo cuyo objetivo era hallar un equilibrio entre los intereses tanto del creador como del público, las tecnologías destinadas a evitar la copia se inclinan sólo hacia un lado de la balanza. “Hollywood y la industria discográfica gozan de todos los privilegios del monopolio creado por el gobierno y no asumen ninguna responsabilidad, como garantizar el principio del uso justo y contribuir con el dominio público”, escribe Robin Gross, especialista en la propiedad intelectual y abogado de la Fundación Frontera Electrónica. Cuando la RIAA y la Asociación Cinematográfica de Estados Unidos (Motion Picture Association of America, MPAA) argumentan que el hurto se ha incrementado desde que surgieron las tecnologías para copiar material, están concibiendo el copyright en términos relativamente nuevos.
+
+Hasta los años setenta, los informes legales, las decisiones judiciales, los artículos y libros sobre leyes entendieron el copyright, en su mayoría, como un punto medio entre el público y el creador. El designio no era otorgarle un control total al autor, puesto que la ley estaba diseñada para dispensar una protección permeable —y no una barrera hermética. Hoy, sin embargo, cualquier actividad que no se subordine a las reglas impuestas por los dueños de copyright se considera un atraco: un cambio significativo en la forma de entender el papel de la propiedad intelectual.
+
+
+
+
+Este fragmento forma parte del libro Freedom of Expression®: Overzealous Copyright Bozos and Other Enemies of Creativity, Doubleday, 2005. Traducción de Ana Marimón.
+
+KEMBREW MCLEOD es un documentalista independiente y académico de la Universidad de Iowa, cuyo trabajo se especializa en música popular y en el impacto cultural de las leyes de propiedad intelectual. Además de Freedom of Expression® ha publicado sobre estos temas el libro Owning Culture: Authorship, Ownership and Intellectual Property Law, Lang, 2001. En 1997, en una suerte de performance de denuncia, registró la frase “Libertad de expresión” como una marca registrada en Estados Unidos. Algunos de sus artículos sobre música han aparecido en Rolling Stone, Mojo, Spin y The Village Voice, mientras que su documental Money for Nothing: Behind the Business of Pop Music (2000), obtuvo en 2002 el premio Rosa Luxemburgo del Festival de Cine y Video de Nueva Inglaterra. (kembrew.com)
+
+
+
+
+
+GLOSARIO BÁSICO
+
+
+Código abierto
+
+Modelo de programación que permite la modificación, mejora y copia por parte de los usuarios. El espíritu de mantener el código abierto en el software es que gracias a que los usuarios lo adaptan a sus necesidades, corrigen sus errores con rapidez y lo desarrollan colectivamente, se perfecciona y evoluciona para beneficio de todos.
+
+Se contrapone al software privativo o cerrado, en el que prevalece una estructura vertical y se restringen al mínimo los derechos de los usuarios.
+
+Copia ilegal
+
+La accesibilidad a los medios de reproducción propia de la revolución tecnológica trajo consigo un sacudimiento en las legislaciones sobre derecho de autor y copyright, que en muchos casos han buscado extender las restricciones a la copia de obras protegidas. En general, se considera que una persona tiene derecho a realizar copias privadas sin autorización del titular de los derechos de autor, siempre y cuando carezca de ánimo de lucro.
+
+En algunos países, la Doctrina de la primera venta establece que, una vez vendido un ejemplar de cierta obra, el poseedor de los derechos de autor no tiene derecho a controlar las ventas ulteriores de ese ejemplar (por ejemplo, en tiendas de segunda mano), ni tampoco las copias privadas que se generen a partir de ella o su disfrute colectivo. En los Estados Unidos, con la introducción de las restricciones conocidas como DRM (Gestión de Derechos Digitales), ha comenzado un movimiento para eliminar este derecho, limitando el uso y la copia de obras en formato digital.
+
+Copyleft
+
+El copyleft nació como un método para convertir un programa en software libre y exigir que todas las versiones del mismo, modificadas o ampliadas, también lo sean. El concepto deriva de un juego de palabras intraducible del término copyright (donde el derecho de copia se transforma en izquierda de copia) y formó parte del movimiento de Software Libre promovido por el programador y activista Richard Stallman. A partir de allí el copyleft se ha ido adaptando a diversos medios, como la literatura, la fotografía o la música.
+
+Para que una obra lleve copyleft primero es necesario que se reserven los derechos, así se evita que algún advenedizo lo haga; luego se añade una leyenda sobre los términos de distribución, un instrumento legal que otorga a todo el mundo el derecho a utilizarla, modificarla y redistribuirla. De esta manera tanto la obra como las libertades asociadas a su disfrute se convierten en elementos legalmente inseparables.[1]
+
+Para decirlo en pocas palabras, bajo una licencia copyleft el autor conserva los derechos de su obra y decide cómo difundirla. Al reproducir un texto con licencia copyleft, por ejemplo, se deben respetar los deseos del autor siempre que sean legítimos, es decir, siempre que a su vez respeten las libertades fundamentales del usuario para ese tipo de textos.
+
+Copyright
+
+El copyright en la tradición legal sajona —o common law— rige en particular la explotación comercial de las obras y su principal fin es que sus titulares tengan derechos exclusivos para controlar su distribución y reproducción (un control que a veces se confunde con celo excesivo, como en el caso de prohibir el préstamo público en bibliotecas).
+
+El copyright se originó en Inglaterra, a mediados del siglo XVI, cuando el Estado brindó en exclusiva a una casta profesional de editores (los stationers) el “derecho de copia” de toda impresión, con lo cual no sólo les concedía el monopolio de las imprentas, sino también la propiedad de las obras publicadas.[2]
+
+Aunque a grandes rasgos el copyright pueda equipararse con el derecho patrimonial de los sistemas de tradición jurídica latina —o de derecho continental—, hay un matiz sutil, pues en esta corriente las obras se consideran la expresión individual de una persona (natural), y no se extiende a entidades sociales y corporaciones, que en todo caso sólo pueden fungir como causahabientes.
+
+El sesgo restrictivo que en especial las agrupaciones y consorcios suelen imprimir al copyright, al entenderlo como un obstáculo a la libre reproducción y circulación de las obras, ha llevado a que en las últimas décadas surgieran toda clase de movimientos críticos para contrarrestarlo y en algunos casos ponerlo de cabeza, bajo la premisa de que dichas restricciones no siempre son legítimas y con frecuencia entran en conflicto con las libertades y derechos de los usuarios.
+
+Creador
+
+El término “creador”, aplicado a los autores, los equipara implícitamente a una deidad. Suelen utilizarlo los editores para elevar la estatura moral de los autores por encima del ciudadano medio, justificando así un aumento del poder del copyright que dichos editores ejercen en nombre de los autores. Es preferible que se diga “autor” en su lugar. No obstante, en muchas ocasiones lo que en verdad se quiere decir es “titular del copyright”.[3]
+
+Creative Commons
+
+Proyecto colectivo de carácter legal, sin fines de lucro, enfocado en bienes culturales comunes, que desarrolla de manera gratuita modelos de licencias para autores interesados en difundir su obra, sin perder los derechos sobre ésta, bajo dos tipos de licencias: a) libres y b) con restricciones para los usuarios.
+
+Este proyecto trabaja de acuerdo a la legislación de cada país; recientemente se han desarrollado licencias para México.
+
+Derechos de autor
+
+En 1777 el dramaturgo Pierre-Augustin de Beaumarchais fundó en Francia la primera asociación que pretendía reconocer el poder jurídico de un autor sobre sus creaciones, y a partir de entonces, en la mayoría de los países que siguen el derecho continental, los códigos civiles respectivos establecen, para todo autor intelectual, derechos morales y patrimoniales sobre sus obras, independientemente del género al que pertenezcan y de si se hayan publicado o no. Mientras que el derecho moral es perpetuo, inalienable, imprescriptible e irrenunciable, el derecho patrimonial, relacionado con la explotación económica de la obra, es temporal, renunciable y transmisible, y su fin principal es garantizar que el autor o sus herederos reciban algún beneficio por la comercialización de sus creaciones.[4]
+
+Gracias al Convenio de Berna (tratado internacional cuya última enmienda data de 1979), cada país participante debe otorgar a una obra extranjera, sin ninguna formalidad de por medio, la misma protección que concede a las obras de sus propios ciudadanos.
+
+Dominio público
+
+Una vez que los derechos patrimoniales han expirado, la obra puede ser explotada libremente por quienquiera, siempre y cuando respete los derechos morales del autor que la creó. La vigencia del derecho patrimonial depende de la legislación de cada país, y generalmente comprende toda la vida del autor hasta cierto lapso después de su muerte.
+
+De un tiempo a esta parte la vigencia del derecho patrimonial se ha ampliado cada vez más, y en México, por ejemplo, según decreto de 2003, alcanza los cien años post mortem auctoris, uno de los plazos más largos del mundo.
+
+Hurto o robo
+
+Los apologistas del copyright emplean con frecuencia palabras como “robo” y “hurto” para referirse a la violación del copyright. Al mismo tiempo, piden que tratemos al sistema legal como si fuera una autoridad ética: si copiar está prohibido, debe ser malo.
+
+En este contexto es pertinente mencionar que el sistema legal de muchos países rechaza la idea de que la violación del copyright sea una forma de robo o hurto. De manera que los apologistas del copyright hacen un llamamiento a la autoridad, mientras que veladamente tergiversan lo que la propia autoridad dice.[5]
+
+Peer to peer (P2P)
+
+Red informática entre iguales que se vale de nodos variables e intercambiables para prescindir de servidores fijos o terminales, y que permite compartir archivos y software de modo eficaz, aprovechando al máximo la banda ancha de internet.
+
+A fin de garantizar la disponibilidad de archivos compartidos, estas redes se rigen por la ética de que “el que más comparta, más privilegios tiene y más acceso dispone de manera más rápida a más contenido”. El caso límite de esta ética lo constituyen los llamados “leechers” o “sanguijuelas”, que se valen de los contenidos disponibles sin aportar nada a cambio, amenazando la estabilidad y riqueza de la red.
+
+Piratería
+
+En el habla común, la piratería se equipara con robar o destruir los bienes ajenos. “Los editores frecuentemente se refieren a la copia ilegal como piratería. De esta forma, expresan de manera implícita que hacer copias ilegales es éticamente equiparable a atacar barcos en alta mar, secuestrar y asesinar a la gente que viaja en ellos. Si uno no cree que la copia ilegal sea como secuestrar y asesinar, quizá prefiera evitar la palabra “piratería” para describirla. Expresiones neutrales como “copia prohibida” o “copia no autorizada” pueden utilizarse perfectamente en su lugar. Incluso algunos de nosotros podríamos preferir utilizar una expresión positiva como compartir información con tu vecino”.[6]
+
+Las copias privadas, las descargas en internet y aun los préstamos públicos de libros no se oponen a los derechos de autor en cuanto contribuyen a la difusión de las obras (y según se ha demostrado, también a su venta) y no se guían por el fin de lucro. La piratería gestionada por el crimen organizado, en cambio, es la contraparte extralegal de los excesos en la explotación de los derechos de autor por parte de los consorcios y corporaciones que hacen que el acceso a las obras protegidas sea artificialmente oneroso y para muchos prohibitivo.
+
+Plagio
+
+Copiar una obra ajena haciéndola pasar como propia. En sentido amplio, se considera plagio cuando hay semejanzas “sustanciales” entre una obra y otra considerada original, lo cual ha generado equívocos con prácticas creativas como el collage, la apropiación, el cut-up y el sampling. Sin embargo, en la medida que el artista no se declare autor de los materiales empleados, estas prácticas no deberían considerarse plagios ni violaciones a los derecho de autor, puesto que cortar y pegar fragmentos de obras no es lo mismo que copiarlas. Por lo demás, muchas veces estas técnicas creativas parten de la premisa de que el lector o espectador reconocerá el origen de los materiales que utiliza.
+
+Propiedad intelectual
+
+Pese a que la mayoría de las legislaciones del mundo reconoce un derecho de propiedad a los autores o titulares de derechos sobre obras del intelecto humano, el concepto de propiedad intelectual es una generalización tan basta y simplista que termina por ser confusa y a veces perniciosa, no sólo porque equipara la propiedad intelectual con cualquier otra forma de propiedad (por ejemplo, de objetos físicos o extensiones de tierra), sino porque en aras de un núcleo común más bien exiguo entre legislaciones cercanas pero muy distintas, enmascara la disparidad entre los derechos de autor, las patentes y las marcas, cuyas leyes se originaron de forma separada y con intereses diferentes.
+
+A fin de evitar los entuertos, distorsiones y abusos que dicha noción acarrea, algunos autores, entre ellos Stallman[7], proponen que no se utilice en absoluto y que se busque un nuevo nombre para la OMPI (Organización Mundial de la Propiedad Intelectual), fundada en 1967 y formalmente parte de la ONU.
+
+Software libre
+
+El software libre es aquel que respeta las libertades esenciales de los usuarios. Existen cuatro libertades básicas:
+
+Libertad 0: la libertad para ejecutar el programa sea cual sea nuestro propósito.
+
+Libertad 1: la libertad para estudiar el funcionamiento del programa y adaptarlo a tus necesidades —el acceso al código fuente es condición indispensable para esto.
+
+Libertad 2: la libertad para redistribuir copias y ayudar así a tu vecino. (Es una cuestión de libertad, no de precio.)
+
+Libertad 3: la libertad para mejorar el programa y luego publicarlo para el bien de toda la comunidad —el acceso al código fuente es condición indispensable para esto.[8]
+
+
+
+
+
+Notas
+
+
+[1] http://www.wumingfoundation.com/italiano/Giap/giap2_IV.html#copyright/ <<
+
+
+
+[1] P. Gowan, La apuesta por la globalización, Madrid, Akal, 2000, p. 29; véase también D. Harvey, The Limits to Capital, Londres, Verso, 1999, cap. 9.4 y cap. 11. 6. <<
+
+
+
+[2] A. Callinicos ha subrayado con toda la razón lo ridículo que resulta que se atribuya la revolución informática a la iniciativa privada de unos cuantos emprendedores sin recursos trabajando en un cochambroso garaje cuando exigió fastuosas cantidades de dinero en investigación básica procedentes del Estado (A. Callinicos, Contra la tercera vía, Madrid, Crítica, 2002, p. 46). <<
+
+
+
+[3] H. Schwartz, La cultura de la copia. Parecidos sorprendentes, facsímiles insólitos, Madrid, Cátedra, 1998. Aquí aparece, entre otras numerosas extravagancias, un repaso ilustrativo de algunas de estas prácticas. <<
+
+
+
+[4] Se trata de una tesis bastante habitual; por lo que toca a la literatura me gusta la versión que plantea Terry Eagleton en Introducción a la teoría literaria, México, FCE, 1993. <<
+
+
+
+[5] E. L. Einsenstein, The Printing Press as an Agent of Change, Cambridge, CUP, 1979, p. 120-21. Véase también L. Febvre y H. J. Martin, La aparición del libro, México, Utahe, 1962. <<
+
+
+
+[6] D. Saunders, Authorship and Copyright, Nueva York, Routledge, 1992. <<
+
+
+
+[7] Cf. M. Rose, Authors and Owners. The Invention of Copyright, Cambridge, Harvard University Press, 1993, p. 88. <<
+
+
+
+[8] Cf. Ronald V. Bettig, Copyrighting Culture. The political Economy of Intellectual Property, Oxford, Westview Press, 1996, p. 26. <<
+
+
+
+[9] Véase D. Saunders, op. cit., cap. 3. <<
+
+
+
+[10] Las primeras obras de B. Edelman, en especial La práctica ideológica del derecho: elementos para una crítica marxista del derecho (Madrid, Tecnos, 1980), tienen especial interés en este sentido ya que incide en cómo esta arquitectura jurídica del derecho de autor se fue adecuando a los cambios tecnológicos. <<
+
+
+
+[11] Véase C. Colombert, Grandes principios del derecho de autor y los derechos conexos en el mundo, Madrid, UNESCO/CINDOC, 1997, p. 66-82; y P. Sirinelli, “Excepciones y límites al derecho de autor y los derechos conexos” en http://www.wipo.org/spa/meetings/1999/wct_wppt <<
+
+
+
+[12] Véase S. Dussolier, “Derecho de autor y acceso a la información en el ámbito digital” en http://www.centrodearte.com <<
+
+
+
+[13] De nuevo resulta muy interesante leer las críticas de Edelman al giro legislativo que se produce en los años ochenta, por ejemplo en B. Edelman, La propriété littéraire et artistique, París, PUF, 1989. <<
+
+
+
+[14] Véase el artículo de Sven Lütticken, “El arte de robar”, New Left Review, número 13, marzo-abril de 2002. Sobre el modo en que el mercado del arte ha obligado a falsificar los procesos reales de creación artística, véase Ivan Gaskell, “Historia de las imágenes” en P. Burke (ed.), Formas de hacer historia, Madrid, Alianza, 1993. <<
+
+
+
+[15] Cf. A. Lucas, “Le droit d’auteur et l’interdit” en Critique, agosto-septiembre de 2002, p. 592. <<
+
+
+
+[16] E. Hobsbawm, A la zaga. Decadencia y fracaso de las vanguardias del siglo XX, Madrid, Crítica, 1999. <<
+
+
+
+[17] Los escasos estudios que existen sobre precariedad laboral en los medios de comunicación muestran resultados asombrosos. La mayor parte de los medios trabajan cada vez más con colaboradores a destajo que cobran por pieza y que carecen de mecanismos de presión colectiva que les permita algún grado de control sobre su trabajo. <<
+
+
+
+[1] Lawrence Lessig propuso la iniciativa Creative Commons (bienes comunes creativos). En su libro Cultura libre defiende el copyleft como un nuevo paradigma para el desarrollo cultural y científico desde internet. (N. del e.). <<
+
+
+
+[1] Definición de Richard Stallman tomada de “What is Copyleft”, originalmente publicado en Free Software, Free Society: The Selected Essays of Richard M. Stallman. Boston, GNU, 2004. Este libro se puede descargar en español desde la página: www.gnu.org <<
+
+
+
+[2] Wu Ming 1, “Apuntes inéditos sobre copyright y copyleft”. <<
+
+
+
+[3] Richard Stallman, “Words to Avoid”. En: Free Software, Free Society: The Selected Essays of Richard M. Stallman. <<
+
+
+
+[4] Una magnífica guía en esta materia es el libro de José Luis Caballero Leal, Derecho de autor para autores, México, FCE-CERLALC, 2004. <<
+
+
+
+[5] Richard Stallman, op. cit. <<
+
+
+
+[6] Richard Stallman, op. cit. <<
+
+
+
+[7] Richard Stallman, “¿Ha dicho propiedad intelectual?”. Véase http: //www.gnu.org/philosophy/not-ipr.es.html <<
+
+
+
+[8] Richard Stallman, “Free Software Definition”, op. cit. <<
+
+
+
+
+
