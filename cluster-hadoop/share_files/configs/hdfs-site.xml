@@ -1,0 +1,40 @@
+<configuration>
+
+    <property>
+        <name>dfs.replication</name>
+        <value>2</value>
+    </property>
+
+    <property>
+        <name>dfs.block.size</name>
+        <value>16777216</value>
+        <description>The default block size in bytes of data saved to HDFS</description>
+    </property>
+
+
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>/var/lib/hadoop/data</value>
+    </property>
+
+    <property>
+        <name>dfs.datanode.name.dir</name>
+        <value>/var/lib/hadoop/name</value>
+    </property>
+
+    <property>
+        <name>dfs.datanode.checkpoint.dir</name>
+        <value>/var/lib/hadoop/namesecondary</value>
+    </property>
+
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/var/lib/hadoop/tmp</value>
+    </property>
+
+    <property>
+            <name>dfs.permissions</name>
+            <value>false</value>
+    </property>
+
+</configuration>

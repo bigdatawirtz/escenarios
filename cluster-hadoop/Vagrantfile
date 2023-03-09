@@ -1,0 +1,77 @@
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "ubuntu/focal64"
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 4096
+    v.cpus = 2
+  end
+
+  (1..2).each do |i|
+    config.vm.define "hadoop-worker#{i}" do |config|
+      config.vm.network :private_network, ip:"192.168.33.2#{i}"
+      config.vm.hostname = "hadoop-worker#{i}"
+
+      config.vm.provision :shell, path: "scripts/1_download_and_install_hadoop.sh"
+
+      public_key = File.read("share_files/keys/id_rsa.pub")
+      config.vm.provision "shell", inline: <<-SCRIPT
+        echo 'Copying hadoop-master public SSH Keys to the VM'
+        mkdir -p /home/vagrant/.ssh
+        chmod 700 /home/vagrant/.ssh
+        echo '#{public_key}' >> /home/vagrant/.ssh/authorized_keys
+        chmod -R 600 /home/vagrant/.ssh/authorized_keys
+    
+        cp -R /home/vagrant/.ssh /home/hadoop/
+        chown -R hadoop:hadoop /home/hadoop/.ssh
+
+      SCRIPT
+
+      
+      #config.vm.provision :shell, path: "scripts/3_run_worker.sh"
+    end
+  end
+
+
+  config.vm.define "hadoop-master" do |config|
+    config.vm.network :private_network, ip:"192.168.33.11"
+    config.vm.hostname = "hadoop-master"
+    config.vm.provision :shell, path: "scripts/1_download_and_install_hadoop.sh"
+    config.vm.provision :shell, path: "scripts/4_download_and_install_pig.sh"
+
+    config.vm.provision "file", source: "share_files/keys/id_rsa", destination: "/home/vagrant/.ssh/id_rsa"
+    public_key = File.read("share_files/keys/id_rsa.pub")
+    config.vm.provision "shell", inline: <<-SCRIPT
+    chmod 600 /home/vagrant/.ssh/id_rsa
+    echo 'Host localhost' >> /home/vagrant/.ssh/config
+    echo 'StrictHostKeyChecking no' >> /home/vagrant/.ssh/config
+    echo 'UserKnownHostsFile ~/.ssh/known_hosts' >> /home/vagrant/.ssh/config
+    echo 'Host 192.168.*.*' >> /home/vagrant/.ssh/config
+    echo 'StrictHostKeyChecking no' >> /home/vagrant/.ssh/config
+    echo 'UserKnownHostsFile ~/.ssh/known_hosts' >> /home/vagrant/.ssh/config
+    echo 'Host hadoop-worker1' >> /home/vagrant/.ssh/config
+    echo 'StrictHostKeyChecking no' >> /home/vagrant/.ssh/config
+    echo 'UserKnownHostsFile ~/.ssh/known_hosts' >> /home/vagrant/.ssh/config
+    echo 'Host hadoop-worker2' >> /home/vagrant/.ssh/config
+    echo 'StrictHostKeyChecking no' >> /home/vagrant/.ssh/config
+    echo 'UserKnownHostsFile ~/.ssh/known_hosts' >> /home/vagrant/.ssh/config
+    chmod -R 600 /home/vagrant/.ssh/config
+    chown vagrant:vagrant /home/vagrant/.ssh/config
+
+    echo 'Copying hadoop-master public SSH Keys to the VM'
+    echo '#{public_key}' >> /home/vagrant/.ssh/authorized_keys
+    chmod -R 600 /home/vagrant/.ssh/authorized_keys
+
+    cp -R /home/vagrant/.ssh /home/hadoop/
+    chown -R hadoop:hadoop /home/hadoop/.ssh
+
+    SCRIPT
+
+    config.vm.provision :shell, path: "scripts/2_run_master.sh"
+
+  end
+
+
+
+
+end
