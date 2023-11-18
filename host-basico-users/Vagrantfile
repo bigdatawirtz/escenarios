@@ -1,0 +1,36 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+    # Identifica a imaxe/box de vagrant que vas utilizar: "ubuntu/focal64"
+    config.vm.box = "ubuntu/focal64"
+
+    config.vm.boot_timeout = 1200
+  
+    # Crea unha rede privada, que permite acceso host-only á máquina
+    config.vm.network "private_network", ip: "192.168.33.10"
+ 
+    # Indica o nome da máquina virtual
+    config.vm.provider :virtualbox do |vb|
+      vb.name = "host-basico-users"
+    end
+ 
+    
+    config.vm.provision "shell", inline: <<-SHELL
+    
+    sed -i "s/PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config    
+    systemctl restart sshd.service
+  
+    #chmod a+x /vagrant/scripts/create_users.sh
+    #/vagrant/scripts/create_users.sh
+
+    /bin/bash /vagrant/scripts/create_users.sh
+
+    SHELL
+
+    # Indica o nome do hostname
+    config.vm.hostname = "host-basico-users"
+
+    config.vm.network "forwarded_port", guest: 22, host: 22222
+
+  end
