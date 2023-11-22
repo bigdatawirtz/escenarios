@@ -10,7 +10,7 @@ Dous hosts ubuntus nunha rede privada con Sistemas Xestores de Bases de Datos Re
 ## Como empezar
 1. Sitúate no directorio onde está o Vagrantfile correspondente
 2. Executa `vagrant up`
-3. Podes conectarte ao guest 'main' con `vagrant ssh main` ou ao guest 'worker' con `vagrant ssh worker`
+3. Podes conectarte ao guest 'mari' con `vagrant ssh mari` ou ao guest 'postgri' con `vagrant ssh postgri`
 
 ## Notas
 Créase unha rede privada entre o host e os dous guest, de xeito que todos se poden comunicar a través dos correspondentes enderezos ip:
