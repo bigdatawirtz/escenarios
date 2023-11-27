@@ -11,6 +11,8 @@ Vagrant.configure("2") do |config|
      # Indica o nome da máquina virtual
      config.vm.provider :virtualbox do |vb|
       vb.name = "host-basico"
+      #vb.cpus = 2 # default 2 cpus
+      vb.memory = "2048"
    end
   
     # Indica o nome do hostname
