@@ -1,4 +1,4 @@
-# docker-host
+# nginx-flume
 Un host ubuntu con Ngix, servindo unha web a través da carpeta compartida: www
 
 O host está pensado para exercicios nos que se procesen os logs de visitas a unha páxina web. Pode utilizarse, por exemplo, para unha práctica con Flume.
