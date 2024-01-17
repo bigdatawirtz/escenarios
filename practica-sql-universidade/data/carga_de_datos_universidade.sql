@@ -2,7 +2,7 @@
 use universidade;
 insert into persoa values ('16161616A','Luis','Ramírez','Haro','Pez','34','941111111',NULL,'1');
 insert into persoa values ('17171717A','Laura','Beltrán','Madrid','Gran Vía','23','912121212',str_to_date('08/08/1974','%d/%m/%Y'),'0');
-insert into persoa values ('18181818A','Pepe','Pérez','Madrid','Percebe','13','913131313',str_to_date('02/02/1980','%d/%m/%y'),'1');
+insert into persoa values ('18181818A','Pepe','Pérez','Madrid','Percebe','13','913131313',str_to_date('02/02/1980','%d/%m/%Y'),'1');
 insert into persoa values ('19191919A','Juan','Sánchez','Bilbao','Melancolía','7','944141414',str_to_date('03/03/1966','%d/%m/%Y'),'1');
 insert into persoa values ('20202020A','Luis','Jiménez','Nájera','Cigüeña','15','941151515',str_to_date('03/03/1979','%d/%m/%Y'),'1');
 insert into persoa values ('21212121A','Rosa','García','Haro','Alegría','16','941161616',NULL,'0');
