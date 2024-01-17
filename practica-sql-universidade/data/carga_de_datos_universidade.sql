@@ -1,15 +1,15 @@
 #poboar a taboa persoa
 use universidade;
-insert into persoa values ('16161616A','Luis','Ramírez','Haro','Pez','34','941111111',str_to_date('01/01/69','%d/%m/%y'),'1');
-insert into persoa values ('17171717A','Laura','Beltrán','Madrid','Gran Vía','23','912121212',str_to_date('08/08/74','%d/%m/%y'),'0');
-insert into persoa values ('18181818A','Pepe','Pérez','Madrid','Percebe','13','913131313',str_to_date('02/02/80','%d/%m/%y'),'1');
-insert into persoa values ('19191919A','Juan','Sánchez','Bilbao','Melancolía','7','944141414',str_to_date('03/03/66','%d/%m/%y'),'1');
-insert into persoa values ('20202020A','Luis','Jiménez','Nájera','Cigüeña','15','941151515',str_to_date('03/03/79','%d/%m/%y'),'1');
-insert into persoa values ('21212121A','Rosa','García','Haro','Alegría','16','941161616',str_to_date('04/04/78','%d/%m/%y'),'0');
-insert into persoa values ('23232323A','Jorge','Sáenz','Logroño','Luis Ulloa','17','941171717',str_to_date('09/09/78','%d/%m/%y'),'1');
-insert into persoa values ('24242424A','María','Gutiérrez','Logroño','Avda. de la Paz','18','941181818',str_to_date('10/10/64','%d/%m/%y'),'0');
-insert into persoa values ('25252525A','Rosario','Díaz','Logroño','Percebe','19','941191919',str_to_date('11/11/71','%d/%m/%y'),'0');
-insert into persoa values ('26262626A','Elena','González','Logroño','Percebe','20','941202020',str_to_date('05/05/75','%d/%m/%y'),'0');
+insert into persoa values ('16161616A','Luis','Ramírez','Haro','Pez','34','941111111',NULL,'1');
+insert into persoa values ('17171717A','Laura','Beltrán','Madrid','Gran Vía','23','912121212',str_to_date('08/08/1974','%d/%m/%y'),'0');
+insert into persoa values ('18181818A','Pepe','Pérez','Madrid','Percebe','13','913131313',str_to_date('02/02/1980','%d/%m/%y'),'1');
+insert into persoa values ('19191919A','Juan','Sánchez','Bilbao','Melancolía','7','944141414',str_to_date('03/03/1966','%d/%m/%y'),'1');
+insert into persoa values ('20202020A','Luis','Jiménez','Nájera','Cigüeña','15','941151515',str_to_date('03/03/1979','%d/%m/%y'),'1');
+insert into persoa values ('21212121A','Rosa','García','Haro','Alegría','16','941161616','','0');
+insert into persoa values ('23232323A','Jorge','Sáenz','Logroño','Luis Ulloa','17','941171717',str_to_date('09/09/1978','%d/%m/%y'),'1');
+insert into persoa values ('24242424A','María','Gutiérrez','Logroño','Avda. de la Paz','18','941181818',str_to_date('10/10/1964','%d/%m/%y'),'0');
+insert into persoa values ('25252525A','Rosario','Díaz','Logroño','Percebe','19','941191919',str_to_date('11/11/1971','%d/%m/%y'),'0');
+insert into persoa values ('26262626A','Elena','González','Logroño','Percebe','20','941202020',str_to_date('05/05/1975','%d/%m/%y'),'0');
 #poboar a taboa alumno
 insert into alumno values('A010101','21212121A');
 insert into alumno values('A020202','18181818A');
