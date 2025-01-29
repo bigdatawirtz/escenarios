@@ -1,3 +1,4 @@
+SET FOREIGN_KEY_CHECKS = 0;
 SELECT 'CREACION DE BASE DE DATOS: universidade' as 'INFO';
 
 CREATE DATABASE universidade;
