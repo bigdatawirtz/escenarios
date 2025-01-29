@@ -1,3 +1,4 @@
+SET FOREIGN_KEY_CHECKS = 0;
 #poboar a taboa persoa
 use universidade;
 insert into persoa values ('16161616A','Luis','Ramírez','Haro','Pez','34','941111111',NULL,'1');
